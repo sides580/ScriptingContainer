@@ -1,0 +1,1573 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharp.Scripts</name>
+    </assembly>
+    <members>
+        <member name="T:Scripting.CSharp.Ax5000Drive">
+            <summary>
+            Demonstrates how to assign tasks to CPU cores!
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.Ax5000Drive.project">
+            <summary>
+            Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.Ax5000Drive.systemManager">
+            <summary>
+            System Manager
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.Ax5000Drive.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.Ax5000Drive.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.Ax5000Drive.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.Ax5000Drive.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="P:Scripting.CSharp.Ax5000Drive.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.Ax5000Drive.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.Ax5000Drive.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.Ax5000Drive.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.Ax5000Drive.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.AccessRunningVS">
+            <summary>
+            Demonstrates the generation + compilation of PLC projects
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.AccessRunningVS.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.AccessRunningVS.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.AccessRunningVS.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.AccessRunningVS.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="P:Scripting.CSharp.AccessRunningVS.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.AccessRunningVS.DetailedDescription">
+            <summary>
+            Gets the detailed description of the <see cref="T:ScriptingTest.Script"/> that is shown in the Method Tips.
+            </summary>
+            <value>The detailed description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.AccessRunningVS.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.AccessRunningVS.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.AccessRunningVS.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.AccessRunningVS.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.TComObjects">
+            <summary>
+            Demonstrates the generation + compilation of PLC projects
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.setTComTask(TCatSysManagerLib.ITcSmTreeItem,System.Int32,TCatSysManagerLib.ITcSmTreeItem)">
+            <summary>
+            Sets the specified task to the TCOM object.
+            </summary>
+            <param name="tcomObject">The TCOM object.</param>
+            <param name="contextId">The context id.</param>
+            <param name="task">The task to set.</param>
+            <exception cref="T:System.ArgumentNullException">tcomObject
+            or
+            task</exception>
+            <exception cref="T:System.ArgumentException">WrongType;tcomObject</exception>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.getTaskObjectId(TCatSysManagerLib.ITcSmTreeItem)">
+            <summary>
+            Gets the task ObjectId of the specified task item
+            </summary>
+            <param name="task">The task.</param>
+            <returns>The task ObjectID</returns>
+            <exception cref="T:System.ArgumentNullException">task</exception>
+            <exception cref="T:System.ArgumentException">WrongType;task</exception>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.setParameterCreateSymbol(TCatSysManagerLib.ITcSmTreeItem,System.String,System.Boolean)">
+            <summary>
+            Sets the create symbol indicator on the specified TCOM objects Parameter
+            </summary>
+            <param name="tcomObject">The TCOM object.</param>
+            <param name="parameterName">Name of the parameter to change.</param>
+            <param name="createSymbol">if set to <c>true</c> then the symbols will be created, otherwise <c>false</c></param>
+            <exception cref="T:System.ArgumentNullException">
+            tcomObject
+            or
+            parameterName
+            </exception>
+            <exception cref="T:System.ArgumentException">TreeItem is not a TCOM Object;tcomObject</exception>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.setParameterCreateSymbol(System.Xml.XmlDocument,System.String,System.Boolean)">
+            <summary>
+            Sets the create symbol flag within the document for the specified parameter
+            </summary>
+            <param name="doc">The XML Document</param>
+            <param name="parameterName">Name of the Parameter</param>
+            <param name="value">Value of the CreateSymbol flag</param>
+            <exception cref="T:System.ArgumentException">parameterName</exception>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.setParameterInitValue(System.Xml.XmlDocument,Scripting.CSharp.TmiValueType,System.String,System.String)">
+            <summary>
+            Sets the parameter init value within the document
+            </summary>
+            <param name="doc">The XML Document to set</param>
+            <param name="type">Value Type</param>
+            <param name="parameterName">Init parameter path (split by period '.')</param>
+            <param name="value">The value to set.</param>
+            <exception cref="T:System.ArgumentException">parameterName</exception>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.getDataAreas(System.Xml.XmlDocument)">
+            <summary>
+            Gets the data areas fro the TCOM Document
+            </summary>
+            <param name="doc">The doc.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.getDataArea(TCatSysManagerLib.ITcSmTreeItem,System.Int32,System.String)">
+            <summary>
+            Gets a specific Data Area
+            </summary>
+            <param name="tcomObject">The tcom object.</param>
+            <param name="context">The data area context.</param>
+            <param name="dataAreaName">Name of the data area to find.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">tcomObject</exception>
+            <exception cref="T:System.ArgumentException">TreeItem is not a TCOM Object;tcomObject</exception>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.getParameterId(TCatSysManagerLib.ITcSmTreeItem,System.String)">
+            <summary>
+            Gets the ParameterID of the specified TCOM Object and parameter
+            </summary>
+            <param name="tcomObject">The tcom object.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.getInitParameterSymbols(System.Xml.XmlDocument)">
+            <summary>
+            Gets a list of the allowed parameter paths.
+            </summary>
+            <param name="doc">The XML Document describing the Module instance.</param>
+            <returns>The list of Init Parameter Symbols</returns>
+        </member>
+        <member name="M:Scripting.CSharp.TComObjects.getParameterSubItems(System.Xml.XmlNodeList,System.String,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Gets the Parameters SubItems and adds them into the symbols list.
+            </summary>
+            <param name="subItems">The nodes.</param>
+            <param name="parentPath">Parent path of the symbol</param>
+            <param name="symbols">The combined.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="P:Scripting.CSharp.TComObjects.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TComObjects.DetailedDescription">
+            <summary>
+            Gets the detailed description of the <see cref="T:ScriptingTest.Script"/> that is shown in the Method Tips.
+            </summary>
+            <value>The detailed description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TComObjects.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TComObjects.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TComObjects.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TComObjects.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.TComObjects.CreatePlcMode">
+            <summary>
+            Insertion Mode for creating PLC projects.
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TComObjects.CreatePlcMode.Copy">
+            <summary>
+            Copies a PLC Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TComObjects.CreatePlcMode.Move">
+            <summary>
+            Moves a PLC Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TComObjects.CreatePlcMode.Reference">
+            <summary>
+            References a PLC Project
+            </summary>
+        </member>
+        <member name="T:Scripting.CSharp.DataAreaType">
+            <summary>
+            DataAreaType for TCOM Objects
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaType.InputDst">
+            <summary>
+            Input
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaType.OutputSrc">
+            <summary>
+            Output
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaType.Internal">
+            <summary>
+            Internal
+            </summary>
+        </member>
+        <member name="T:Scripting.CSharp.DataAreaInfo">
+            <summary>
+            Data Area Info object
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaInfo.AreaType">
+            <summary>
+            The area type
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaInfo.AreaId">
+            <summary>
+            The area id
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaInfo.Name">
+            <summary>
+            The data area name
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaInfo.ContextId">
+            <summary>
+            The data area context ID
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaInfo.ByteSize">
+            <summary>
+            The byte size of the DataArea
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.DataAreaInfo.Symbols">
+            <summary>
+            The symbols of the DataAray
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.DataAreaInfo.#ctor(System.Xml.XmlElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Scripting.CSharp.DataAreaInfo"/> class.
+            </summary>
+            <param name="dataAreaElement">The data area element.</param>
+        </member>
+        <member name="T:Scripting.CSharp.SymbolInfo">
+            <summary>
+            Data Area Symbol
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.SymbolInfo.Name">
+            <summary>
+            Symbol name
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.SymbolInfo.BitSize">
+            <summary>
+            Symbol Bit Size
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.SymbolInfo.BaseTypeGuid">
+            <summary>
+            Base Type of the Symbol (as GUID)
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.SymbolInfo.BaseType">
+            <summary>
+            Base Type of the Symbol
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.SymbolInfo.BitOffset">
+            <summary>
+            Relative bit offset of the Symbol
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.SymbolInfo.#ctor(System.Xml.XmlElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Scripting.CSharp.SymbolInfo"/> class.
+            </summary>
+            <param name="symbolElement">The symbol element.</param>
+        </member>
+        <member name="T:Scripting.CSharp.TmiValueType">
+            <summary>
+            Tmi Value Type
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TmiValueType.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TmiValueType.EnumText">
+            <summary>
+            Enum Value
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TmiValueType.Data">
+            <summary>
+            Data Value
+            </summary>
+        </member>
+        <member name="T:Scripting.CSharp.RouteManagement">
+            <summary>
+            Demonstrates how to assign tasks to CPU cores!
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.RouteManagement.project">
+            <summary>
+            Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.RouteManagement.systemManager">
+            <summary>
+            System Manager
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.RouteManagement.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.RouteManagement.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.RouteManagement.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.RouteManagement.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.RouteManagement.addRoute(TCatSysManagerLib.ITcSmTreeItem,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Adds a static or project route to a remote target
+            </summary>
+            <param name="routesNode">Routes node in TwinCAT XAE.</param>
+            <param name="hostname">Hostname of the remote target.</param>
+            <param name="amsNetId">AmsNetId of the remote target.</param>
+            <param name="ipAddress">IP Address of the remote target.</param>
+            <param name="useHostname">Selects if the hostname or IP address of the remote target should be used. true = hostname, false = IP address</param>
+            <param name="staticRoute">Selects if a static or project route should be added. true = static, false = project</param>
+        </member>
+        <member name="P:Scripting.CSharp.RouteManagement.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.RouteManagement.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.RouteManagement.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.RouteManagement.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.RouteManagement.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.PlcArchives">
+            <summary>
+            Demonstrates the Import and Export of PLC Archives
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.PlcArchives.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.PlcArchives.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.PlcArchives.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.PlcArchives.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="P:Scripting.CSharp.PlcArchives.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.PlcArchives.DetailedDescription">
+            <summary>
+            Gets the detailed description of the <see cref="T:ScriptingTest.Script"/> that is shown in the Method Tips.
+            </summary>
+            <value>The detailed description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.PlcArchives.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.PlcArchives.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.PlcArchives.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.PlcArchives.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.PlcArchives.CreatePlcMode">
+            <summary>
+            Insertion Mode for creating PLC projects.
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.PlcArchives.CreatePlcMode.Copy">
+            <summary>
+            Copies a PLC Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.PlcArchives.CreatePlcMode.Move">
+            <summary>
+            Moves a PLC Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.PlcArchives.CreatePlcMode.Reference">
+            <summary>
+            References a PLC Project
+            </summary>
+        </member>
+        <member name="T:Scripting.CSharp.ManagePlcLibraries">
+            <summary>
+            Demonstrates the creation of PLC projects
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.ManagePlcLibraries.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.ManagePlcLibraries.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.ManagePlcLibraries.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.ManagePlcLibraries.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="P:Scripting.CSharp.ManagePlcLibraries.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.ManagePlcLibraries.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.ManagePlcLibraries.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.ManagePlcLibraries.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.ManagePlcLibraries.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.EtherCATAutomationProtocol">
+            <summary>
+            Demonstration of implementing EtherCAT Automation Protocol with Network Variables
+            </summary>
+            <remarks>
+            Creation of to TwinCAT XAE Projects within one solution (Publisher and Subscriber).
+            Creation of EAP (EtherCAT Network protocol) Device
+            Creation of Publisher Subscriber Network Variables with underlying Realtime Ethernet and UDP protocol
+            Demonstration of different configurations Broadcast, Multicast, Unicast for each protocol
+            </remarks>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.connectViaNetworkVariables(TCatSysManagerLib.ITcSysManager4,System.String,TCatSysManagerLib.ITcSmTreeItem3,TCatSysManagerLib.ITcSmTreeItem3,TCatSysManagerLib.ITcSysManager4,System.String,TCatSysManagerLib.ITcSmTreeItem3,TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Connects PlcSource -> Publisher -> Subscriber - > PlcTarget
+            </summary>
+            <param name="pubSysMan">Publisher side SystemManager</param>
+            <param name="pubSymbolPath">Publisher side symbol path</param>
+            <param name="pubDevice">Publisher device.</param>
+            <param name="publisher">Publisher object</param>
+            <param name="subSysMan">Subscriber System Manager</param>
+            <param name="subSymbolPath">Subscriber Symbol Path</param>
+            <param name="subDevice">Subscriber Device</param>
+            <param name="subscriber">Subscriber object.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.GetVarData(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Gets the VarData symbol of a Network Variable
+            </summary>
+            <param name="networkVariable">The Network Varialbe (NVPublisherVar or NVSubscriberVar)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.LinkVariables(TCatSysManagerLib.ITcSysManager4,TCatSysManagerLib.ITcSmTreeItem3,TCatSysManagerLib.ITcSmTreeItem3,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Links (Maps) the specified symbols ( TreeItemType.Variable) within one XAE project
+            </summary>
+            <param name="systemManager">The system manager.</param>
+            <param name="source">The source.</param>
+            <param name="target">The target.</param>
+            <param name="offsetSource">The offset source.</param>
+            <param name="offsetTarget">The offset target.</param>
+            <param name="overlap">The overlap.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.LinkVariables(TCatSysManagerLib.ITcSysManager4,TCatSysManagerLib.ITcSmTreeItem3,TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Links (Maps) the specified symbols ( TreeItemType.Variable) within one XAE project
+            </summary>
+            <param name="systemManager">The system manager.</param>
+            <param name="source">The source variable</param>
+            <param name="target">The target variable</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.ProduceXml(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Produces the XML and loads it into an XmlDocument.
+            </summary>
+            <param name="treeItem">The tree item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.GetVariableDataType(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Gets the type variable / symbol.
+            </summary>
+            <param name="variable">The variable.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.GetVariableDataTypeId(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Gets the variable DataType id.
+            </summary>
+            <param name="variable">The variable.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.GetVariableBitSize(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Gets the bitsize of the Variable / its represented data type.
+            </summary>
+            <param name="variable">The variable.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.ScanDevices(TCatSysManagerLib.ITcSysManager4)">
+            <summary>
+            Scans the devices on the target system and returns a list of XML Nodes representing these devices.
+            </summary>
+            <param name="systemManager">The system manager.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.CreatePublisherVariable(TCatSysManagerLib.ITcSmTreeItem3,System.String,System.String,System.Int32@)">
+            <summary>
+            Creates the spefied publisher variable
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="varName">Name of the var.</param>
+            <param name="dataType">Type of the data.</param>
+            <param name="publisherId">The publisher id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.CreateSubscriberVariable(TCatSysManagerLib.ITcSmTreeItem3,System.String,System.String,System.Int32)">
+            <summary>
+            Creates the specified Subscriber variable
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="varName">Name of the var.</param>
+            <param name="dataType">Type of the data.</param>
+            <param name="publisherId">The publisher id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherId(TCatSysManagerLib.ITcSmTreeItem3,System.Int32)">
+            <summary>
+            Sets the publisher id.
+            </summary>
+            <param name="nvVar">The Network variable.</param>
+            <param name="publisherId">The publisher id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.GetPublisherId(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Gets the publisher id.
+            </summary>
+            <param name="nvVar">The Network variable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherBroadCastRT(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Broadcast publisher
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherBroadCastUdp(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Broadcast publisher
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherMulticastRT(TCatSysManagerLib.ITcSmTreeItem3,System.UInt16)">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Multicast publisher
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="id">Multicast ID</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherMulticastUdp(TCatSysManagerLib.ITcSmTreeItem3,System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Multicast publisher
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="multicastAddress">The multicast address.</param>
+            <param name="gateway">The gateway address</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherUnicastRT(TCatSysManagerLib.ITcSmTreeItem3,TwinCAT.AmsNetId)">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Unicast publisher (via AmsNetId)
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="publisherNetId">The publisher net id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherUnicastRT(TCatSysManagerLib.ITcSmTreeItem3,System.Byte[])">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Unicast publisher (via MacId)
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="multicastMacId">The multicast mac id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherUnicastUdp(TCatSysManagerLib.ITcSmTreeItem3,System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Sets the Properties for a Realtime Ethernet Unicast publisher (via AmsNetId)
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="ip">The ip.</param>
+            <param name="gateway">The gateway address.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherAddressRT(TCatSysManagerLib.ITcSmTreeItem3,System.Byte[],TwinCAT.AmsNetId)">
+            <summary>
+            Sets the RT parameters for a publisher
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="macId">The mac id.</param>
+            <param name="netId">The net id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetPublisherAddressUdp(TCatSysManagerLib.ITcSmTreeItem3,System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Sets the parameters for a UDP publisher
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="address">The address.</param>
+            <param name="gateway">The gateway.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberAddressRT(TCatSysManagerLib.ITcSmTreeItem3,System.Byte[],TwinCAT.AmsNetId)">
+            <summary>
+            Sets the parameters for a RT subscriber
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="multicastMacId">The multicast mac id.</param>
+            <param name="publisherNetId">The publisher net id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberAddressUdp(TCatSysManagerLib.ITcSmTreeItem3,System.Net.IPAddress,TwinCAT.AmsNetId)">
+            <summary>
+            Sets the parameters for a UDP Subscriber
+            </summary>
+            <param name="publisher">The publisher.</param>
+            <param name="multicastIpAddr">The multicast ip addr.</param>
+            <param name="publisherNetId">The publisher net id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberBroadcastRT(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Sets the parameters for a RT Broadcast subscriber.
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberMulticastRT(TCatSysManagerLib.ITcSmTreeItem3,System.UInt16)">
+            <summary>
+            Sets the parameters for a RT Multicast subscriber
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="id">The id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberUnicastRT(TCatSysManagerLib.ITcSmTreeItem3,TwinCAT.AmsNetId)">
+            <summary>
+            Sets parameters for a RT Unicast subscriber
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="netId">The net id.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberBroadcastUdp(TCatSysManagerLib.ITcSmTreeItem3)">
+            <summary>
+            Sets parameters for a UDP Broadcast subscriber
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberMulticastUdp(TCatSysManagerLib.ITcSmTreeItem3,TwinCAT.AmsNetId,System.Net.IPAddress)">
+            <summary>
+            Sets parameters for a UDP Multicast subscriber
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="netId">The net id.</param>
+            <param name="multicastAddress">The multicast address.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATAutomationProtocol.SetSubscriberUnicastUdp(TCatSysManagerLib.ITcSmTreeItem3,TwinCAT.AmsNetId)">
+            <summary>
+            Sets the parameters for a UDP Unicast subscriber
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="publisherNetId">The publisher NetId</param>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATAutomationProtocol.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATAutomationProtocol.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATAutomationProtocol.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATAutomationProtocol.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATAutomationProtocol.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.GeneratePlcProject">
+            <summary>
+            Demonstrates the generation + compilation of PLC projects. 
+            The method Execute() will be called by ScriptingContainer and will execute the actual script code.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.waitForBuildAndCheckErrors(ScriptingTest.IWorker,EnvDTE80.ErrorItems@)">
+            <summary>
+            Waits for build command to finish and checks for any errors in the ErrorList window
+            </summary>
+            <param name="worker">The worker.</param>
+            <param name="errorItems">Returns found errors in ErrorItems list.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePlcFolder(TCatSysManagerLib.ITcSmTreeItem,System.String,System.String,ScriptingTest.IWorker)">
+            <summary>
+            Creates a PLC folder
+            </summary>
+            <param name="parent">The parent item.</param>
+            <param name="folderName">Name of the folder to be created.</param>
+            <param name="before">Before item.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreateDut(TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.TreeItemType,System.String,System.String,System.String,ScriptingTest.IWorker)">
+            <summary>
+            Creates a DUT
+            </summary>
+            <param name="parent">The parent item.</param>
+            <param name="treeItemType">Tree item type.</param>
+            <param name="typeName">Name of the DUT.</param>
+            <param name="baseType">Base type.</param>
+            <param name="declarationCode">Declaration code of the DUT.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreateGlv(TCatSysManagerLib.ITcSmTreeItem,System.String,System.String,ScriptingTest.IWorker)">
+            <summary>
+            Creates Global Variable List
+            </summary>
+            <param name="parent">The parent item.</param>
+            <param name="name">Name of the item.</param>
+            <param name="declarationCode">Fill the GVL with declaration code.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreateParameterList(TCatSysManagerLib.ITcSmTreeItem,System.String,System.String,ScriptingTest.IWorker)">
+            <summary>
+            Creates Global Variable Parameter List
+            </summary>
+            <param name="parent">The parent item.</param>
+            <param name="name">Name of the Parameter List.</param>
+            <param name="declarationCode">Fill the Parameter List with declaration code.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePOUsSFC(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Creates SFC POUs
+            </summary>
+            <param name="plcPousItem">The PLC pous item.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePOUsIL(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Creates IL POUs
+            </summary>
+            <param name="parent">The parent.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePOUsST(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Creates ST POUs
+            </summary>
+            <param name="parent">The parent.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePOUsCFC(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Creates CFC Pous
+            </summary>
+            <param name="plcPousItem">The PLC pous item.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePOUsFBD(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Creates FBD POUs
+            </summary>
+            <param name="plcPousItem">The PLC pous item.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.CreatePOUsLD(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Creates LD POUs
+            </summary>
+            <param name="plcPousItem">The PLC pous item.</param>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddPouFunction(System.String,System.String,TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType,ScriptingTest.IWorker)">
+            <summary>
+            Adds a function POU to the parent item
+            </summary>
+            <param name="pouName">Name of the pou.</param>
+            <param name="returnType">Type of the return.</param>
+            <param name="parent">The parent.</param>
+            <param name="language">The language.</param>
+            <param name="worker">The worker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddPOUFB(System.String,TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType,System.String,System.String[],ScriptingTest.IWorker)">
+            <summary>
+            Adds a function block POU to the parent
+            </summary>
+            <param name="pouName">Name of the pou.</param>
+            <param name="parent">The parent.</param>
+            <param name="language">The language.</param>
+            <param name="extensionType">Type of the extension.</param>
+            <param name="implementationInterfaces">The implementation interfaces.</param>
+            <param name="worker">The worker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddPOUProgram(System.String,TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType,ScriptingTest.IWorker)">
+            <summary>
+            Adds a Program pou to the Parent
+            </summary>
+            <param name="pouName">Name of the pou.</param>
+            <param name="parent">The parent.</param>
+            <param name="language">The language.</param>
+            <param name="worker">The worker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.loadTemplate(TCatSysManagerLib.ITcPlcPou,TwinCAT.SystemManager.IECLanguageType)">
+            <summary>
+            Loads template XML file for a POU
+            </summary>
+            <param name="pou">POU object.</param>
+            <param name="language">The IEC language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddMethod(TCatSysManagerLib.ITcSmTreeItem,System.String,TwinCAT.SystemManager.IECLanguageType,System.String,TCatSysManagerLib.PLCACCESS)">
+            <summary>
+            Adds a Method to a POU
+            </summary>
+            <param name="pou">POU object.</param>
+            <param name="name">Name of the Method</param>
+            <param name="language">The IEC language.</param>
+            <param name="returnType">Return type</param>
+            <param name="accessor">The accessor.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddMethod(TCatSysManagerLib.ITcSmTreeItem,System.String,TwinCAT.SystemManager.IECLanguageType,System.String)">
+            <summary>
+            Adds a Method to a POU
+            </summary>
+            <param name="pou">POU object.</param>
+            <param name="name">Name of the Method</param>
+            <param name="language">The IEC language.</param>
+            <param name="returnType">Return type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddTransition(TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType)">
+            <summary>
+            Adds a Transition to a POU
+            </summary>
+            <param name="pou">POU object.</param>
+            <param name="language">The IEC language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddPropertySet(TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType)">
+            <summary>
+            Adds a Set to a Property
+            </summary>
+            <param name="prop">Property object.</param>
+            <param name="language">The IEC language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddPropertyGet(TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType)">
+            <summary>
+            Adds a Get to a Property
+            </summary>
+            <param name="prop">Property object.</param>
+            <param name="language">The IEC language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddProperty(TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType)">
+            <summary>
+            Adds a Property to a POU
+            </summary>
+            <param name="pou">POU object.</param>
+            <param name="language">The IEC language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.AddAction(TCatSysManagerLib.ITcSmTreeItem,TwinCAT.SystemManager.IECLanguageType)">
+            <summary>
+            Adds an Action to a POU
+            </summary>
+            <param name="pou">POU object.</param>
+            <param name="language">The IEC language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scripting.CSharp.GeneratePlcProject.DumpPous(TCatSysManagerLib.ITcSmTreeItem,ScriptingTest.IWorker)">
+            <summary>
+            Writes all POUs into worker window
+            </summary>
+            <param name="root">Root object.</param>
+            <param name="worker">The worker.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Scripting.CSharp.GeneratePlcProject.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.GeneratePlcProject.DetailedDescription">
+            <summary>
+            Gets the detailed description of the <see cref="T:ScriptingTest.Script"/> that is shown in the Method Tips.
+            </summary>
+            <value>The detailed description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.GeneratePlcProject.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.GeneratePlcProject.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.GeneratePlcProject.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.GeneratePlcProject.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.GeneratePlcProject.CreatePlcMode">
+            <summary>
+            Insertion Mode for creating PLC projects.
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.GeneratePlcProject.CreatePlcMode.Copy">
+            <summary>
+            Copies a PLC Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.GeneratePlcProject.CreatePlcMode.Move">
+            <summary>
+            Moves a PLC Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.GeneratePlcProject.CreatePlcMode.Reference">
+            <summary>
+            References a PLC Project
+            </summary>
+        </member>
+        <member name="T:Scripting.CSharp.EtherCATLinking">
+            <summary>
+            Demonstrates the creation of an EtherCAT IO Subtree and the linking with PLC Symbols (Early Binding)
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.EtherCATLinking.systemManager">
+            <summary>
+            System Manager Instance
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.EtherCATLinking.project">
+            <summary>
+            Visual Studio Project
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.EtherCATLinking2">
+            <summary>
+            Demonstrates the creation of an EtherCAT IO Subtree and the linking with PLC Symbols (Early Binding), Alternative Box adding via VInfo Structe
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.EtherCATLinking2.systemManager">
+            <summary>
+            System Manager object
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.EtherCATLinking2.project">
+            <summary>
+            TwinCAT XAE Project ojbect
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking2.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking2.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking2.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="F:Scripting.CSharp.EtherCATLinking2.plcTemplateName">
+            <summary>
+            Name of the PLC Template
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.EtherCATLinking2.xaeProjectTemplateName">
+            <summary>
+            Name of the Project Template
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.EtherCATLinking2.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.PlcTemplatePath">
+            <summary>
+            Gets the Path to the PLC Template
+            </summary>
+            <value>The PLC file.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.XAEProjectTemplatePath">
+            <summary>
+            Gets the Path to the Project Template
+            </summary>
+            <value>The TSM file.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.EtherCATLinking2.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.TaskCpuSettings">
+            <summary>
+            Demonstrates how to assign tasks to CPU cores!
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TaskCpuSettings.project">
+            <summary>
+            Project
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.TaskCpuSettings.systemManager">
+            <summary>
+            System Manager
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.OnInitialize(ScriptingTest.IContext)">
+            <summary>
+            Handler function Initializing the Script (Configuration preparations)
+            </summary>
+            <param name="context"></param>
+            <remarks>Usually used to to the open a prepared or new XAE configuration</remarks>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.OnSolutionCreated">
+            <summary>
+            Handler function called after the Solution object has been created.
+            </summary>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.OnCleanUp(ScriptingTest.IWorker)">
+            <summary>
+            Cleaning up the XAE configuration after script execution.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.OnExecute(ScriptingTest.IWorker)">
+            <summary>
+            Handler function Executing the Script code.
+            </summary>
+            <param name="worker">The worker.</param>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.setTaskAffinity(TCatSysManagerLib.ITcSmTreeItem,Scripting.CSharp.CpuAffinity)">
+            <summary>
+            Sets the task CPU affinity
+            </summary>
+            <param name="task">The task.</param>
+            <param name="affinityMask">The affinity mask.</param>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.setTaskPriority(TCatSysManagerLib.ITcSmTreeItem,System.Int32)">
+            <summary>
+            Sets the task priority.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="priority">The priority.</param>
+        </member>
+        <member name="M:Scripting.CSharp.TaskCpuSettings.writeCpuProperties(System.Xml.XmlWriter,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Writes the CPU properties to the XmlWriter
+            </summary>
+            <param name="writer">XmlWriter</param>
+            <param name="id">CPU ID</param>
+            <param name="loadLimit">LoadLimt (0..100)</param>
+            <param name="baseTime">Base Time in Ticks (100ns)</param>
+            <param name="latencyWarning">Latency warning in Ticks (100ns).</param>
+        </member>
+        <member name="P:Scripting.CSharp.TaskCpuSettings.Description">
+            <summary>
+            Gets the Script description
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TaskCpuSettings.Keywords">
+            <summary>
+            Gets the keywords, describing the Script features
+            </summary>
+            <value>The keywords.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TaskCpuSettings.TwinCATVersion">
+            <summary>
+            Gets the Version number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT version.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TaskCpuSettings.TwinCATBuild">
+            <summary>
+            Gets the build number of TwinCAT that is necessary for script execution.
+            </summary>
+            <value>The TwinCAT build.</value>
+        </member>
+        <member name="P:Scripting.CSharp.TaskCpuSettings.Category">
+            <summary>
+            Gets the category of this script.
+            </summary>
+            <value>The script category.</value>
+        </member>
+        <member name="T:Scripting.CSharp.CpuAffinity">
+            <summary>
+            Flags and Masks for the CPU Affinity
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU1">
+            <summary>
+            CPU 1
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU2">
+            <summary>
+            CPU 2
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU3">
+            <summary>
+            CPU 3
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU4">
+            <summary>
+            CPU 4
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU5">
+            <summary>
+            CPU 5
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU6">
+            <summary>
+            CPU 6
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU7">
+            <summary>
+            CPU 7
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.CPU8">
+            <summary>
+            CPU 8
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.None">
+            <summary>
+            None, Uninitialized
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.MaskSingle">
+            <summary>
+            Single Core CPU
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.MaskDual">
+            <summary>
+            Dual Core CPU
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.MaskQuad">
+            <summary>
+            Quad Core CPU
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.MaskHexa">
+            <summary>
+            Hexa Core CPU
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.MaskOct">
+            <summary>
+            Oct Core CPU
+            </summary>
+        </member>
+        <member name="F:Scripting.CSharp.CpuAffinity.MaskAll">
+            <summary>
+            Mask All
+            </summary>
+        </member>
+    </members>
+</doc>

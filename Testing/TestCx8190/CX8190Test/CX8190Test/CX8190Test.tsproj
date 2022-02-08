@@ -1,0 +1,1587 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000009}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..8] OF BIT</Name>
+			<BitSize>9</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>9</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<BitSize>4</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000300000014}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..19] OF BYTE</Name>
+			<BitSize>160</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>20</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000300000019}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..24] OF BYTE</Name>
+			<BitSize>200</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>25</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e000000010018000000000000000000c30e0000c30e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080808000000080808000000080808000000080808000000000000000000000000000000000ff0000ff0000000000000000ff0000000000ff0000000000ff0000000000ff0000000000000000000000000000000000ff0000ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080808000000080808000000080808000000080808000000000000000000000000000000000ff0000ff0000000000000000ff0000000000ff0000000000ff0000000000ff0000000000000000000000000000000000ff0000ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007fff007fff007fff007fff007fff007fffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff007fff007fff007fff007fff007fff007fffff00ff000000000000000000000000000000000000000000ff00ffff00ff007fff007fff007fff007fff007fff007fffff00ff000000000000000000000000000000000000000000007fffff00ff007fff007fff007fff007fff007fff007fffff00ff000000000000000000000000000000000000000000ff00ffff00ff007fff007fff007fff007fff007fff007fffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ff007fff007fff007fff007fff007fff007fffff00ff000000000000000000000000ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424dba000000000000004a00000028000000100000000e000000010004000000000070000000c30e0000c30e0000050000000500000000000000ff00ff0080808000007fff0000ff000011111111111111110000000000000000020202020000044004040404000004400000000000000000000000000000000002020202000004400404040400000440000000000000000033333311111111113333331111111111333333111111111133333311111111113333331111111111</ImageData>
+		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ff000000000000ff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ff000000000000ff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{C3A940E5-79D3-4A7F-BA03-5FFED584540C}" Target64Bit="true" ShowHideConfigurations="#x106">
+		<System>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="301" AmsNetId="5.71.3.161.1.1">
+					<Name>IO</Name>
+					<Vars VarGrpType="1" InsertType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>SyncTag</Name>
+							<Type>BIT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" InsertType="1">
+						<Name>Outputs</Name>
+					</Vars>
+					<Image Id="4" AddrType="1" ImageType="1" SizeIn="1">
+						<Name>Image</Name>
+					</Image>
+				</Task>
+			</Tasks>
+		</System>
+		<Io>
+			<Device Id="1" DevType="124" DevFlags="#x0004">
+				<Name>Device 1 (Beckhoff CCAT)</Name>
+				<ImageId>230</ImageId>
+				<AddressInfo>
+					<Pci>
+						<Address>-1073741824</Address>
+						<Size>0</Size>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Pci>
+				</AddressInfo>
+				<CCat>
+					<Slot Id="#x03010011">
+						<Name>Slot 1 (MAC-DMA)</Name>
+						<ImageId>231</ImageId>
+						<CCatSlot SlotType="15000100030200000000010000400000" SlotData="00000000000000000001054703a20000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" SlotName="Slot 1 (MAC-DMA)" Ports="2" MacOids="1200010313000103140001030000000000000000000000000000000000000000" SlotNo="1"/>
+					</Slot>
+					<Slot Id="#x03010015">
+						<Name>Slot 2 (Switch)</Name>
+						<ImageId>231</ImageId>
+						<CCatSlot SlotType="05000600030000000000030000200000" SlotName="Slot 2 (Switch)" SlotNo="2"/>
+					</Slot>
+					<Slot Id="#x03010016">
+						<Name>Slot 5 (GPIO)</Name>
+						<ImageId>231</ImageId>
+						<CCatSlot SlotType="0d0000000a0000000003000020000000" SlotName="Slot 5 (GPIO)" SlotNo="5"/>
+					</Slot>
+					<Slot Id="#x03010017">
+						<Name>Slot 6 (System Time)</Name>
+						<ImageId>231</ImageId>
+						<CCatSlot SlotType="10000000000000000004000080000000" SlotName="Slot 6 (System Time)" MacOids="1800010300000000000000000000000000000000000000000000000000000000" SlotNo="6"/>
+					</Slot>
+					<Slot Id="#x03010019">
+						<Name>Slot 11 (EEPROM)</Name>
+						<ImageId>231</ImageId>
+						<CCatSlot SlotType="12000000000000000002000040000000" SlotName="Slot 11 (EEPROM)" SlotNo="11"/>
+					</Slot>
+					<Slot Id="#x0301001a">
+						<Name>Slot 13 (SRAM)</Name>
+						<ImageId>231</ImageId>
+						<CCatSlot SlotType="16000000000000000000100000001000" SlotName="Slot 13 (SRAM)" SlotNo="13"/>
+					</Slot>
+				</CCat>
+			</Device>
+			<Device Id="2" DevType="111" DevFlags="#x0003" AmsPort="28674" AmsNetId="192.168.10.65.3.1" RemoteName="Device 2 (EtherCAT)" InfoImageId="2">
+				<Name>Device 2 (EtherCAT)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>-1073741824</Address>
+						<Offset>131072</Offset>
+						<Size>65536</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+						<Dma>
+							<Address>0</Address>
+							<Offset>4096</Offset>
+							<Size>256</Size>
+							<BaseAddr>2</BaseAddr>
+							<RxChn>0</RxChn>
+							<TxChn>1</TxChn>
+						</Dma>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099">
+					<Name>Term 1 (EK1200)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001388" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-5000 EtherCAT Power supply (2A E-Bus)" Desc="EK1200" PortABoxInfo="#x00ffffff"/>
+					<Box Id="2" BoxType="9099">
+						<Name>Term 2 (EK1122)</Name>
+						<ImageId>1001</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+						<Box Id="3" BoxType="9099" BoxFlags="#x00000020">
+							<Name>Box 3 (EP7402-0057)</Name>
+							<ImageId>1002</ImageId>
+							<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1cea4052" RevisionNo="#x00110039" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="273" CreateDeviceDataType="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP7402-0057 2 Ch. Brushless-DC Motor,  24VDC/2.8A, 8 x digital In/Output, B23 ENP 5G4" Desc="EP7402-0057" PortABoxInfo="#x03000002">
+								<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+								<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+								<SyncMan>001212002400010003000000000000001200001224010000</SyncMan>
+								<SyncMan>001916002000010004000000000000001600001920010000</SyncMan>
+								<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+								<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+								<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+								<BootStrapData>0010f400f410f400</BootStrapData>
+								<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000003900110000</MBoxUserCmdData>
+								<MBoxUserCmdData>020003000a0000000c0000000300000000000000000000000000000000000000202080010200000088135065616b2063757272656e7400</MBoxUserCmdData>
+								<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+									<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control input 1" Index="#x6000" Sub="#x05">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control input 2" Index="#x6000" Sub="#x06">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control input 3" Index="#x6000" Sub="#x07">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control input 4" Index="#x6000" Sub="#x08">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry>
+										<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Status Channel 1" Index="#x1a01" Flags="#x0010" SyncMan="3">
+									<Entry Name="Status__Ready to enable" Index="#x6020" Sub="#x01" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Ready" Index="#x6020" Sub="#x02" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Warning" Index="#x6020" Sub="#x03">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Error" Index="#x6020" Sub="#x04" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Moving positive" Index="#x6020" Sub="#x05">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Moving negative" Index="#x6020" Sub="#x06">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__">
+										<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+									</Entry>
+									<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Synchron info data Channel 1" Index="#x1a02" Flags="#x0010" SyncMan="3">
+									<Entry Name="Info data 1" Index="#x6020" Sub="#x11">
+										<Type>UINT</Type>
+									</Entry>
+									<Entry Name="Info data 2" Index="#x6020" Sub="#x12">
+										<Type>UINT</Type>
+									</Entry>
+									<Entry Name="Info data 3" Index="#x6020" Sub="#x16">
+										<Type>UINT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Status Channel 2" Index="#x1a03" Flags="#x0010" SyncMan="3">
+									<Entry Name="Status__Ready to enable" Index="#x6030" Sub="#x01" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Ready" Index="#x6030" Sub="#x02" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Warning" Index="#x6030" Sub="#x03" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Error" Index="#x6030" Sub="#x04" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Moving positive" Index="#x6030" Sub="#x05">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__Moving negative" Index="#x6030" Sub="#x06">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Status__">
+										<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+									</Entry>
+									<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+										<Type>BIT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Synchron info data Channel 2" Index="#x1a04" Flags="#x0010" SyncMan="3">
+									<Entry Name="Info data 1" Index="#x6030" Sub="#x11">
+										<Type>UINT</Type>
+									</Entry>
+									<Entry Name="Info data 2" Index="#x6030" Sub="#x12">
+										<Type>UINT</Type>
+									</Entry>
+									<Entry Name="Info data 3" Index="#x6030" Sub="#x16">
+										<Type>UINT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Inputs Device" Index="#x1a05" Flags="#x0011" SyncMan="3">
+									<Entry Name="Device Diag__Device undervoltage" Index="#xf600" Sub="#x01">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Device overvoltage" Index="#xf600" Sub="#x02">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__">
+										<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Overtemperature warning" Index="#xf600" Sub="#x04">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Overtemperature error" Index="#xf600" Sub="#x05">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__General hardware error" Index="#xf600" Sub="#x06">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__">
+										<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 openload" Index="#xf600" Sub="#x09">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 short circuit" Index="#xf600" Sub="#x0a">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 motor overload I2T warning" Index="#xf600" Sub="#x0b">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 motor overload I2T error" Index="#xf600" Sub="#x0c">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 amplifier overload I2T warning" Index="#xf600" Sub="#x0d">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 amplifier overload I2T error" Index="#xf600" Sub="#x0e">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 in limit" Index="#xf600" Sub="#x0f">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 1 commutation error" Index="#xf600" Sub="#x10">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__">
+										<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 openload" Index="#xf600" Sub="#x15">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 short circuit" Index="#xf600" Sub="#x16">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 motor overload I2T warning" Index="#xf600" Sub="#x17">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 motor overload I2T error" Index="#xf600" Sub="#x18">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 amplifier overload I2T warning" Index="#xf600" Sub="#x19">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 amplifier overload I2T error" Index="#xf600" Sub="#x1a">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 in limit" Index="#xf600" Sub="#x1b">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__Channel 2 commutation error" Index="#xf600" Sub="#x1c">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Device Diag__">
+										<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="DO Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+									<Entry Name="Output 1" Index="#x7010" Sub="#x01">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Output 2" Index="#x7010" Sub="#x02">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Output 3" Index="#x7010" Sub="#x03">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Output 4" Index="#x7010" Sub="#x04">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control output 1" Index="#x7010" Sub="#x05">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control output 2" Index="#x7010" Sub="#x06">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control output 3" Index="#x7010" Sub="#x07">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control output 4" Index="#x7010" Sub="#x08">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry>
+										<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Control Channel 1" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+									<Entry Name="Control__Enable" Index="#x7020" Sub="#x01" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__Reset" Index="#x7020" Sub="#x02" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__">
+										<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+									</Entry>
+									<Entry Name="Control__Invert direction" Index="#x7020" Sub="#x04" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__">
+										<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+									</Entry>
+									<Entry Name="Control__Brake output" Index="#x7020" Sub="#x0c" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__">
+										<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Target Velocity Channel 1" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+									<Entry Name="Velocity" Index="#x7020" Sub="#x21">
+										<Type>INT</Type>
+									</Entry>
+									<Entry Name="Accelleration" Index="#x7020" Sub="#x22">
+										<Type>UINT</Type>
+									</Entry>
+									<Entry Name="Decceleration" Index="#x7020" Sub="#x23">
+										<Type>UINT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Control Channel 2" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+									<Entry Name="Control__Enable" Index="#x7030" Sub="#x01">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__Reset" Index="#x7030" Sub="#x02" Flags="#x00008020">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__">
+										<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+									</Entry>
+									<Entry Name="Control__Invert direction" Index="#x7030" Sub="#x04">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__">
+										<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+									</Entry>
+									<Entry Name="Control__Brake output" Index="#x7030" Sub="#x0c">
+										<Type>BIT</Type>
+									</Entry>
+									<Entry Name="Control__">
+										<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+									</Entry>
+								</Pdo>
+								<Pdo Name="STM Target Velocity Channel 2" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+									<Entry Name="Velocity" Index="#x7030" Sub="#x21">
+										<Type>INT</Type>
+									</Entry>
+									<Entry Name="Accelleration" Index="#x7030" Sub="#x22">
+										<Type>UINT</Type>
+									</Entry>
+									<Entry Name="Decceleration" Index="#x7030" Sub="#x23">
+										<Type>UINT</Type>
+									</Entry>
+								</Pdo>
+								<CoeProfile ProfileNo="6558601"/>
+								<CoeProfile ProfileNo="13112201"/>
+								<CoeProfile ProfileNo="46076809" DisplayName="Stepper interface"/>
+								<CoeProfile ProfileNo="46076809" DisplayName="Stepper interface"/>
+							</EtherCAT>
+							<Box Id="4" BoxType="9099">
+								<Name>Box 4 (EP2349-0021)</Name>
+								<ImageId>1003</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x092d4052" RevisionNo="#x00110015" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP2349-0021 16 Ch. Dig. Input/Output 24V, 10µs, 0,5A, M8" Desc="EP2349-0021" PortABoxInfo="#x01000003">
+									<SyncMan>000f01004400010003000000010001000100000f44090000</SyncMan>
+									<SyncMan>010f01004400010003000000010001000100010f44090000</SyncMan>
+									<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+									<SyncMan>011001000000010004000000010001000100011000010000</SyncMan>
+									<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
+									<Fmmu>0000000000000000010f00020100000001000000000000000000000000000000</Fmmu>
+									<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+									<Fmmu>0000000000000000011000010100000002000000000000000000000000000000</Fmmu>
+									<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6000" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6010" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6020" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6030" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6040" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6050" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6060" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="2">
+										<Entry Name="Input" Index="#x6070" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x6080" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x6090" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x60a0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x60b0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x60c0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x60d0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x60e0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="3">
+										<Entry Name="Input" Index="#x60f0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 17" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7000" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 18" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7010" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 19" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7020" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 20" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7030" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 21" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7040" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 22" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7050" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 23" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7060" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 24" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="0">
+										<Entry Name="Output" Index="#x7070" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 25" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x7080" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 26" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x7090" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 27" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x70a0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 28" Index="#x160b" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x70b0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 29" Index="#x160c" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x70c0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 30" Index="#x160d" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x70d0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 31" Index="#x160e" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x70e0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+									<Pdo Name="Channel 32" Index="#x160f" InOut="1" Flags="#x0011" SyncMan="1">
+										<Entry Name="Output" Index="#x70f0" Sub="#x01">
+											<Type>BIT</Type>
+										</Entry>
+									</Pdo>
+								</EtherCAT>
+							</Box>
+						</Box>
+					</Box>
+					<Box Id="5" BoxType="9109" BoxFlags="#x00000020">
+						<Name>Term 5 (EL6652-0010)</Name>
+						<ImageId>1004</ImageId>
+						<EtherCAT SlaveType="5" AdsServerAddress="054703a10401ec03" FixedAdsServerNetId="true" PdiType="#x0008" ExecIo="true" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x19fc3052" RevisionNo="#x0011000a" InfoDataAddr="true" InfoDataNetId="true" OwnAddrExtern="true" RepeatSupport="true" TimeoutStateChange1="10000" TimeoutStateChange3="20000" TimeoutMailbox2="2000" GenerateOwnNetId="true" InitializeOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6652-0010 EtherNet/IP Adapter (Slave)" Desc="EL6652-0010" PortABoxInfo="#x02000002">
+							<SyncMan>001000022600010001000000400000020002001026010000</SyncMan>
+							<SyncMan>001200022200010002000000400000020002001222010000</SyncMan>
+							<SyncMan>00141d006400010003000000000000000200001464010000</SyncMan>
+							<SyncMan>002018002000010004000000000000000200002020010000</SyncMan>
+							<Fmmu>0000000000000000001400020100000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000002000010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010000400140004</BootStrapData>
+							<Pdo Name="Box 7 (TC EtherNet/IP Slave)_In" Index="#x1a00" Flags="#x0001" SyncMan="3">
+								<Entry Name="Box 7 (TC EtherNet/IP Slave)_State" Index="#x6000" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+								<Entry Name="Box 7 (TC EtherNet/IP Slave) Assembly 1 (Input/Output)_In" Index="#x6001" Sub="#x01" Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-000300000014}">ARRAY [0..19] OF BYTE</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Box 7 (TC EtherNet/IP Slave)_Out" Index="#x1600" InOut="1" Flags="#x0001" SyncMan="2">
+								<Entry Name="Box 7 (TC EtherNet/IP Slave)_Ctrl" Index="#x7000" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+								<Entry Name="Box 7 (TC EtherNet/IP Slave) Assembly 1 (Input/Output)_Out" Index="#x7001" Sub="#x01" Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-000300000019}">ARRAY [0..24] OF BYTE</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="ECatState" Index="#x1bff" Flags="#x0001" SyncMan="3">
+								<Entry Name="ECatState" Index="#xf101" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="ECatCtrl" Index="#x17ff" InOut="1" Flags="#x0001" SyncMan="2">
+								<Entry Name="ECatCtrl" Index="#xf201" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="5001"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="6" BoxType="9099">
+						<Name>Term 6 (EL9011)</Name>
+						<ImageId>1005</ImageId>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000005"/>
+					</Box>
+				</Box>
+				<EtherCAT/>
+			</Device>
+			<Device Id="3" DevType="145" AmsPort="28675" AmsNetId="192.168.10.65.4.1" RemoteName="Device 3 (ECAT EIP Adapter (EL6652-0010))">
+				<Name>Device 3 (ECAT EIP Adapter (EL6652-0010))</Name>
+				<AddressInfo>
+					<Ecat>
+						<EtherCATDeviceId>5</EtherCATDeviceId>
+						<EtherCATDeviceName>TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL6652-0010)</EtherCATDeviceName>
+					</Ecat>
+				</AddressInfo>
+				<Image Id="3" AddrType="4" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="9" BoxType="9133">
+					<Name>Box 7 (TC EtherNet/IP Slave)</Name>
+					<ImageId>63</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>State</Name>
+							<Comment><![CDATA[0x8000 = Slave has no valid Assembly Object configured
+0x4000 = Slave has no valid IP Addr - pending DHCP request
+0x2000 = TCP server: unable to listen on local EtherNet/IP Port (44818)
+0x1000 = UDP server: unable to listen on local EtherNet/IP Port (44818)
+0x0XXX = reserved
+]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>Ctrl</Name>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<EthernetIp NewSlavePara="09000000426f782037202854432045746865724e65742f495020536c61766529000000000c0000006c000000fc1900000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200090000004101a8c000ffffff000000000000800001001e000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+						<SlaveConnection Id="2" AssemblyPara="02000000000000000000000000000000000000008100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000008200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000008800000000000000890000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" ConnectionType="1073741867">
+							<Name>Assembly 1 (Input/Output)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1" InsertType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>ConnState</Name>
+									<Comment><![CDATA[0x0001 = Connection is not running
+0x8000 = Connection is running but no new data received
+]]></Comment>
+									<Type>UDINT</Type>
+									<BitOffs>16</BitOffs>
+								</Var>
+								<Var>
+									<Name>Output 1</Name>
+									<Type>BIT</Type>
+									<BitOffs>48</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Output 2</Name>
+									<Type>BIT</Type>
+									<BitOffs>49</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Output 3</Name>
+									<Type>BIT</Type>
+									<BitOffs>50</BitOffs>
+									<ExternalAddress>41</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Output 4</Name>
+									<Type>BIT</Type>
+									<BitOffs>51</BitOffs>
+									<ExternalAddress>41</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Output 1</Name>
+									<Type>BIT</Type>
+									<BitOffs>52</BitOffs>
+									<ExternalAddress>41</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Output 2</Name>
+									<Type>BIT</Type>
+									<BitOffs>53</BitOffs>
+									<ExternalAddress>41</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Output 3</Name>
+									<Type>BIT</Type>
+									<BitOffs>54</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Output 4</Name>
+									<Type>BIT</Type>
+									<BitOffs>55</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch1 Enable</Name>
+									<Type>BIT</Type>
+									<BitOffs>56</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch1 Reset</Name>
+									<Type>BIT</Type>
+									<BitOffs>57</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch1 InvertDirection</Name>
+									<Type>BIT</Type>
+									<BitOffs>58</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch1 Brake</Name>
+									<Type>BIT</Type>
+									<BitOffs>59</BitOffs>
+									<ExternalAddress>40</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Enable</Name>
+									<Type>BIT</Type>
+									<BitOffs>60</BitOffs>
+									<ExternalAddress>16</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Reset</Name>
+									<Type>BIT</Type>
+									<BitOffs>61</BitOffs>
+									<ExternalAddress>16</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Invert Direction</Name>
+									<Type>BIT</Type>
+									<BitOffs>62</BitOffs>
+									<ExternalAddress>14</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 brake</Name>
+									<Type>BIT</Type>
+									<BitOffs>63</BitOffs>
+									<ExternalAddress>14</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Velocity</Name>
+									<Type>INT</Type>
+									<BitOffs>64</BitOffs>
+									<ExternalAddress>18</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Accelleration</Name>
+									<Type>UINT</Type>
+									<BitOffs>80</BitOffs>
+									<ExternalAddress>20</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Decelleration</Name>
+									<Type>UINT</Type>
+									<BitOffs>96</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Velocity</Name>
+									<Type>INT</Type>
+									<BitOffs>112</BitOffs>
+									<ExternalAddress>14</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Accelleration</Name>
+									<Type>UINT</Type>
+									<BitOffs>128</BitOffs>
+									<ExternalAddress>16</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Decelleration</Name>
+									<Type>UINT</Type>
+									<BitOffs>144</BitOffs>
+									<ExternalAddress>18</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 1</Name>
+									<Type>BIT</Type>
+									<BitOffs>160</BitOffs>
+									<ExternalAddress>20</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 2</Name>
+									<Type>BIT</Type>
+									<BitOffs>161</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 3</Name>
+									<Type>BIT</Type>
+									<BitOffs>162</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 4</Name>
+									<Type>BIT</Type>
+									<BitOffs>163</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 5</Name>
+									<Type>BIT</Type>
+									<BitOffs>164</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 6</Name>
+									<Type>BIT</Type>
+									<BitOffs>165</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 7</Name>
+									<Type>BIT</Type>
+									<BitOffs>166</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 8</Name>
+									<Type>BIT</Type>
+									<BitOffs>167</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 9</Name>
+									<Type>BIT</Type>
+									<BitOffs>168</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 10</Name>
+									<Type>BIT</Type>
+									<BitOffs>169</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 11</Name>
+									<Type>BIT</Type>
+									<BitOffs>170</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 12</Name>
+									<Type>BIT</Type>
+									<BitOffs>171</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 13</Name>
+									<Type>BIT</Type>
+									<BitOffs>172</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 14</Name>
+									<Type>BIT</Type>
+									<BitOffs>173</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 15</Name>
+									<Type>BIT</Type>
+									<BitOffs>174</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Output 16</Name>
+									<Type>BIT</Type>
+									<BitOffs>175</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2" InsertType="1">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>ConnCtrl</Name>
+									<Type>UDINT</Type>
+									<BitOffs>16</BitOffs>
+								</Var>
+								<Var>
+									<Name>Input 1</Name>
+									<Type>BIT</Type>
+									<BitOffs>48</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Input_2</Name>
+									<Type>BIT</Type>
+									<BitOffs>49</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Input_3</Name>
+									<Type>BIT</Type>
+									<BitOffs>50</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Input_4</Name>
+									<Type>BIT</Type>
+									<BitOffs>51</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Input_1</Name>
+									<Type>BIT</Type>
+									<BitOffs>52</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Input_2</Name>
+									<Type>BIT</Type>
+									<BitOffs>53</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Input_3</Name>
+									<Type>BIT</Type>
+									<BitOffs>54</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Control Input_4</Name>
+									<Type>BIT</Type>
+									<BitOffs>55</BitOffs>
+									<ExternalAddress>6</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Ready to Enable</Name>
+									<Type>BIT</Type>
+									<BitOffs>56</BitOffs>
+									<ExternalAddress>7</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Ready</Name>
+									<Type>BIT</Type>
+									<BitOffs>57</BitOffs>
+									<ExternalAddress>8</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Warning</Name>
+									<Type>BIT</Type>
+									<BitOffs>58</BitOffs>
+									<ExternalAddress>8</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Error</Name>
+									<Type>BIT</Type>
+									<BitOffs>59</BitOffs>
+									<ExternalAddress>8</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Moving Positive</Name>
+									<Type>BIT</Type>
+									<BitOffs>60</BitOffs>
+									<ExternalAddress>8</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Moving Negative</Name>
+									<Type>BIT</Type>
+									<BitOffs>61</BitOffs>
+									<ExternalAddress>8</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits</Name>
+									<Type>BIT</Type>
+									<BitOffs>62</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_2</Name>
+									<Type>BIT</Type>
+									<BitOffs>63</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Info Data 1</Name>
+									<Type>UINT</Type>
+									<BitOffs>64</BitOffs>
+									<ExternalAddress>8</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Info Data 2</Name>
+									<Type>UINT</Type>
+									<BitOffs>80</BitOffs>
+									<ExternalAddress>9</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Info Data 3</Name>
+									<Type>UINT</Type>
+									<BitOffs>96</BitOffs>
+									<ExternalAddress>11</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Ready to Enable</Name>
+									<Type>BIT</Type>
+									<BitOffs>112</BitOffs>
+									<ExternalAddress>13</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Ready</Name>
+									<Type>BIT</Type>
+									<BitOffs>113</BitOffs>
+									<ExternalAddress>14</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Warning</Name>
+									<Type>BIT</Type>
+									<BitOffs>114</BitOffs>
+									<ExternalAddress>14</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Error</Name>
+									<Type>BIT</Type>
+									<BitOffs>115</BitOffs>
+									<ExternalAddress>15</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Moving Positive</Name>
+									<Type>BIT</Type>
+									<BitOffs>116</BitOffs>
+									<ExternalAddress>15</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Moving Negative</Name>
+									<Type>BIT</Type>
+									<BitOffs>117</BitOffs>
+									<ExternalAddress>15</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_3</Name>
+									<Type>BIT</Type>
+									<BitOffs>118</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_4</Name>
+									<Type>BIT</Type>
+									<BitOffs>119</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_2</Name>
+									<Type>BIT</Type>
+									<BitOffs>120</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11</Name>
+									<Type>BIT</Type>
+									<BitOffs>121</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_3</Name>
+									<Type>BIT</Type>
+									<BitOffs>122</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_4</Name>
+									<Type>BIT</Type>
+									<BitOffs>123</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_5</Name>
+									<Type>BIT</Type>
+									<BitOffs>124</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_6</Name>
+									<Type>BIT</Type>
+									<BitOffs>125</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_7</Name>
+									<Type>BIT</Type>
+									<BitOffs>126</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>BufferBits_11_8</Name>
+									<Type>BIT</Type>
+									<BitOffs>127</BitOffs>
+									<ExternalAddress>26</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Info Data 1</Name>
+									<Type>UINT</Type>
+									<BitOffs>128</BitOffs>
+									<ExternalAddress>15</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Info Data 2</Name>
+									<Type>UINT</Type>
+									<BitOffs>144</BitOffs>
+									<ExternalAddress>16</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Info Data 3</Name>
+									<Type>UINT</Type>
+									<BitOffs>160</BitOffs>
+									<ExternalAddress>18</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Drive UnderVoltage</Name>
+									<Type>BIT</Type>
+									<BitOffs>176</BitOffs>
+									<ExternalAddress>20</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Drive OverVoltage</Name>
+									<Type>BIT</Type>
+									<BitOffs>177</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Drive OverTemp Warn</Name>
+									<Type>BIT</Type>
+									<BitOffs>178</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Drive Over Temp Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>179</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Drive Hardware Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>180</BitOffs>
+									<ExternalAddress>21</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Open Load</Name>
+									<Type>BIT</Type>
+									<BitOffs>181</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Short Circuit</Name>
+									<Type>BIT</Type>
+									<BitOffs>182</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Motor Overload Warn</Name>
+									<Type>BIT</Type>
+									<BitOffs>183</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch1 Motor Overload Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>184</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Drive Overload Warn</Name>
+									<Type>BIT</Type>
+									<BitOffs>185</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Drive Overload Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>186</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 In Limit</Name>
+									<Type>BIT</Type>
+									<BitOffs>187</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 1 Commutation Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>188</BitOffs>
+									<ExternalAddress>22</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Open Load</Name>
+									<Type>BIT</Type>
+									<BitOffs>189</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Short Circuit</Name>
+									<Type>BIT</Type>
+									<BitOffs>190</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Motor Overload Warn</Name>
+									<Type>BIT</Type>
+									<BitOffs>191</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Motor Overload Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>192</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Drive Overload Warn</Name>
+									<Type>BIT</Type>
+									<BitOffs>193</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Drive Overload Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>194</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 In Limit</Name>
+									<Type>BIT</Type>
+									<BitOffs>195</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>Ch 2 Commutation Fault</Name>
+									<Type>BIT</Type>
+									<BitOffs>196</BitOffs>
+									<ExternalAddress>23</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 1</Name>
+									<Type>BIT</Type>
+									<BitOffs>197</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 2</Name>
+									<Type>BIT</Type>
+									<BitOffs>198</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 3</Name>
+									<Type>BIT</Type>
+									<BitOffs>199</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 4</Name>
+									<Type>BIT</Type>
+									<BitOffs>200</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 5</Name>
+									<Type>BIT</Type>
+									<BitOffs>201</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 6</Name>
+									<Type>BIT</Type>
+									<BitOffs>202</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 7</Name>
+									<Type>BIT</Type>
+									<BitOffs>203</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 8</Name>
+									<Type>BIT</Type>
+									<BitOffs>204</BitOffs>
+									<ExternalAddress>24</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 9</Name>
+									<Type>BIT</Type>
+									<BitOffs>205</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 10</Name>
+									<Type>BIT</Type>
+									<BitOffs>206</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 11</Name>
+									<Type>BIT</Type>
+									<BitOffs>207</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 12</Name>
+									<Type>BIT</Type>
+									<BitOffs>208</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 13</Name>
+									<Type>BIT</Type>
+									<BitOffs>209</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 14</Name>
+									<Type>BIT</Type>
+									<BitOffs>210</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 15</Name>
+									<Type>BIT</Type>
+									<BitOffs>211</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>IO Input 16</Name>
+									<Type>BIT</Type>
+									<BitOffs>212</BitOffs>
+									<ExternalAddress>25</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>bitBuffer_5</Name>
+									<Type>BIT</Type>
+									<BitOffs>213</BitOffs>
+									<ExternalAddress>27</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>bitBuffer_6</Name>
+									<Type>BIT</Type>
+									<BitOffs>214</BitOffs>
+									<ExternalAddress>27</ExternalAddress>
+								</Var>
+								<Var>
+									<Name>bitBuffer_7</Name>
+									<Type>BIT</Type>
+									<BitOffs>215</BitOffs>
+									<ExternalAddress>27</ExternalAddress>
+								</Var>
+							</Vars>
+						</SlaveConnection>
+					</EthernetIp>
+				</Box>
+				<Ethernet DeviceDesc="EL6652-0010 EtherNet/IP Adapter (Slave)"/>
+				<EtherNetIPSlaveDev/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-0010-0304-3000-040310000403}" Id="#x02030010"/>
+		<MappingInfo Identifier="{00000000-0010-0304-4000-040310000403}" Id="#x02030020"/>
+		<OwnerA Name="TIID^Device 2 (EtherCAT)">
+			<OwnerB Name="TIID^Device 3 (ECAT EIP Adapter (EL6652-0010))^Box 7 (TC EtherNet/IP Slave)">
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 10^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 10"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 11^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 11"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 12^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 12"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 14^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 14"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 16^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 16"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 1^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 1"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 20^Output" VarB="Assembly 1 (Input/Output)^Inputs^IO Output 4"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 22^Output" VarB="Assembly 1 (Input/Output)^Inputs^IO Output 6"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 25^Output" VarB="Assembly 1 (Input/Output)^Inputs^IO Output 9"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 26^Output" VarB="Assembly 1 (Input/Output)^Inputs^IO Output 10"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 27^Output" VarB="Assembly 1 (Input/Output)^Inputs^IO Output 11"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 28^Output" VarB="Assembly 1 (Input/Output)^Inputs^IO Output 12"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 5^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 5"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)^Channel 6^Input" VarB="Assembly 1 (Input/Output)^Outputs^IO Input 6"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DI Inputs^Control input 1" VarB="Assembly 1 (Input/Output)^Outputs^Control Input_1"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DI Inputs^Control input 2" VarB="Assembly 1 (Input/Output)^Outputs^Control Input_2"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DI Inputs^Control input 3" VarB="Assembly 1 (Input/Output)^Outputs^Control Input_3"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DI Inputs^Control input 4" VarB="Assembly 1 (Input/Output)^Outputs^Control Input_4"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DI Inputs^Input 3" VarB="Assembly 1 (Input/Output)^Outputs^Input_3"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DO Outputs^Control output 2" VarB="Assembly 1 (Input/Output)^Inputs^Control Output 2"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DO Outputs^Control output 4" VarB="Assembly 1 (Input/Output)^Inputs^Control Output 4"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^DO Outputs^Output 2" VarB="Assembly 1 (Input/Output)^Inputs^Output 2"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 1^Control^Brake output" VarB="Assembly 1 (Input/Output)^Inputs^Ch1 Brake"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 1^Control^Enable" VarB="Assembly 1 (Input/Output)^Inputs^Ch1 Enable"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 1^Control^Invert direction" VarB="Assembly 1 (Input/Output)^Inputs^Ch1 InvertDirection"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 1^Control^Reset" VarB="Assembly 1 (Input/Output)^Inputs^Ch1 Reset"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 2^Control^Brake output" VarB="Assembly 1 (Input/Output)^Inputs^Ch 2 brake"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 2^Control^Enable" VarB="Assembly 1 (Input/Output)^Inputs^Ch 2 Enable"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 2^Control^Invert direction" VarB="Assembly 1 (Input/Output)^Inputs^Ch 2 Invert Direction"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Control Channel 2^Control^Reset" VarB="Assembly 1 (Input/Output)^Inputs^Ch 2 Reset"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Inputs Device^Device Diag^Channel 1 amplifier overload I2T error" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 Drive Overload Fault"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Inputs Device^Device Diag^Channel 1 in limit" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 In Limit"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Inputs Device^Device Diag^Channel 1 openload" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 Open Load"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Inputs Device^Device Diag^Channel 1 short circuit" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 Short Circuit"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Inputs Device^Device Diag^Channel 2 motor overload I2T error" VarB="Assembly 1 (Input/Output)^Outputs^Ch 2 Motor Overload Fault"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Inputs Device^Device Diag^Device undervoltage" VarB="Assembly 1 (Input/Output)^Outputs^Drive UnderVoltage"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Status Channel 1^Status^Moving positive" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 Moving Positive"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Status Channel 2^Status^Error" VarB="Assembly 1 (Input/Output)^Outputs^Ch 2 Error"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Status Channel 2^Status^Moving positive" VarB="Assembly 1 (Input/Output)^Outputs^Ch 2 Moving Positive"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Status Channel 2^Status^Warning" VarB="Assembly 1 (Input/Output)^Outputs^Ch 2 Warning"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Synchron info data Channel 1^Info data 2" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 Info Data 2"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Synchron info data Channel 1^Info data 3" VarB="Assembly 1 (Input/Output)^Outputs^Ch 1 Info Data 3"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Synchron info data Channel 2^Info data 2" VarB="Assembly 1 (Input/Output)^Outputs^Ch 2 Info Data 2"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Synchron info data Channel 2^Info data 3" VarB="Assembly 1 (Input/Output)^Outputs^Ch 2 Info Data 3"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Target Velocity Channel 1^Accelleration" VarB="Assembly 1 (Input/Output)^Inputs^Ch 1 Accelleration"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Target Velocity Channel 1^Velocity" VarB="Assembly 1 (Input/Output)^Inputs^Ch 1 Velocity"/>
+				<Link VarA="Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^STM Target Velocity Channel 2^Velocity" VarB="Assembly 1 (Input/Output)^Inputs^Ch 2 Velocity"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="TIID^Device 3 (ECAT EIP Adapter (EL6652-0010))">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)">
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Ch 1 Decelleration" VarB="STM Target Velocity Channel 1^Decceleration"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Ch 2 Accelleration" VarB="STM Target Velocity Channel 2^Accelleration"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Ch 2 Decelleration" VarB="STM Target Velocity Channel 2^Decceleration"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Control Output 1" VarB="DO Outputs^Control output 1"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Control Output 3" VarB="DO Outputs^Control output 3"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Output 1" VarB="DO Outputs^Output 1"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Output 3" VarB="DO Outputs^Output 3"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^Output 4" VarB="DO Outputs^Output 4"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Commutation Fault" VarB="STM Inputs Device^Device Diag^Channel 1 commutation error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Drive Overload Warn" VarB="STM Inputs Device^Device Diag^Channel 1 amplifier overload I2T warning"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Error" VarB="STM Status Channel 1^Status^Error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Info Data 1" VarB="STM Synchron info data Channel 1^Info data 1"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Motor Overload Warn" VarB="STM Inputs Device^Device Diag^Channel 1 motor overload I2T warning"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Moving Negative" VarB="STM Status Channel 1^Status^Moving negative"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Ready" VarB="STM Status Channel 1^Status^Ready"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Ready to Enable" VarB="STM Status Channel 1^Status^Ready to enable"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 1 Warning" VarB="STM Status Channel 1^Status^Warning"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Commutation Fault" VarB="STM Inputs Device^Device Diag^Channel 2 commutation error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Drive Overload Fault" VarB="STM Inputs Device^Device Diag^Channel 2 amplifier overload I2T error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Drive Overload Warn" VarB="STM Inputs Device^Device Diag^Channel 2 amplifier overload I2T warning"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 In Limit" VarB="STM Inputs Device^Device Diag^Channel 2 in limit"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Info Data 1" VarB="STM Synchron info data Channel 2^Info data 1"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Motor Overload Warn" VarB="STM Inputs Device^Device Diag^Channel 2 motor overload I2T warning"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Moving Negative" VarB="STM Status Channel 2^Status^Moving negative"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Open Load" VarB="STM Inputs Device^Device Diag^Channel 2 openload"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Ready" VarB="STM Status Channel 2^Status^Ready"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Ready to Enable" VarB="STM Status Channel 2^Status^Ready to enable"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch 2 Short Circuit" VarB="STM Inputs Device^Device Diag^Channel 2 short circuit"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Ch1 Motor Overload Fault" VarB="STM Inputs Device^Device Diag^Channel 1 motor overload I2T error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Drive Hardware Fault" VarB="STM Inputs Device^Device Diag^General hardware error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Drive Over Temp Fault" VarB="STM Inputs Device^Device Diag^Overtemperature error"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Drive OverTemp Warn" VarB="STM Inputs Device^Device Diag^Overtemperature warning"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Drive OverVoltage" VarB="STM Inputs Device^Device Diag^Device overvoltage"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Input 1" VarB="DI Inputs^Input 1"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Input_2" VarB="DI Inputs^Input 2"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^Input_4" VarB="DI Inputs^Input 4"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 2 (EK1122)^Box 3 (EP7402-0057)^Box 4 (EP2349-0021)">
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 1" VarB="Channel 17^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 13" VarB="Channel 29^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 14" VarB="Channel 30^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 15" VarB="Channel 31^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 16" VarB="Channel 32^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 2" VarB="Channel 18^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 3" VarB="Channel 19^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 5" VarB="Channel 21^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 7" VarB="Channel 23^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Inputs^IO Output 8" VarB="Channel 24^Output"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 13" VarB="Channel 13^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 15" VarB="Channel 15^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 2" VarB="Channel 2^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 3" VarB="Channel 3^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 4" VarB="Channel 4^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 7" VarB="Channel 7^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 8" VarB="Channel 8^Input"/>
+				<Link VarA="Box 7 (TC EtherNet/IP Slave)^Assembly 1 (Input/Output)^Outputs^IO Input 9" VarB="Channel 9^Input"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="TIRT^IO">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)">
+				<Link VarA="Inputs^SyncTag" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^WcState^WcState"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>

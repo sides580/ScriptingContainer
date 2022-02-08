@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScriptingTestContainer</name>
+    </assembly>
+    <members>
+        <member name="T:ScriptingTest.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:ScriptingTest.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MainWindow._initializing">
+            <summary>
+            Indicates, that the main window is initializing.
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScriptingTest.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.setScripts(System.Collections.Generic.IList{ScriptingTest.Script})">
+            <summary>
+            Sets the scripts within the ListView
+            </summary>
+            <param name="scripts">The scripts.</param>
+        </member>
+        <member name="F:ScriptingTest.MainWindow._worker">
+            <summary>
+            Background script worker
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MainWindow._factory">
+            <summary>
+            Configuration Generator
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MainWindow._runningScript">
+            <summary>
+            Currently runnig script
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.btnExecute_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnExecute control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.script_StatusChanged(System.Object,ScriptingTest.ScriptStatusChangedEventArgs)">
+            <summary>
+            Handles the StatusChanged event of the script control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:ScriptingTest.ScriptStatusChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.Update(ScriptingTest.Script)">
+            <summary>
+            Updates the Main window with the Script status
+            </summary>
+            <param name="script">The script.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow._worker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            Handles the RunWorkerCompleted event of the _worker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.RunWorkerCompletedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:ScriptingTest.MainWindow._executing">
+            <summary>
+            Indicates that the Script engine is running
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.SetExecution(System.Boolean)">
+            <summary>
+            Sets the execution flag.
+            </summary>
+            <param name="set">if set to <c>true</c> [set].</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.enableDisableControls">
+            <summary>
+            Enables / Disables (updates) the Main form controls
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.MainWindow._worker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+            <summary>
+            Handles the ProgressChanged event of the _worker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.ProgressChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.btnCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the btnCancel control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Window.Closing"/> event.
+            </summary>
+            <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.lVScripts_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Handles the SelectionChanged event of the lVScripts control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ScriptingTest.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.IsInitializing">
+            <summary>
+            Gets a value Indicating that the <see cref="T:ScriptingTest.MainWindow"/> is currently initializing.
+            </summary>
+            <value>
+              <c>true</c> if [is initializing]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.DTEInfo">
+            <summary>
+            Gets the currently configured Prog ID for TwinCAT 3
+            </summary>
+            <value>The prog ID.</value>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.IsIDEVisible">
+            <summary>
+            Gets a value indicating whether the IDE is visible during script
+            </summary>
+            <value>
+            	<c>true</c> if this instance is IDE visible; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.IsIDEUserControl">
+            <summary>
+            Gets a value indicating whether the IDE is controlled by User
+            </summary>
+            <value>
+            </value>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.SupressUI">
+            <summary>
+            Gets a value indicating whether VisualStudio UI is suppressed.
+            </summary>
+            <value>
+            </value>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.IsExecuting">
+            <summary>
+            Gets a value indicating whether a script is executing.
+            </summary>
+            <value>
+            	<c>true</c> if a script is executing; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ScriptingTest.MainWindow.SelectedScript">
+            <summary>
+            Gets the currently selected script.
+            </summary>
+            <value>The selected script.</value>
+        </member>
+        <member name="T:ScriptingTest.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ScriptingTest.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ScriptingTest.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

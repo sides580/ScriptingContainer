@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" TargetType="DataType" ContainsContext="true">
+<Controller Use="Context">
+<DataTypes Use="Context">
+<DataType Use="Target" Name="TF6280_Inputs" Family="NoFamily" Class="User">
+<Members>
+<Member Name="ConnCtrl" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_1]]></Description></Member>
+<Member Name="Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Ready_to_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Moving_Positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Moving_Negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Info_Data_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Info_Data_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Info_Data_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_2]]></Description></Member>
+<Member Name="Ch_2_Ready_to_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Moving_Positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Moving_Negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="byteBuffer" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Info_Data_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Info_Data_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Info_Data_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_3]]></Description></Member>
+<Member Name="Drive_UnderVoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_OverVoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_OverTemp_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_Over_Temp_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_Hardware_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Open_Load" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Short_Circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Motor_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch1_Motor_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Drive_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Drive_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_In_Limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Commutation_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Open_Load" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Short_Circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Motor_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_4" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_4]]></Description></Member>
+<Member Name="Ch_2_Motor_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Drive_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Drive_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_In_Limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Commutation_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_8" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_9" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_10" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_11" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_5" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_5]]></Description></Member>
+<Member Name="IO_Input_12" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_13" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_14" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_15" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_16" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="bitBuffer_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="bitBuffer_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="bitBuffer_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="7" ExternalAccess="Read/Write"></Member>
+</Members>
+</DataType>
+<DataType Use="Target" Name="TF6280_Inputs_wConnHdr" Family="NoFamily" Class="User">
+<Members>
+<Member Name="bitOverlay_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_1]]></Description></Member>
+<Member Name="ConnectionFaulted" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="1" ExternalAccess="Read/Write"><Description><![CDATA[Connection Faulted]]></Description></Member>
+<Member Name="hiddenElement0" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"></Member>
+<Member Name="ConnCtrl" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_2]]></Description></Member>
+<Member Name="Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Ready_to_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Moving_Positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Moving_Negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Info_Data_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Info_Data_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Info_Data_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_3]]></Description></Member>
+<Member Name="Ch_2_Ready_to_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Moving_Positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Moving_Negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="BufferBits_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="byteBuffer" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Info_Data_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Info_Data_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Info_Data_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_4" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_4]]></Description></Member>
+<Member Name="Drive_UnderVoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_OverVoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_OverTemp_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_Over_Temp_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Drive_Hardware_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Open_Load" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Short_Circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Motor_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch1_Motor_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Drive_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Drive_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_In_Limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Commutation_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Open_Load" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Short_Circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Motor_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_5" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_5]]></Description></Member>
+<Member Name="Ch_2_Motor_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Drive_Overload_Warn" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Drive_Overload_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_In_Limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Commutation_Fault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_8" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_9" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_10" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_11" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_6" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_6]]></Description></Member>
+<Member Name="IO_Input_12" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_13" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_14" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_15" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Input_16" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="bitBuffer_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="bitBuffer_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="bitBuffer_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="7" ExternalAccess="Read/Write"></Member>
+</Members>
+</DataType>
+<DataType Use="Target" Name="TF6280_Outputs" Family="NoFamily" Class="User">
+<Members>
+<Member Name="ConnState" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"><Description><![CDATA[0x0001 = Connection is not running
+0x8000 = Connection is running but no new data received
+]]></Description></Member>
+<Member Name="bitOverlay_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_1]]></Description></Member>
+<Member Name="Output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Control_Output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch1_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch1_Reset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch1_InvertDirection" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch1_Brake" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Reset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Invert_Direction" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_brake" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Velocity" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Accelleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_1_Decelleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Velocity" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Accelleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Ch_2_Decelleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_2]]></Description></Member>
+<Member Name="IO_Output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_8" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_9" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_10" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_11" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_12" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_13" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_14" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_15" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="IO_Output_16" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="15" ExternalAccess="Read/Write"></Member>
+</Members>
+</DataType>
+</DataTypes>
+</Controller>
+</RSLogix5000Content>
+

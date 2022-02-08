@@ -1,0 +1,1371 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.22" ClassName="CEipSlaveDef" SubType="9133">
+	<Box Id="7" BoxType="9133">
+		<Name>Box 1 (TC EtherNet/IP Slave)</Name>
+		<ImageId>63</ImageId>
+		<Vars VarGrpType="1">
+			<Name>Inputs</Name>
+			<Var>
+				<Name>State</Name>
+				<Comment><![CDATA[0x8000 = Slave has no valid Assembly Object configured
+0x4000 = Slave has no valid IP Addr - pending DHCP request
+0x2000 = TCP server: unable to listen on local EtherNet/IP Port (44818)
+0x1000 = UDP server: unable to listen on local EtherNet/IP Port (44818)
+0x0XXX = reserved
+]]></Comment>
+				<Type>UINT</Type>
+			</Var>
+		</Vars>
+		<Vars VarGrpType="2">
+			<Name>Outputs</Name>
+			<Var>
+				<Name>Ctrl</Name>
+				<Type>UINT</Type>
+			</Var>
+		</Vars>
+		<EthernetIp NewSlavePara="07000000426f782031202854432045746865724e65742f495020536c61766529000000000c0000006c000000881800000301000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200070000004101a8c000ffffff000000000000800001001e000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+			<SlaveConnection Id="1" ConnectionPara="ffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ffffc5b1ff" AssemblyPara="010000000000000000000000000000000000000081000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003a0000000000000000000000000000008200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000008800000000000000890000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" ConnectionType="1073741867">
+				<Name>Assembly 1 (Input/Output)</Name>
+				<ImageId>24</ImageId>
+				<Vars VarGrpType="1" InsertType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>ConnState</Name>
+						<Comment><![CDATA[0x0001 = Connection is not running
+0x8000 = Connection is running but no new data received
+]]></Comment>
+						<Type>UDINT</Type>
+						<BitOffs>16</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SetVel_Chl_1_Velocity</Name>
+						<Type>INT</Type>
+						<BitOffs>48</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SetVel_Chl_1_Acc</Name>
+						<Type>UINT</Type>
+						<BitOffs>64</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SetVel_Chl_1_Decceleration</Name>
+						<Type>UINT</Type>
+						<BitOffs>80</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SetVel_Chl_2_Velocity</Name>
+						<Type>INT</Type>
+						<BitOffs>96</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SetVel_Chl_2_Acc</Name>
+						<Type>UINT</Type>
+						<BitOffs>112</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SetVel_Chl_2_Decceleration</Name>
+						<Type>UINT</Type>
+						<BitOffs>128</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SetVel_Chl_1_Velocity</Name>
+						<Type>INT</Type>
+						<BitOffs>144</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SetVel_Chl_1_Acc</Name>
+						<Type>UINT</Type>
+						<BitOffs>160</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SetVel_Chl_1_Decceleration</Name>
+						<Type>UINT</Type>
+						<BitOffs>176</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SetVel_Chl_2_Velocity</Name>
+						<Type>INT</Type>
+						<BitOffs>192</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SetVel_Chl_2_Acc</Name>
+						<Type>UINT</Type>
+						<BitOffs>208</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SetVel_Chl_2_Decceleration</Name>
+						<Type>UINT</Type>
+						<BitOffs>224</BitOffs>
+					</Var>
+					<Var>
+						<Name>_102_EL2004_Chl_1_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>240</BitOffs>
+					</Var>
+					<Var>
+						<Name>_102_EL2004_Chl_2_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>241</BitOffs>
+					</Var>
+					<Var>
+						<Name>_102_EL2004_Chl_3_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>242</BitOffs>
+					</Var>
+					<Var>
+						<Name>_102_EL2004_Chl_4_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>243</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Output_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>244</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Output_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>245</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Output_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>246</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Output_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>247</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Control_output_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>248</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Control_output_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>249</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Control_output_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>250</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DO_Outputs_Control_output_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>251</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_1_Enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>252</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_1_Reset</Name>
+						<Type>BIT</Type>
+						<BitOffs>253</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_1_Invert_direction</Name>
+						<Type>BIT</Type>
+						<BitOffs>254</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_1_Brake_output</Name>
+						<Type>BIT</Type>
+						<BitOffs>255</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_2_Enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>256</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_2_Reset</Name>
+						<Type>BIT</Type>
+						<BitOffs>257</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_2_Invert_direction</Name>
+						<Type>BIT</Type>
+						<BitOffs>258</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Control_Chl_2_Brake_output</Name>
+						<Type>BIT</Type>
+						<BitOffs>259</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Output_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>260</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Output_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>261</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Output_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>262</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Output_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>263</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Control_output_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>264</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Control_output_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>265</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Control_output_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>266</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DO_Outputs_Control_output_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>267</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_1_Enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>268</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_1_Reset</Name>
+						<Type>BIT</Type>
+						<BitOffs>269</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_1_Invert_direction</Name>
+						<Type>BIT</Type>
+						<BitOffs>270</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_1_Brake_output</Name>
+						<Type>BIT</Type>
+						<BitOffs>271</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_2_Enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>272</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_2_Reset</Name>
+						<Type>BIT</Type>
+						<BitOffs>273</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_2_Invert_direction</Name>
+						<Type>BIT</Type>
+						<BitOffs>274</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Control_Chl_2_Brake_output</Name>
+						<Type>BIT</Type>
+						<BitOffs>275</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_17_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>276</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_18_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>277</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_19_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>278</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_20_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>279</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_21_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>280</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_22_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>281</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_23_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>282</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_24_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>283</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_25_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>284</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_26_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>285</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_27_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>286</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_28_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>287</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_29_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>288</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_30_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>289</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_31_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>290</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_32_Output</Name>
+						<Type>BIT</Type>
+						<BitOffs>291</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_14</Name>
+						<Type>BIT</Type>
+						<BitOffs>292</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_15</Name>
+						<Type>BIT</Type>
+						<BitOffs>293</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_16</Name>
+						<Type>BIT</Type>
+						<BitOffs>294</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_17</Name>
+						<Type>BIT</Type>
+						<BitOffs>295</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_18</Name>
+						<Type>BIT</Type>
+						<BitOffs>296</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_19</Name>
+						<Type>BIT</Type>
+						<BitOffs>297</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_20</Name>
+						<Type>BIT</Type>
+						<BitOffs>298</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_21</Name>
+						<Type>BIT</Type>
+						<BitOffs>299</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_22</Name>
+						<Type>BIT</Type>
+						<BitOffs>300</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_23</Name>
+						<Type>BIT</Type>
+						<BitOffs>301</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_24</Name>
+						<Type>BIT</Type>
+						<BitOffs>302</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_25</Name>
+						<Type>BIT</Type>
+						<BitOffs>303</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2" InsertType="1">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>ConnCtrl</Name>
+						<Type>UDINT</Type>
+						<BitOffs>16</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Samples_1_Samples0</Name>
+						<Type>DINT</Type>
+						<BitOffs>48</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Timestamp_Low</Name>
+						<Type>UDINT</Type>
+						<BitOffs>80</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Timestamp_Hi</Name>
+						<Type>UDINT</Type>
+						<BitOffs>112</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SyncInfo_Chl_1_Vel</Name>
+						<Type>UINT</Type>
+						<BitOffs>144</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SyncInfo_Chl_1_data2</Name>
+						<Type>UINT</Type>
+						<BitOffs>160</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SyncInfo_Chl_1_Current</Name>
+						<Type>UINT</Type>
+						<BitOffs>176</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SyncInfo_Chl_2_Vel</Name>
+						<Type>UINT</Type>
+						<BitOffs>192</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SyncInfo_Chl_2_data2</Name>
+						<Type>UINT</Type>
+						<BitOffs>208</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_SyncInfo_Chl_2_Current</Name>
+						<Type>UINT</Type>
+						<BitOffs>224</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SyncInfo_Chl_1_Vel</Name>
+						<Type>UINT</Type>
+						<BitOffs>240</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SyncInfo_Chl_1_data2</Name>
+						<Type>UINT</Type>
+						<BitOffs>256</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SyncInfo_Chl_1_Current</Name>
+						<Type>UINT</Type>
+						<BitOffs>272</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SyncInfo_Chl_2_Vel</Name>
+						<Type>UINT</Type>
+						<BitOffs>288</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SyncInfo_Chl_2_data2</Name>
+						<Type>UINT</Type>
+						<BitOffs>304</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_SyncInfo_Chl_2_Current</Name>
+						<Type>UINT</Type>
+						<BitOffs>320</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_No_of_Samples</Name>
+						<Type>USINT</Type>
+						<BitOffs>336</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>344</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>345</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>346</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>347</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_5</Name>
+						<Type>BIT</Type>
+						<BitOffs>348</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_6</Name>
+						<Type>BIT</Type>
+						<BitOffs>349</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_7</Name>
+						<Type>BIT</Type>
+						<BitOffs>350</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_8</Name>
+						<Type>BIT</Type>
+						<BitOffs>351</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_Input_cycle_counter</Name>
+						<Type>SINT</Type>
+						<BitOffs>352</BitOffs>
+					</Var>
+					<Var>
+						<Name>InputBox1_Chl_1_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>360</BitOffs>
+					</Var>
+					<Var>
+						<Name>InputBox1_Chl_2_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>361</BitOffs>
+					</Var>
+					<Var>
+						<Name>InputBox1_Chl_3_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>362</BitOffs>
+					</Var>
+					<Var>
+						<Name>InputBox1_Chl_4_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>363</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_Error</Name>
+						<Type>BIT</Type>
+						<BitOffs>364</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_Underrange</Name>
+						<Type>BIT</Type>
+						<BitOffs>365</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_Overrange</Name>
+						<Type>BIT</Type>
+						<BitOffs>366</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_Diag</Name>
+						<Type>BIT</Type>
+						<BitOffs>367</BitOffs>
+					</Var>
+					<Var>
+						<Name>Term_5_EL37510024_PAI_Status_TxPDO_State</Name>
+						<Type>BIT</Type>
+						<BitOffs>368</BitOffs>
+					</Var>
+					<Var>
+						<Name>_110_EL1014_Chl_1_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>369</BitOffs>
+					</Var>
+					<Var>
+						<Name>_110_EL1014_Chl_2_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>370</BitOffs>
+					</Var>
+					<Var>
+						<Name>_110_EL1014_Chl_3_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>371</BitOffs>
+					</Var>
+					<Var>
+						<Name>_110_EL1014_Chl_4_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>372</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Input_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>373</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Input_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>374</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Input_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>375</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Input_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>376</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Control_input_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>377</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Control_input_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>378</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Control_input_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>379</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_DI_Inputs_Control_input_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>380</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_Ready_to_enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>381</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_Ready</Name>
+						<Type>BIT</Type>
+						<BitOffs>382</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_Warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>383</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_Error</Name>
+						<Type>BIT</Type>
+						<BitOffs>384</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_Moving_positive</Name>
+						<Type>BIT</Type>
+						<BitOffs>385</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_Moving_negative</Name>
+						<Type>BIT</Type>
+						<BitOffs>386</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_1_TxPDO_Toggle</Name>
+						<Type>BIT</Type>
+						<BitOffs>387</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_Ready_to_enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>388</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_Ready</Name>
+						<Type>BIT</Type>
+						<BitOffs>389</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_Warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>390</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_Error</Name>
+						<Type>BIT</Type>
+						<BitOffs>391</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_Moving_positive</Name>
+						<Type>BIT</Type>
+						<BitOffs>392</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_Moving_negative</Name>
+						<Type>BIT</Type>
+						<BitOffs>393</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_Status_Chl_2_TxPDO_Toggle</Name>
+						<Type>BIT</Type>
+						<BitOffs>394</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Device_undervoltage</Name>
+						<Type>BIT</Type>
+						<BitOffs>395</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Device_overvoltage</Name>
+						<Type>BIT</Type>
+						<BitOffs>396</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Overtemperature_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>397</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Overtemperature_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>398</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_General_hardware_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>399</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_openload</Name>
+						<Type>BIT</Type>
+						<BitOffs>400</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_short_circuit</Name>
+						<Type>BIT</Type>
+						<BitOffs>401</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_mOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>402</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_mOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>403</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_ampOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>404</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_ampOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>405</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_in_limit</Name>
+						<Type>BIT</Type>
+						<BitOffs>406</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_1_commutation_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>407</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_openload</Name>
+						<Type>BIT</Type>
+						<BitOffs>408</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_short_circuit</Name>
+						<Type>BIT</Type>
+						<BitOffs>409</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_mOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>410</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_mOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>411</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_ampOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>412</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_ampOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>413</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_in_limit</Name>
+						<Type>BIT</Type>
+						<BitOffs>414</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR100_InDev_Chl_2_commutation_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>415</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Input_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>416</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Input_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>417</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Input_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>418</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Input_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>419</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Control_input_1</Name>
+						<Type>BIT</Type>
+						<BitOffs>420</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Control_input_2</Name>
+						<Type>BIT</Type>
+						<BitOffs>421</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Control_input_3</Name>
+						<Type>BIT</Type>
+						<BitOffs>422</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_DI_Inputs_Control_input_4</Name>
+						<Type>BIT</Type>
+						<BitOffs>423</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_Ready_to_enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>424</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_Ready</Name>
+						<Type>BIT</Type>
+						<BitOffs>425</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_Warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>426</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_Error</Name>
+						<Type>BIT</Type>
+						<BitOffs>427</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_Moving_positive</Name>
+						<Type>BIT</Type>
+						<BitOffs>428</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_Moving_negative</Name>
+						<Type>BIT</Type>
+						<BitOffs>429</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_1_TxPDO_Toggle</Name>
+						<Type>BIT</Type>
+						<BitOffs>430</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_Ready_to_enable</Name>
+						<Type>BIT</Type>
+						<BitOffs>431</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_Ready</Name>
+						<Type>BIT</Type>
+						<BitOffs>432</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_Warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>433</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_Error</Name>
+						<Type>BIT</Type>
+						<BitOffs>434</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_Moving_positive</Name>
+						<Type>BIT</Type>
+						<BitOffs>435</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_Moving_negative</Name>
+						<Type>BIT</Type>
+						<BitOffs>436</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_Status_Chl_2_TxPDO_Toggle</Name>
+						<Type>BIT</Type>
+						<BitOffs>437</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Device_undervoltage</Name>
+						<Type>BIT</Type>
+						<BitOffs>438</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Device_overvoltage</Name>
+						<Type>BIT</Type>
+						<BitOffs>439</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Overtemperature_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>440</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Overtemperature_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>441</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_General_hardware_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>442</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_openload</Name>
+						<Type>BIT</Type>
+						<BitOffs>443</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_short_circuit</Name>
+						<Type>BIT</Type>
+						<BitOffs>444</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_mOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>445</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_mOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>446</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_ampOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>447</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_ampOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>448</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_in_limit</Name>
+						<Type>BIT</Type>
+						<BitOffs>449</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_1_commutation_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>450</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_openload</Name>
+						<Type>BIT</Type>
+						<BitOffs>451</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_short_circuit</Name>
+						<Type>BIT</Type>
+						<BitOffs>452</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_mOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>453</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_mOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>454</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_ampOverload_warning</Name>
+						<Type>BIT</Type>
+						<BitOffs>455</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_ampOverload_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>456</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_in_limit</Name>
+						<Type>BIT</Type>
+						<BitOffs>457</BitOffs>
+					</Var>
+					<Var>
+						<Name>MDR200_InDev_Chl_2_commutation_error</Name>
+						<Type>BIT</Type>
+						<BitOffs>458</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_1_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>459</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_2_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>460</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_3_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>461</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_4_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>462</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_5_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>463</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_6_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>464</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_7_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>465</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_8_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>466</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_9_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>467</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_10_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>468</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_11_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>469</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_12_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>470</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_13_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>471</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_14_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>472</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_15_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>473</BitOffs>
+					</Var>
+					<Var>
+						<Name>Conveyor23_Chl_16_Input</Name>
+						<Type>BIT</Type>
+						<BitOffs>474</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_9</Name>
+						<Type>BIT</Type>
+						<BitOffs>475</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_10</Name>
+						<Type>BIT</Type>
+						<BitOffs>476</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_11</Name>
+						<Type>BIT</Type>
+						<BitOffs>477</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_12</Name>
+						<Type>BIT</Type>
+						<BitOffs>478</BitOffs>
+					</Var>
+					<Var>
+						<Name>Buffer_13</Name>
+						<Type>BIT</Type>
+						<BitOffs>479</BitOffs>
+					</Var>
+				</Vars>
+			</SlaveConnection>
+		</EthernetIp>
+	</Box>
+	<Mappings>
+		<OwnerA Name="__THIS__">
+			<OwnerB Name="TIID^EtherCAT Master^A2P (EK1100)^102 (EL2004)">
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^_102_EL2004_Chl_1_Output" VarB="Chl 1^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^_102_EL2004_Chl_2_Output" VarB="Chl 2^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^_102_EL2004_Chl_3_Output" VarB="Chl 3^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^_102_EL2004_Chl_4_Output" VarB="Chl 4^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Master^A2P (EK1100)^110 (EL1014)">
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^_110_EL1014_Chl_1_Input" VarB="Chl 1^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^_110_EL1014_Chl_2_Input" VarB="Chl 2^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^_110_EL1014_Chl_3_Input" VarB="Chl 3^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^_110_EL1014_Chl_4_Input" VarB="Chl 4^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Master^A2P (EK1100)^InputBox1">
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^InputBox1_Chl_1_Input" VarB="Chl 1^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^InputBox1_Chl_2_Input" VarB="Chl 2^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^InputBox1_Chl_3_Input" VarB="Chl 3^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^InputBox1_Chl_4_Input" VarB="Chl 4^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Master^A2P (EK1100)^Term 5 (EL37510024)">
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Samples_1_Samples0" VarB="PAI Samples 1^Samples[0]"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_Diag" VarB="PAI Status^Status^Diag"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_Error" VarB="PAI Status^Status^Error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_Input_cycle_counter" VarB="PAI Status^Status^Input cycle counter"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_No_of_Samples" VarB="PAI Status^Status^No of Samples"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_Overrange" VarB="PAI Status^Status^Overrange"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_TxPDO_State" VarB="PAI Status^Status^TxPDO State"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Status_Underrange" VarB="PAI Status^Status^Underrange"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Timestamp_Hi" VarB="PAI Timestamp^StartTimeNextLatch^Hi"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Term_5_EL37510024_PAI_Timestamp_Low" VarB="PAI Timestamp^StartTimeNextLatch^Low"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Master^MDR100">
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Brake_output" VarB="Control Chl 1^Control^Brake output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Enable" VarB="Control Chl 1^Control^Enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Invert_direction" VarB="Control Chl 1^Control^Invert direction"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Reset" VarB="Control Chl 1^Control^Reset"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Brake_output" VarB="Control Chl 2^Control^Brake output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Enable" VarB="Control Chl 2^Control^Enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Invert_direction" VarB="Control Chl 2^Control^Invert direction"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Reset" VarB="Control Chl 2^Control^Reset"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_1" VarB="DO Outputs^Control output 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_2" VarB="DO Outputs^Control output 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_3" VarB="DO Outputs^Control output 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_4" VarB="DO Outputs^Control output 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_1" VarB="DO Outputs^Output 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_2" VarB="DO Outputs^Output 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_3" VarB="DO Outputs^Output 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_4" VarB="DO Outputs^Output 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_1_Acc" VarB="SetVel Chl 1^Acc"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_1_Decceleration" VarB="SetVel Chl 1^Decceleration"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_1_Velocity" VarB="SetVel Chl 1^Velocity"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_2_Acc" VarB="SetVel Chl 2^Acc"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_2_Decceleration" VarB="SetVel Chl 2^Decceleration"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_2_Velocity" VarB="SetVel Chl 2^Velocity"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_1" VarB="DI Inputs^Control input 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_2" VarB="DI Inputs^Control input 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_3" VarB="DI Inputs^Control input 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_4" VarB="DI Inputs^Control input 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_1" VarB="DI Inputs^Input 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_2" VarB="DI Inputs^Input 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_3" VarB="DI Inputs^Input 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_4" VarB="DI Inputs^Input 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_ampOverload_error" VarB="InDev^DevDiag^Chl 1 ampOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_ampOverload_warning" VarB="InDev^DevDiag^Chl 1 ampOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_commutation_error" VarB="InDev^DevDiag^Chl 1 commutation error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_in_limit" VarB="InDev^DevDiag^Chl 1 in limit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_mOverload_error" VarB="InDev^DevDiag^Chl 1 mOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_mOverload_warning" VarB="InDev^DevDiag^Chl 1 mOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_openload" VarB="InDev^DevDiag^Chl 1 openload"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_short_circuit" VarB="InDev^DevDiag^Chl 1 short circuit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_ampOverload_error" VarB="InDev^DevDiag^Chl 2 ampOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_ampOverload_warning" VarB="InDev^DevDiag^Chl 2 ampOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_commutation_error" VarB="InDev^DevDiag^Chl 2 commutation error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_in_limit" VarB="InDev^DevDiag^Chl 2 in limit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_mOverload_error" VarB="InDev^DevDiag^Chl 2 mOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_mOverload_warning" VarB="InDev^DevDiag^Chl 2 mOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_openload" VarB="InDev^DevDiag^Chl 2 openload"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_short_circuit" VarB="InDev^DevDiag^Chl 2 short circuit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Device_overvoltage" VarB="InDev^DevDiag^Device overvoltage"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Device_undervoltage" VarB="InDev^DevDiag^Device undervoltage"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_General_hardware_error" VarB="InDev^DevDiag^General hardware error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Overtemperature_error" VarB="InDev^DevDiag^Overtemperature error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Overtemperature_warning" VarB="InDev^DevDiag^Overtemperature warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Error" VarB="Status Chl 1^Status^Error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Moving_negative" VarB="Status Chl 1^Status^Moving negative"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Moving_positive" VarB="Status Chl 1^Status^Moving positive"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Ready" VarB="Status Chl 1^Status^Ready"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Ready_to_enable" VarB="Status Chl 1^Status^Ready to enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_TxPDO_Toggle" VarB="Status Chl 1^Status^TxPDO Toggle"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Warning" VarB="Status Chl 1^Status^Warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Error" VarB="Status Chl 2^Status^Error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Moving_negative" VarB="Status Chl 2^Status^Moving negative"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Moving_positive" VarB="Status Chl 2^Status^Moving positive"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Ready" VarB="Status Chl 2^Status^Ready"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Ready_to_enable" VarB="Status Chl 2^Status^Ready to enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_TxPDO_Toggle" VarB="Status Chl 2^Status^TxPDO Toggle"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Warning" VarB="Status Chl 2^Status^Warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_1_Current" VarB="SyncInfo Chl 1^Current"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_1_Vel" VarB="SyncInfo Chl 1^Vel"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_1_data2" VarB="SyncInfo Chl 1^data2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_2_Current" VarB="SyncInfo Chl 2^Current"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_2_Vel" VarB="SyncInfo Chl 2^Vel"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_2_data2" VarB="SyncInfo Chl 2^data2"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Master^MDR100^MDR200">
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Brake_output" VarB="Control Chl 1^Control^Brake output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Enable" VarB="Control Chl 1^Control^Enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Invert_direction" VarB="Control Chl 1^Control^Invert direction"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Reset" VarB="Control Chl 1^Control^Reset"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Brake_output" VarB="Control Chl 2^Control^Brake output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Enable" VarB="Control Chl 2^Control^Enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Invert_direction" VarB="Control Chl 2^Control^Invert direction"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Reset" VarB="Control Chl 2^Control^Reset"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_1" VarB="DO Outputs^Control output 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_2" VarB="DO Outputs^Control output 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_3" VarB="DO Outputs^Control output 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_4" VarB="DO Outputs^Control output 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_1" VarB="DO Outputs^Output 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_2" VarB="DO Outputs^Output 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_3" VarB="DO Outputs^Output 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_4" VarB="DO Outputs^Output 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_1_Acc" VarB="SetVel Chl 1^Acc"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_1_Decceleration" VarB="SetVel Chl 1^Decceleration"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_1_Velocity" VarB="SetVel Chl 1^Velocity"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_2_Acc" VarB="SetVel Chl 2^Acc"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_2_Decceleration" VarB="SetVel Chl 2^Decceleration"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_2_Velocity" VarB="SetVel Chl 2^Velocity"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_1" VarB="DI Inputs^Control input 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_2" VarB="DI Inputs^Control input 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_3" VarB="DI Inputs^Control input 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_4" VarB="DI Inputs^Control input 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_1" VarB="DI Inputs^Input 1"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_2" VarB="DI Inputs^Input 2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_3" VarB="DI Inputs^Input 3"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_4" VarB="DI Inputs^Input 4"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_ampOverload_error" VarB="InDev^DevDiag^Chl 1 ampOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_ampOverload_warning" VarB="InDev^DevDiag^Chl 1 ampOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_commutation_error" VarB="InDev^DevDiag^Chl 1 commutation error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_in_limit" VarB="InDev^DevDiag^Chl 1 in limit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_mOverload_error" VarB="InDev^DevDiag^Chl 1 mOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_mOverload_warning" VarB="InDev^DevDiag^Chl 1 mOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_openload" VarB="InDev^DevDiag^Chl 1 openload"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_short_circuit" VarB="InDev^DevDiag^Chl 1 short circuit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_ampOverload_error" VarB="InDev^DevDiag^Chl 2 ampOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_ampOverload_warning" VarB="InDev^DevDiag^Chl 2 ampOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_commutation_error" VarB="InDev^DevDiag^Chl 2 commutation error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_in_limit" VarB="InDev^DevDiag^Chl 2 in limit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_mOverload_error" VarB="InDev^DevDiag^Chl 2 mOverload error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_mOverload_warning" VarB="InDev^DevDiag^Chl 2 mOverload warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_openload" VarB="InDev^DevDiag^Chl 2 openload"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_short_circuit" VarB="InDev^DevDiag^Chl 2 short circuit"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Device_overvoltage" VarB="InDev^DevDiag^Device overvoltage"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Device_undervoltage" VarB="InDev^DevDiag^Device undervoltage"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_General_hardware_error" VarB="InDev^DevDiag^General hardware error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Overtemperature_error" VarB="InDev^DevDiag^Overtemperature error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Overtemperature_warning" VarB="InDev^DevDiag^Overtemperature warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Error" VarB="Status Chl 1^Status^Error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Moving_negative" VarB="Status Chl 1^Status^Moving negative"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Moving_positive" VarB="Status Chl 1^Status^Moving positive"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Ready" VarB="Status Chl 1^Status^Ready"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Ready_to_enable" VarB="Status Chl 1^Status^Ready to enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_TxPDO_Toggle" VarB="Status Chl 1^Status^TxPDO Toggle"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Warning" VarB="Status Chl 1^Status^Warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Error" VarB="Status Chl 2^Status^Error"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Moving_negative" VarB="Status Chl 2^Status^Moving negative"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Moving_positive" VarB="Status Chl 2^Status^Moving positive"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Ready" VarB="Status Chl 2^Status^Ready"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Ready_to_enable" VarB="Status Chl 2^Status^Ready to enable"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_TxPDO_Toggle" VarB="Status Chl 2^Status^TxPDO Toggle"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Warning" VarB="Status Chl 2^Status^Warning"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_1_Current" VarB="SyncInfo Chl 1^Current"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_1_Vel" VarB="SyncInfo Chl 1^Vel"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_1_data2" VarB="SyncInfo Chl 1^data2"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_2_Current" VarB="SyncInfo Chl 2^Current"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_2_Vel" VarB="SyncInfo Chl 2^Vel"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_2_data2" VarB="SyncInfo Chl 2^data2"/>
+			</OwnerB>
+			<OwnerB Name="TIID^EtherCAT Master^MDR100^MDR200^Conveyor23">
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_17_Output" VarB="Chl 17^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_18_Output" VarB="Chl 18^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_19_Output" VarB="Chl 19^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_20_Output" VarB="Chl 20^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_21_Output" VarB="Chl 21^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_22_Output" VarB="Chl 22^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_23_Output" VarB="Chl 23^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_24_Output" VarB="Chl 24^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_25_Output" VarB="Chl 25^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_26_Output" VarB="Chl 26^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_27_Output" VarB="Chl 27^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_28_Output" VarB="Chl 28^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_29_Output" VarB="Chl 29^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_30_Output" VarB="Chl 30^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_31_Output" VarB="Chl 31^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_32_Output" VarB="Chl 32^Output"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_10_Input" VarB="Chl 10^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_11_Input" VarB="Chl 11^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_12_Input" VarB="Chl 12^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_13_Input" VarB="Chl 13^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_14_Input" VarB="Chl 14^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_15_Input" VarB="Chl 15^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_16_Input" VarB="Chl 16^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_1_Input" VarB="Chl 1^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_2_Input" VarB="Chl 2^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_3_Input" VarB="Chl 3^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_4_Input" VarB="Chl 4^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_5_Input" VarB="Chl 5^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_6_Input" VarB="Chl 6^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_7_Input" VarB="Chl 7^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_8_Input" VarB="Chl 8^Input"/>
+				<Link VarA="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_9_Input" VarB="Chl 9^Input"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>

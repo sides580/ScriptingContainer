@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" TargetType="DataType" ContainsContext="true">
+<Controller Use="Context">
+<DataTypes Use="Context">
+<DataType Use="Target" Name="TF6280_Inputs" Family="NoFamily" Class="User">
+<Members>
+<Member Name="ConnCtrl" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Samples_1_Samples0" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Timestamp_Low" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Timestamp_Hi" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_1_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_1_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_1_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_2_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_2_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_2_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_1_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_1_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_1_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_2_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_2_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_2_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_No_of_Sampl" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_1]]></Description></Member>
+<Member Name="Buffer_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_8" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Input_cycle" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_2]]></Description></Member>
+<Member Name="InputBox1_Chl_1_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="InputBox1_Chl_2_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="InputBox1_Chl_3_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="InputBox1_Chl_4_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Underrange" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Overrange" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Diag" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_3]]></Description></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_TxPDO_State" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_1_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_2_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_3_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_4_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_4" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_4]]></Description></Member>
+<Member Name="MDR100_Status_Chl_1_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Device_undervoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Device_overvoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Overtemperature_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Overtemperature_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_General_hardware_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_5" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_5]]></Description></Member>
+<Member Name="MDR100_InDev_Chl_1_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_6" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_6]]></Description></Member>
+<Member Name="MDR200_DI_Inputs_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_7" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_7]]></Description></Member>
+<Member Name="MDR200_Status_Chl_2_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Device_undervoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Device_overvoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Overtemperature_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Overtemperature_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_General_hardware_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_8" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_8]]></Description></Member>
+<Member Name="MDR200_InDev_Chl_1_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_1_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_2_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_3_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_4_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_5_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_9" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_9]]></Description></Member>
+<Member Name="Conveyor23_Chl_6_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_7_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_8_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_9_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_10_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_11_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_12_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_13_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_14_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_15_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_16_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_9" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_10" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_11" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_12" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_13" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="15" ExternalAccess="Read/Write"></Member>
+</Members>
+</DataType>
+<DataType Use="Target" Name="TF6280_Inputs_wConnHdr" Family="NoFamily" Class="User">
+<Members>
+<Member Name="bitOverlay_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_1]]></Description></Member>
+<Member Name="ConnectionFaulted" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="1" ExternalAccess="Read/Write"><Description><![CDATA[Connection Faulted]]></Description></Member>
+<Member Name="hiddenElement0" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"></Member>
+<Member Name="ConnCtrl" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Samples_1_Samples0" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Timestamp_Low" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Timestamp_Hi" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_1_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_1_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_1_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_2_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_2_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SyncInfo_Chl_2_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_1_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_1_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_1_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_2_Vel" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_2_data2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SyncInfo_Chl_2_Current" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_No_of_Sampl" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_2]]></Description></Member>
+<Member Name="Buffer_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_5" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_6" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_7" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_8" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Input_cycle" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_3]]></Description></Member>
+<Member Name="InputBox1_Chl_1_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="InputBox1_Chl_2_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="InputBox1_Chl_3_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="InputBox1_Chl_4_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Underrange" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Overrange" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_Diag" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_4" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_4]]></Description></Member>
+<Member Name="Term_5_EL37510024_PAI_Status_TxPDO_State" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_1_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_2_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_3_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="110_EL1014_Chl_4_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DI_Inputs_Control_input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_5" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_5]]></Description></Member>
+<Member Name="MDR100_Status_Chl_1_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_1_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Status_Chl_2_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Device_undervoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Device_overvoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Overtemperature_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Overtemperature_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_General_hardware_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_5" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_6" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_6]]></Description></Member>
+<Member Name="MDR100_InDev_Chl_1_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_1_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_InDev_Chl_2_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_6" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_7" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_7]]></Description></Member>
+<Member Name="MDR200_DI_Inputs_Input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DI_Inputs_Control_input_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_1_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Ready_to_enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_7" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_8" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_8]]></Description></Member>
+<Member Name="MDR200_Status_Chl_2_Ready" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Moving_positive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_Moving_negative" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Status_Chl_2_TxPDO_Toggle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Device_undervoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Device_overvoltage" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Overtemperature_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Overtemperature_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_General_hardware_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_8" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_9" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_9]]></Description></Member>
+<Member Name="MDR200_InDev_Chl_1_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_1_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_openload" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_short_circuit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_mOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_mOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_ampOverload_warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_ampOverload_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_in_limit" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_InDev_Chl_2_commutation_error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_1_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_2_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_3_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_4_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_5_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_9" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_10" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_10]]></Description></Member>
+<Member Name="Conveyor23_Chl_6_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_7_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_8_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_9_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_10_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_11_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_12_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_13_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_14_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_15_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_16_Input" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_9" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_10" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_11" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_12" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_13" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_10" BitNumber="15" ExternalAccess="Read/Write"></Member>
+</Members>
+</DataType>
+<DataType Use="Target" Name="TF6280_Outputs" Family="NoFamily" Class="User">
+<Members>
+<Member Name="ConnState" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"><Description><![CDATA[0x0001 = Connection is not running
+0x8000 = Connection is running but no new data received
+]]></Description></Member>
+<Member Name="MDR100_SetVel_Chl_1_Velocity" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SetVel_Chl_1_Acc" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SetVel_Chl_1_Decceleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SetVel_Chl_2_Velocity" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SetVel_Chl_2_Acc" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_SetVel_Chl_2_Decceleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SetVel_Chl_1_Velocity" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SetVel_Chl_1_Acc" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SetVel_Chl_1_Decceleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SetVel_Chl_2_Velocity" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SetVel_Chl_2_Acc" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_SetVel_Chl_2_Decceleration" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_1" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_1]]></Description></Member>
+<Member Name="102_EL2004_Chl_1_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="102_EL2004_Chl_2_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="102_EL2004_Chl_3_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="102_EL2004_Chl_4_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Control_output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Control_output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Control_output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_DO_Outputs_Control_output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_1_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_1_Reset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_1_Invert_direction" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_1_Brake_output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_1" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_2" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_2]]></Description></Member>
+<Member Name="MDR100_Control_Chl_2_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_2_Reset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_2_Invert_direction" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR100_Control_Chl_2_Brake_output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Control_output_1" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Control_output_2" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Control_output_3" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_DO_Outputs_Control_output_4" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_1_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_1_Reset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_1_Invert_direction" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_1_Brake_output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_2" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_3" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_3]]></Description></Member>
+<Member Name="MDR200_Control_Chl_2_Enable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_2_Reset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_2_Invert_direction" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="MDR200_Control_Chl_2_Brake_output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_17_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_18_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_19_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_20_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_21_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_22_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_23_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_24_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_25_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_26_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_27_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_28_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_3" BitNumber="15" ExternalAccess="Read/Write"></Member>
+<Member Name="bitOverlay_4" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"><Description><![CDATA[bitOverlay_4]]></Description></Member>
+<Member Name="Conveyor23_Chl_29_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="0" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_30_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="1" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_31_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="2" ExternalAccess="Read/Write"></Member>
+<Member Name="Conveyor23_Chl_32_Output" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="3" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_14" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="4" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_15" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="5" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_16" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="6" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_17" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="7" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_18" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="8" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_19" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="9" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_20" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="10" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_21" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="11" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_22" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="12" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_23" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="13" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_24" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="14" ExternalAccess="Read/Write"></Member>
+<Member Name="Buffer_25" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="bitOverlay_4" BitNumber="15" ExternalAccess="Read/Write"></Member>
+</Members>
+</DataType>
+</DataTypes>
+</Controller>
+</RSLogix5000Content>
+

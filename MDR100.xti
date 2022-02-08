@@ -1,0 +1,1241 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.22" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000009}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..8] OF BIT</Name>
+			<BitSize>9</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>9</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<BitSize>4</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000D}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..12] OF BIT</Name>
+			<BitSize>13</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>13</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff00ff00ff00ffff00ff00ff00ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff00ff00ff00ff00ff0000ff0000ff00ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff00ff00ff00ffff00ff00ff00ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff00ff00ff00ff00ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff00ff00ff00ffff00ff00ff00ff00ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0c0c0000000c0c0c0000000c0c0c0000000c0c0c000000000000000000000000000000000ff0000ff0000000000000000ff0000000000ff0000000000ff0000000000ff0000000000000000000000000000000000ff0000ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0c0c0000000c0c0c0000000c0c0c0000000c0c0c000000000000000000000000000000000ff0000ff0000000000000000ff0000000000ff0000000000ff0000000000ff0000000000000000000000000000000000ff0000ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dba000000000000004a00000028000000100000000e000000010004000000000070000000c30e0000c30e0000050000000500000000000000ff00ff0080808000007fff0000ff000011111111111111110000000000000000020202020000044004040404000004400000000000000000000000000000000002020202000004400404040400000440000000000000000033333311111111113333331111111111333333111111111133333311111111113333331111111111</ImageData>
+	</ImageDatas>
+	<Box Id="16" BoxType="9099" BoxFlags="#x00000020">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1cea4052" RevisionNo="#x00130039" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="273" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP7402-0057 2 Ch. Brushless-DC Motor,  24VDC/3A, 8 x digital In/Output, B23 ENP 5G4" Desc="EP7402-0057">
+			<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+			<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+			<SyncMan>001212002400010003000000000000001600001224010000</SyncMan>
+			<SyncMan>001916002000010004000000000000001e00001920010000</SyncMan>
+			<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+			<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+			<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+			<BootStrapData>0010f400f410f400</BootStrapData>
+			<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000003900130000</MBoxUserCmdData>
+			<MBoxUserCmdData>020003000a0000000c00000003000000000000000000000000000000000000002020800102000000e8035065616b2063757272656e7400</MBoxUserCmdData>
+			<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+				<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control input 1" Index="#x6000" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control input 2" Index="#x6000" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control input 3" Index="#x6000" Sub="#x07">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control input 4" Index="#x6000" Sub="#x08">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry>
+					<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="Status Chl 1" Index="#x1a01" Flags="#x0010" SyncMan="3">
+				<Entry Name="Status__Ready to enable" Index="#x6020" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Ready" Index="#x6020" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Warning" Index="#x6020" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Error" Index="#x6020" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Moving positive" Index="#x6020" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Moving negative" Index="#x6020" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__">
+					<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+				</Entry>
+				<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+					<Type>BIT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="SyncInfo Chl 1" Index="#x1a02" Flags="#x0010" SyncMan="3">
+				<Entry Name="Vel" Index="#x6020" Sub="#x11">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="data2" Index="#x6020" Sub="#x12">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Current" Index="#x6020" Sub="#x16">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="Status Chl 2" Index="#x1a03" Flags="#x0010" SyncMan="3">
+				<Entry Name="Status__Ready to enable" Index="#x6030" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Ready" Index="#x6030" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Warning" Index="#x6030" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Error" Index="#x6030" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Moving positive" Index="#x6030" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Moving negative" Index="#x6030" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__">
+					<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+				</Entry>
+				<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+					<Type>BIT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="SyncInfo Chl 2" Index="#x1a04" Flags="#x0010" SyncMan="3">
+				<Entry Name="Vel" Index="#x6030" Sub="#x11">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="data2" Index="#x6030" Sub="#x12">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Current" Index="#x6030" Sub="#x16">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="InDev" Index="#x1a05" Flags="#x0011" SyncMan="3">
+				<Entry Name="DevDiag__Device undervoltage" Index="#xf600" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Device overvoltage" Index="#xf600" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__">
+					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Overtemperature warning" Index="#xf600" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Overtemperature error" Index="#xf600" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__General hardware error" Index="#xf600" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__">
+					<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 openload" Index="#xf600" Sub="#x09" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 short circuit" Index="#xf600" Sub="#x0a" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 mOverload warning" Index="#xf600" Sub="#x0b" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 mOverload error" Index="#xf600" Sub="#x0c" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 ampOverload warning" Index="#xf600" Sub="#x0d" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 ampOverload error" Index="#xf600" Sub="#x0e" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 in limit" Index="#xf600" Sub="#x0f" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 1 commutation error" Index="#xf600" Sub="#x10" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__">
+					<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 openload" Index="#xf600" Sub="#x15" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 short circuit" Index="#xf600" Sub="#x16" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 mOverload warning" Index="#xf600" Sub="#x17" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 mOverload error" Index="#xf600" Sub="#x18" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 ampOverload warning" Index="#xf600" Sub="#x19" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 ampOverload error" Index="#xf600" Sub="#x1a" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 in limit" Index="#xf600" Sub="#x1b" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__Chl 2 commutation error" Index="#xf600" Sub="#x1c" Flags="#x00008020">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="DevDiag__">
+					<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="ZNCTRL Inputs Channel 1" Index="#x1a06" Flags="#x0010">
+				<Entry Name="Status__Moving" Index="#x6040" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Zone sensor input" Index="#x6040" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Upstream control input value" Index="#x6040" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Upstream control output value" Index="#x6040" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Downstream control input value" Index="#x6040" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Downstream control output value" Index="#x6040" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Reset Input Value" Index="#x6040" Sub="#x07">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__">
+					<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+				</Entry>
+				<Entry Name="Status__Zone state" Index="#x6040" Sub="#x11">
+					<Type>USINT</Type>
+					<Comment><![CDATA[0x00: Shutdown
+0x01: Uninitialized
+0x05: Disabled
+0x0A: Free
+0x64: Loading
+0x96: Full
+0xA0: Delay after loaded
+0xC8: Unloading
+0xD2: Delay after unloading]]></Comment>
+				</Entry>
+				<Entry Name="Status__">
+					<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="ZNCTRL Inputs Channel 2" Index="#x1a07" Flags="#x0010">
+				<Entry Name="Status__Moving" Index="#x6050" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Zone sensor input" Index="#x6050" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Upstream control input value" Index="#x6050" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Upstream control output value" Index="#x6050" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Downstream control input value" Index="#x6050" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Downstream control output value" Index="#x6050" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__Reset Input Value" Index="#x6050" Sub="#x07">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Status__">
+					<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+				</Entry>
+				<Entry Name="Status__Zone state" Index="#x6050" Sub="#x11">
+					<Type>USINT</Type>
+					<Comment><![CDATA[0x00: Shutdown
+0x01: Uninitialized
+0x05: Disabled
+0x0A: Free
+0x64: Loading
+0x96: Full
+0xA0: Delay after loaded
+0xC8: Unloading
+0xD2: Delay after unloading]]></Comment>
+				</Entry>
+				<Entry Name="Status__">
+					<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="DO Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="Output 1" Index="#x7010" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Output 2" Index="#x7010" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Output 3" Index="#x7010" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Output 4" Index="#x7010" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control output 1" Index="#x7010" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control output 2" Index="#x7010" Sub="#x06">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control output 3" Index="#x7010" Sub="#x07">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control output 4" Index="#x7010" Sub="#x08">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry>
+					<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="Control Chl 1" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="Control__Enable" Index="#x7020" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__Reset" Index="#x7020" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+				</Entry>
+				<Entry Name="Control__Invert direction" Index="#x7020" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+				</Entry>
+				<Entry Name="Control__Brake output" Index="#x7020" Sub="#x0c">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="SetVel Chl 1" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="Velocity" Index="#x7020" Sub="#x21">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="Acc" Index="#x7020" Sub="#x22">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Decceleration" Index="#x7020" Sub="#x23">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="Control Chl 2" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="Control__Enable" Index="#x7030" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__Reset" Index="#x7030" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+				</Entry>
+				<Entry Name="Control__Invert direction" Index="#x7030" Sub="#x04">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+				</Entry>
+				<Entry Name="Control__Brake output" Index="#x7030" Sub="#x0c">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="SetVel Chl 2" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="Velocity" Index="#x7030" Sub="#x21">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="Acc" Index="#x7030" Sub="#x22">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Decceleration" Index="#x7030" Sub="#x23">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="ZNCTRL Outputs Channel 1" Index="#x1605" InOut="1" Flags="#x0010">
+				<Entry Name="Control__Reset" Index="#x7040" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__Disable" Index="#x7040" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__ExternalZoneSensor" Index="#x7040" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-00200000000D}">ARRAY [0..12] OF BIT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="ZNCTRL Outputs Channel 2" Index="#x1606" InOut="1" Flags="#x0010">
+				<Entry Name="Control__Reset" Index="#x7050" Sub="#x01">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__Disable" Index="#x7050" Sub="#x02">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__ExternalZoneSensor" Index="#x7050" Sub="#x03">
+					<Type>BIT</Type>
+				</Entry>
+				<Entry Name="Control__">
+					<Type GUID="{18071995-0000-0000-0000-00200000000D}">ARRAY [0..12] OF BIT</Type>
+				</Entry>
+			</Pdo>
+			<CoeProfile ProfileNo="6558601"/>
+			<CoeProfile ProfileNo="13112201"/>
+			<CoeProfile ProfileNo="46207881" DisplayName="Ch 1 - Stepper inte"/>
+			<CoeProfile ProfileNo="46207881" DisplayName="Ch 2 - Stepper inte"/>
+			<CoeProfile ProfileNo="64230281"/>
+			<CoeProfile ProfileNo="64230281"/>
+		</EtherCAT>
+		<Box Id="17" BoxType="9099" BoxFlags="#x00000020">
+			<Name>MDR200</Name>
+			<ImageId>1000</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1cea4052" RevisionNo="#x00130039" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="273" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP7402-0057 2 Ch. Brushless-DC Motor,  24VDC/3A, 8 x digital In/Output, B23 ENP 5G4" Desc="EP7402-0057" PortABoxInfo="#x01000010">
+				<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+				<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+				<SyncMan>001212002400010003000000000000001600001224010000</SyncMan>
+				<SyncMan>001916002000010004000000000000001e00001920010000</SyncMan>
+				<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000003900130000</MBoxUserCmdData>
+				<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control input 1" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control input 2" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control input 3" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control input 4" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Status Chl 1" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status__Ready to enable" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Ready" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Warning" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Moving positive" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Moving negative" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="SyncInfo Chl 1" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<Entry Name="Vel" Index="#x6020" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="data2" Index="#x6020" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Current" Index="#x6020" Sub="#x16">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Status Chl 2" Index="#x1a03" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status__Ready to enable" Index="#x6030" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Ready" Index="#x6030" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Warning" Index="#x6030" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6030" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Moving positive" Index="#x6030" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Moving negative" Index="#x6030" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="SyncInfo Chl 2" Index="#x1a04" Flags="#x0010" SyncMan="3">
+					<Entry Name="Vel" Index="#x6030" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="data2" Index="#x6030" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Current" Index="#x6030" Sub="#x16">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="InDev" Index="#x1a05" Flags="#x0011" SyncMan="3">
+					<Entry Name="DevDiag__Device undervoltage" Index="#xf600" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Device overvoltage" Index="#xf600" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Overtemperature warning" Index="#xf600" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Overtemperature error" Index="#xf600" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__General hardware error" Index="#xf600" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 openload" Index="#xf600" Sub="#x09" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 short circuit" Index="#xf600" Sub="#x0a" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 mOverload warning" Index="#xf600" Sub="#x0b" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 mOverload error" Index="#xf600" Sub="#x0c" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 ampOverload warning" Index="#xf600" Sub="#x0d" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 ampOverload error" Index="#xf600" Sub="#x0e" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 in limit" Index="#xf600" Sub="#x0f" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 1 commutation error" Index="#xf600" Sub="#x10" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__">
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 openload" Index="#xf600" Sub="#x15" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 short circuit" Index="#xf600" Sub="#x16" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 mOverload warning" Index="#xf600" Sub="#x17" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 mOverload error" Index="#xf600" Sub="#x18" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 ampOverload warning" Index="#xf600" Sub="#x19" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 ampOverload error" Index="#xf600" Sub="#x1a" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 in limit" Index="#xf600" Sub="#x1b" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__Chl 2 commutation error" Index="#xf600" Sub="#x1c" Flags="#x00008020">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="DevDiag__">
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ZNCTRL Inputs Channel 1" Index="#x1a06" Flags="#x0010">
+					<Entry Name="Status__Moving" Index="#x6040" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Zone sensor input" Index="#x6040" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Upstream control input value" Index="#x6040" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Upstream control output value" Index="#x6040" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Downstream control input value" Index="#x6040" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Downstream control output value" Index="#x6040" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Reset Input Value" Index="#x6040" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Zone state" Index="#x6040" Sub="#x11">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x00: Shutdown
+0x01: Uninitialized
+0x05: Disabled
+0x0A: Free
+0x64: Loading
+0x96: Full
+0xA0: Delay after loaded
+0xC8: Unloading
+0xD2: Delay after unloading]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ZNCTRL Inputs Channel 2" Index="#x1a07" Flags="#x0010">
+					<Entry Name="Status__Moving" Index="#x6050" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Zone sensor input" Index="#x6050" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Upstream control input value" Index="#x6050" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Upstream control output value" Index="#x6050" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Downstream control input value" Index="#x6050" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Downstream control output value" Index="#x6050" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Reset Input Value" Index="#x6050" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Zone state" Index="#x6050" Sub="#x11">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x00: Shutdown
+0x01: Uninitialized
+0x05: Disabled
+0x0A: Free
+0x64: Loading
+0x96: Full
+0xA0: Delay after loaded
+0xC8: Unloading
+0xD2: Delay after unloading]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DO Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Output 1" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 2" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 3" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 4" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control output 1" Index="#x7010" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control output 2" Index="#x7010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control output 3" Index="#x7010" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control output 4" Index="#x7010" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Control Chl 1" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Control__Enable" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Reset" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Invert direction" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Brake output" Index="#x7020" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="SetVel Chl 1" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Velocity" Index="#x7020" Sub="#x21">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="Acc" Index="#x7020" Sub="#x22">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Decceleration" Index="#x7020" Sub="#x23">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Control Chl 2" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Control__Enable" Index="#x7030" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Reset" Index="#x7030" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Invert direction" Index="#x7030" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Brake output" Index="#x7030" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="SetVel Chl 2" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Velocity" Index="#x7030" Sub="#x21">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="Acc" Index="#x7030" Sub="#x22">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Decceleration" Index="#x7030" Sub="#x23">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ZNCTRL Outputs Channel 1" Index="#x1605" InOut="1" Flags="#x0010">
+					<Entry Name="Control__Reset" Index="#x7040" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Disable" Index="#x7040" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__ExternalZoneSensor" Index="#x7040" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000D}">ARRAY [0..12] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ZNCTRL Outputs Channel 2" Index="#x1606" InOut="1" Flags="#x0010">
+					<Entry Name="Control__Reset" Index="#x7050" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Disable" Index="#x7050" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__ExternalZoneSensor" Index="#x7050" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000D}">ARRAY [0..12] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="6558601"/>
+				<CoeProfile ProfileNo="13112201"/>
+				<CoeProfile ProfileNo="46207881" DisplayName="Ch 1 - Stepper inte"/>
+				<CoeProfile ProfileNo="46207881" DisplayName="Ch 2 - Stepper inte"/>
+				<CoeProfile ProfileNo="64230281"/>
+				<CoeProfile ProfileNo="64230281"/>
+			</EtherCAT>
+			<Box Id="6" BoxType="9099">
+				<Name>Conveyor23</Name>
+				<ImageId>1001</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x09234052" RevisionNo="#x00140015" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP2339-0021 16 Ch. Dig. Input/Output 24V, 0,5A, M8" Desc="EP2339-0021" PortABoxInfo="#x01000011">
+					<SyncMan>000f01004400010003000000010001000100000f44090000</SyncMan>
+					<SyncMan>010f01004400010003000000010001000100010f44090000</SyncMan>
+					<SyncMan>001002000000010004000000020002000200001000010000</SyncMan>
+					<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000010f00020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Chl 1" Index="#x1a00" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 2" Index="#x1a01" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 3" Index="#x1a02" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 4" Index="#x1a03" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 5" Index="#x1a04" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 6" Index="#x1a05" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 7" Index="#x1a06" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 8" Index="#x1a07" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 9" Index="#x1a08" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 10" Index="#x1a09" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x6090" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 11" Index="#x1a0a" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x60a0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 12" Index="#x1a0b" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x60b0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 13" Index="#x1a0c" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x60c0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 14" Index="#x1a0d" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x60d0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 15" Index="#x1a0e" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x60e0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 16" Index="#x1a0f" Flags="#x0011" SyncMan="2">
+						<Entry Name="Input" Index="#x60f0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 17" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 18" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 19" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 20" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 21" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 22" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 23" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 24" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 25" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x7080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 26" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x7090" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 27" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x70a0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 28" Index="#x160b" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x70b0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 29" Index="#x160c" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x70c0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 30" Index="#x160d" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x70d0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 31" Index="#x160e" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x70e0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Chl 32" Index="#x160f" InOut="1" Flags="#x0011" SyncMan="1">
+						<Entry Name="Output" Index="#x70f0" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+				</EtherCAT>
+			</Box>
+		</Box>
+	</Box>
+	<Mappings>
+		<OwnerA Name="__THIS__">
+			<OwnerB Name="TIID^Device 2 (TC3 EIP Adapter)^Box 1 (TC EtherNet/IP Slave)">
+				<Link VarA="Control Chl 1^Control^Brake output" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Brake_output"/>
+				<Link VarA="Control Chl 1^Control^Enable" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Enable"/>
+				<Link VarA="Control Chl 1^Control^Invert direction" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Invert_direction"/>
+				<Link VarA="Control Chl 1^Control^Reset" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_1_Reset"/>
+				<Link VarA="Control Chl 2^Control^Brake output" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Brake_output"/>
+				<Link VarA="Control Chl 2^Control^Enable" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Enable"/>
+				<Link VarA="Control Chl 2^Control^Invert direction" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Invert_direction"/>
+				<Link VarA="Control Chl 2^Control^Reset" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_Control_Chl_2_Reset"/>
+				<Link VarA="DI Inputs^Control input 1" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_1"/>
+				<Link VarA="DI Inputs^Control input 2" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_2"/>
+				<Link VarA="DI Inputs^Control input 3" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_3"/>
+				<Link VarA="DI Inputs^Control input 4" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Control_input_4"/>
+				<Link VarA="DI Inputs^Input 1" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_1"/>
+				<Link VarA="DI Inputs^Input 2" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_2"/>
+				<Link VarA="DI Inputs^Input 3" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_3"/>
+				<Link VarA="DI Inputs^Input 4" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_DI_Inputs_Input_4"/>
+				<Link VarA="DO Outputs^Control output 1" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_1"/>
+				<Link VarA="DO Outputs^Control output 2" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_2"/>
+				<Link VarA="DO Outputs^Control output 3" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_3"/>
+				<Link VarA="DO Outputs^Control output 4" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Control_output_4"/>
+				<Link VarA="DO Outputs^Output 1" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_1"/>
+				<Link VarA="DO Outputs^Output 2" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_2"/>
+				<Link VarA="DO Outputs^Output 3" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_3"/>
+				<Link VarA="DO Outputs^Output 4" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_DO_Outputs_Output_4"/>
+				<Link VarA="InDev^DevDiag^Chl 1 ampOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_ampOverload_error"/>
+				<Link VarA="InDev^DevDiag^Chl 1 ampOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_ampOverload_warning"/>
+				<Link VarA="InDev^DevDiag^Chl 1 commutation error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_commutation_error"/>
+				<Link VarA="InDev^DevDiag^Chl 1 in limit" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_in_limit"/>
+				<Link VarA="InDev^DevDiag^Chl 1 mOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_mOverload_error"/>
+				<Link VarA="InDev^DevDiag^Chl 1 mOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_mOverload_warning"/>
+				<Link VarA="InDev^DevDiag^Chl 1 openload" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_openload"/>
+				<Link VarA="InDev^DevDiag^Chl 1 short circuit" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_1_short_circuit"/>
+				<Link VarA="InDev^DevDiag^Chl 2 ampOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_ampOverload_error"/>
+				<Link VarA="InDev^DevDiag^Chl 2 ampOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_ampOverload_warning"/>
+				<Link VarA="InDev^DevDiag^Chl 2 commutation error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_commutation_error"/>
+				<Link VarA="InDev^DevDiag^Chl 2 in limit" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_in_limit"/>
+				<Link VarA="InDev^DevDiag^Chl 2 mOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_mOverload_error"/>
+				<Link VarA="InDev^DevDiag^Chl 2 mOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_mOverload_warning"/>
+				<Link VarA="InDev^DevDiag^Chl 2 openload" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_openload"/>
+				<Link VarA="InDev^DevDiag^Chl 2 short circuit" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Chl_2_short_circuit"/>
+				<Link VarA="InDev^DevDiag^Device overvoltage" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Device_overvoltage"/>
+				<Link VarA="InDev^DevDiag^Device undervoltage" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Device_undervoltage"/>
+				<Link VarA="InDev^DevDiag^General hardware error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_General_hardware_error"/>
+				<Link VarA="InDev^DevDiag^Overtemperature error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Overtemperature_error"/>
+				<Link VarA="InDev^DevDiag^Overtemperature warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_InDev_Overtemperature_warning"/>
+				<Link VarA="MDR200^Control Chl 1^Control^Brake output" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Brake_output"/>
+				<Link VarA="MDR200^Control Chl 1^Control^Enable" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Enable"/>
+				<Link VarA="MDR200^Control Chl 1^Control^Invert direction" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Invert_direction"/>
+				<Link VarA="MDR200^Control Chl 1^Control^Reset" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_1_Reset"/>
+				<Link VarA="MDR200^Control Chl 2^Control^Brake output" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Brake_output"/>
+				<Link VarA="MDR200^Control Chl 2^Control^Enable" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Enable"/>
+				<Link VarA="MDR200^Control Chl 2^Control^Invert direction" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Invert_direction"/>
+				<Link VarA="MDR200^Control Chl 2^Control^Reset" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_Control_Chl_2_Reset"/>
+				<Link VarA="MDR200^Conveyor23^Chl 10^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_10_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 11^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_11_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 12^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_12_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 13^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_13_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 14^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_14_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 15^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_15_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 16^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_16_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 17^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_17_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 18^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_18_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 19^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_19_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 1^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_1_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 20^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_20_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 21^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_21_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 22^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_22_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 23^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_23_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 24^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_24_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 25^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_25_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 26^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_26_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 27^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_27_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 28^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_28_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 29^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_29_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 2^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_2_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 30^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_30_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 31^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_31_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 32^Output" VarB="Assembly 1 (Input/Output)^Inputs^Conveyor23_Chl_32_Output"/>
+				<Link VarA="MDR200^Conveyor23^Chl 3^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_3_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 4^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_4_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 5^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_5_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 6^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_6_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 7^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_7_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 8^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_8_Input"/>
+				<Link VarA="MDR200^Conveyor23^Chl 9^Input" VarB="Assembly 1 (Input/Output)^Outputs^Conveyor23_Chl_9_Input"/>
+				<Link VarA="MDR200^DI Inputs^Control input 1" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_1"/>
+				<Link VarA="MDR200^DI Inputs^Control input 2" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_2"/>
+				<Link VarA="MDR200^DI Inputs^Control input 3" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_3"/>
+				<Link VarA="MDR200^DI Inputs^Control input 4" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Control_input_4"/>
+				<Link VarA="MDR200^DI Inputs^Input 1" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_1"/>
+				<Link VarA="MDR200^DI Inputs^Input 2" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_2"/>
+				<Link VarA="MDR200^DI Inputs^Input 3" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_3"/>
+				<Link VarA="MDR200^DI Inputs^Input 4" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_DI_Inputs_Input_4"/>
+				<Link VarA="MDR200^DO Outputs^Control output 1" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_1"/>
+				<Link VarA="MDR200^DO Outputs^Control output 2" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_2"/>
+				<Link VarA="MDR200^DO Outputs^Control output 3" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_3"/>
+				<Link VarA="MDR200^DO Outputs^Control output 4" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Control_output_4"/>
+				<Link VarA="MDR200^DO Outputs^Output 1" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_1"/>
+				<Link VarA="MDR200^DO Outputs^Output 2" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_2"/>
+				<Link VarA="MDR200^DO Outputs^Output 3" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_3"/>
+				<Link VarA="MDR200^DO Outputs^Output 4" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_DO_Outputs_Output_4"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 ampOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_ampOverload_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 ampOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_ampOverload_warning"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 commutation error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_commutation_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 in limit" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_in_limit"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 mOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_mOverload_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 mOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_mOverload_warning"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 openload" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_openload"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 1 short circuit" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_1_short_circuit"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 ampOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_ampOverload_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 ampOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_ampOverload_warning"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 commutation error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_commutation_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 in limit" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_in_limit"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 mOverload error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_mOverload_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 mOverload warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_mOverload_warning"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 openload" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_openload"/>
+				<Link VarA="MDR200^InDev^DevDiag^Chl 2 short circuit" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Chl_2_short_circuit"/>
+				<Link VarA="MDR200^InDev^DevDiag^Device overvoltage" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Device_overvoltage"/>
+				<Link VarA="MDR200^InDev^DevDiag^Device undervoltage" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Device_undervoltage"/>
+				<Link VarA="MDR200^InDev^DevDiag^General hardware error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_General_hardware_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Overtemperature error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Overtemperature_error"/>
+				<Link VarA="MDR200^InDev^DevDiag^Overtemperature warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_InDev_Overtemperature_warning"/>
+				<Link VarA="MDR200^SetVel Chl 1^Acc" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_1_Acc"/>
+				<Link VarA="MDR200^SetVel Chl 1^Decceleration" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_1_Decceleration"/>
+				<Link VarA="MDR200^SetVel Chl 1^Velocity" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_1_Velocity"/>
+				<Link VarA="MDR200^SetVel Chl 2^Acc" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_2_Acc"/>
+				<Link VarA="MDR200^SetVel Chl 2^Decceleration" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_2_Decceleration"/>
+				<Link VarA="MDR200^SetVel Chl 2^Velocity" VarB="Assembly 1 (Input/Output)^Inputs^MDR200_SetVel_Chl_2_Velocity"/>
+				<Link VarA="MDR200^Status Chl 1^Status^Error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Error"/>
+				<Link VarA="MDR200^Status Chl 1^Status^Moving negative" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Moving_negative"/>
+				<Link VarA="MDR200^Status Chl 1^Status^Moving positive" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Moving_positive"/>
+				<Link VarA="MDR200^Status Chl 1^Status^Ready" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Ready"/>
+				<Link VarA="MDR200^Status Chl 1^Status^Ready to enable" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Ready_to_enable"/>
+				<Link VarA="MDR200^Status Chl 1^Status^TxPDO Toggle" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_TxPDO_Toggle"/>
+				<Link VarA="MDR200^Status Chl 1^Status^Warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_1_Warning"/>
+				<Link VarA="MDR200^Status Chl 2^Status^Error" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Error"/>
+				<Link VarA="MDR200^Status Chl 2^Status^Moving negative" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Moving_negative"/>
+				<Link VarA="MDR200^Status Chl 2^Status^Moving positive" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Moving_positive"/>
+				<Link VarA="MDR200^Status Chl 2^Status^Ready" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Ready"/>
+				<Link VarA="MDR200^Status Chl 2^Status^Ready to enable" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Ready_to_enable"/>
+				<Link VarA="MDR200^Status Chl 2^Status^TxPDO Toggle" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_TxPDO_Toggle"/>
+				<Link VarA="MDR200^Status Chl 2^Status^Warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_Status_Chl_2_Warning"/>
+				<Link VarA="MDR200^SyncInfo Chl 1^Current" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_1_Current"/>
+				<Link VarA="MDR200^SyncInfo Chl 1^Vel" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_1_Vel"/>
+				<Link VarA="MDR200^SyncInfo Chl 1^data2" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_1_data2"/>
+				<Link VarA="MDR200^SyncInfo Chl 2^Current" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_2_Current"/>
+				<Link VarA="MDR200^SyncInfo Chl 2^Vel" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_2_Vel"/>
+				<Link VarA="MDR200^SyncInfo Chl 2^data2" VarB="Assembly 1 (Input/Output)^Outputs^MDR200_SyncInfo_Chl_2_data2"/>
+				<Link VarA="SetVel Chl 1^Acc" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_1_Acc"/>
+				<Link VarA="SetVel Chl 1^Decceleration" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_1_Decceleration"/>
+				<Link VarA="SetVel Chl 1^Velocity" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_1_Velocity"/>
+				<Link VarA="SetVel Chl 2^Acc" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_2_Acc"/>
+				<Link VarA="SetVel Chl 2^Decceleration" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_2_Decceleration"/>
+				<Link VarA="SetVel Chl 2^Velocity" VarB="Assembly 1 (Input/Output)^Inputs^MDR100_SetVel_Chl_2_Velocity"/>
+				<Link VarA="Status Chl 1^Status^Error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Error"/>
+				<Link VarA="Status Chl 1^Status^Moving negative" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Moving_negative"/>
+				<Link VarA="Status Chl 1^Status^Moving positive" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Moving_positive"/>
+				<Link VarA="Status Chl 1^Status^Ready" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Ready"/>
+				<Link VarA="Status Chl 1^Status^Ready to enable" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Ready_to_enable"/>
+				<Link VarA="Status Chl 1^Status^TxPDO Toggle" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_TxPDO_Toggle"/>
+				<Link VarA="Status Chl 1^Status^Warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_1_Warning"/>
+				<Link VarA="Status Chl 2^Status^Error" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Error"/>
+				<Link VarA="Status Chl 2^Status^Moving negative" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Moving_negative"/>
+				<Link VarA="Status Chl 2^Status^Moving positive" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Moving_positive"/>
+				<Link VarA="Status Chl 2^Status^Ready" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Ready"/>
+				<Link VarA="Status Chl 2^Status^Ready to enable" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Ready_to_enable"/>
+				<Link VarA="Status Chl 2^Status^TxPDO Toggle" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_TxPDO_Toggle"/>
+				<Link VarA="Status Chl 2^Status^Warning" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_Status_Chl_2_Warning"/>
+				<Link VarA="SyncInfo Chl 1^Current" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_1_Current"/>
+				<Link VarA="SyncInfo Chl 1^Vel" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_1_Vel"/>
+				<Link VarA="SyncInfo Chl 1^data2" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_1_data2"/>
+				<Link VarA="SyncInfo Chl 2^Current" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_2_Current"/>
+				<Link VarA="SyncInfo Chl 2^Vel" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_2_Vel"/>
+				<Link VarA="SyncInfo Chl 2^data2" VarB="Assembly 1 (Input/Output)^Outputs^MDR100_SyncInfo_Chl_2_data2"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>
