@@ -27,6 +27,14 @@ namespace ScriptingTest
         /// For the list view
         /// </summary>
         static public bool OpenExisitngVSProject { get; set; }
+        /// <summary>
+        /// For the list view
+        /// </summary>
+        static public int NumberOfDevicesInEtherCATTree { get; set; }
+        /// <summary>
+        /// For the list view
+        /// </summary>
+        static public List<string> IOListNames { get; set; }
     }
     /// <summary>
     /// For the list view

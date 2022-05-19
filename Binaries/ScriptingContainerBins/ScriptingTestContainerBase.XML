@@ -19,6 +19,16 @@
             For the list view
             </summary>
         </member>
+        <member name="P:ScriptingTest.GlobalVariables.NumberOfDevicesInEtherCATTree">
+            <summary>
+            For the list view
+            </summary>
+        </member>
+        <member name="P:ScriptingTest.GlobalVariables.IOListNames">
+            <summary>
+            For the list view
+            </summary>
+        </member>
         <member name="T:ScriptingTest.OpenVsList">
             <summary>
             For the list view
@@ -462,6 +472,91 @@
             bla
             </summary>
         </member>
+        <member name="T:ScriptingTest.MotorSetting">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorSetting.Channel">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorSetting.Comment">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorSetting.Index">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorSetting.SubIndex">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorSetting.Data">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorSetting.Size">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.MotorSetting.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="T:ScriptingTest.MotorStartupList">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupList.MotorSettings">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupList.MotorTargetName">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupList.MotorChannel">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupList.MotorTargetPosition">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupList.MotorType">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="T:ScriptingTest.MotorStartupDataBase">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupDataBase.MotorSettings">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.MotorStartupDataBase.MotorType">
+            <summary>
+            bla
+            </summary>
+        </member>
         <member name="T:ScriptingTest.EipExtraTagDetails">
             <summary>
             bla
@@ -483,6 +578,21 @@
             </summary>
         </member>
         <member name="F:ScriptingTest.EipExtraTagDetails.IsInput">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.EipExtraTagDetails.IsARRAY">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.EipExtraTagDetails.ArrayStart">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.EipExtraTagDetails.ArrayEnd">
             <summary>
             bla
             </summary>
@@ -527,9 +637,164 @@
             bla
             </summary>
         </member>
+        <member name="T:ScriptingTest.IngnoreObject">
+            <summary>
+            for adding links from the settings file
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.IngnoreObject.Name">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.IngnoreObject.Type">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.IngnoreObject.#ctor(System.String,System.String)">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="T:ScriptingTest.AddDescriptions">
+            <summary>
+            for adding links from the settings file
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AddDescriptions.Description">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AddDescriptions.Device">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AddDescriptions.SearchName">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AddDescriptions.Target">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.AddDescriptions.#ctor(System.String,System.String[],System.String,System.String)">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="T:ScriptingTest.AutoAddCode">
+            <summary>
+            for adding links from the settings file
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AutoAddCode.Option">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AutoAddCode.Type">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AutoAddCode.Name">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.AutoAddCode.Location">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.AutoAddCode.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="T:ScriptingTest.ImportPOU">
+            <summary>
+            for adding links from the settings file
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.ImportPOU.Source">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.ImportPOU.Option">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.ImportPOU.Name">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.ImportPOU.Location">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.ImportPOU.#ctor(System.String,System.String[])">
+            <summary>
+            bla
+            </summary>
+        </member>
         <member name="T:ScriptingTest.CSV_Reader">
             <summary>
             Actual status of the Script
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.MotorSettingsList">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.MotorDataBase">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.AutoAddVariables">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.IgnoreList">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.AddDescription">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.DoNotIgnoreDisabledEtherCATDevices">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.AddAllWcStatesToEIP">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.AddAllStatesToEIP">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.AutoBackupProject">
+            <summary>
+            Project Path if already exist
             </summary>
         </member>
         <member name="F:ScriptingTest.CSV_Reader.ProjectPath">
@@ -543,6 +808,11 @@
             </summary>
         </member>
         <member name="F:ScriptingTest.CSV_Reader.ImportPOU_List">
+            <summary>
+            auto
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.AddLibrary_List">
             <summary>
             auto
             </summary>
@@ -586,6 +856,14 @@
             <summary>
             Actual status of the Script
             </summary>
+            
+        </member>
+        <member name="M:ScriptingTest.CSV_Reader.ReadCSV_FileMotorFile(System.String)">
+            <summary>
+            /////
+            
+            </summary>
+            <param name="fileName"></param>
         </member>
         <member name="T:ScriptingTest.EarlyBoundFactory">
             <summary>

@@ -35,18 +35,20 @@ namespace ScriptingTest
 
             Assembly assembly = Assembly.GetExecutingAssembly();
             // Getting all Script objects from All Dlls within the Execution Folder
-
+            
             IEnumerable<Script> assScripts = null;
             //assScripts = createScripts(assembly);
             //scripts.AddRange(assScripts);
-
+            
             string location = assembly.Location;
             DirectoryInfo dir = new DirectoryInfo(System.IO.Directory.GetCurrentDirectory());//System.IO.Path.GetDirectoryName(location));
+            //DirectoryInfo dir = new DirectoryInfo(System.IO.Path.GetDirectoryName(location));//);
             string localFolder = System.IO.Directory.GetCurrentDirectory();
 
             FileInfo[] assemblies = dir.GetFiles("*.*"); // Getting all Dlls
 
-
+            //MainWindow.
+            //System.Win .MessageBox.Show("");
             IEnumerable<FileInfo> a = assemblies.Where<FileInfo>(x =>
                 {
                     StringComparer cmp = StringComparer.OrdinalIgnoreCase;

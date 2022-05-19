@@ -115,23 +115,15 @@ namespace Scripting.CSharp
             string EtherCATMasterName = "EtherCAT Master";
             ITcSmTreeItem devices = systemManager.LookupTreeItem("TIID");
             ITcSmTreeItem device;
+            device = FindDevice(worker, devices, "EtherCAT Master");
             bool HasEtherCATNetwork = true;
-            if (HasEtherCATNetwork)
-            {
-                try
-                {
-                    device = devices.LookupChild("EtherCAT Master");
-                }
-                catch
-                {
-                    worker.ProgressStatus = "EtherCAT Network Not found";
-                    return;
-                }
-            }
-            else
+
+            if (device == null)
+                return;
+            if (!HasEtherCATNetwork)
             {
                 worker.Progress = 10;
-                worker.ProgressStatus = "Creating EtherCATnetwork (EK1100)";
+                worker.ProgressStatus = "Creating EtherCATnetwork";
                 device = CreateEtherCATNetwork(devices, EtherCATMasterName);
             }
 
@@ -154,7 +146,19 @@ namespace Scripting.CSharp
             ITcSmTreeItem plcConfig = systemManager.LookupTreeItem("TIPC");
 
         }
-
+        private ITcSmTreeItem FindDevice(IWorker worker, ITcSmTreeItem Devices, string Type)
+        {
+            for (int i = 1; i <= Devices.ChildCount; i++)
+            {
+                ITcSmTreeItem EtherCATDevice = Devices.Child[i];
+                XmlDocument EtherCATChilds = new XmlDocument(); //Convert the EtherCAT master childs into XML documents for parsing
+                EtherCATChilds.LoadXml(Devices.Child[i].ProduceXml(false));//Convert the EtherCAT master childs into XML documents for parsing 
+                XmlNode type = EtherCATChilds.SelectSingleNode("TreeItem/ItemSubTypeName"); //Gets the I/O Type. Example EP1111 or EK1100
+                if (Type == type.InnerText)
+                    return EtherCATDevice;
+            }
+            return null;
+        }
         private void AddNewEIPDevice(ITcSmTreeItem devices)
         {
             //int El6652DevId;
@@ -384,6 +388,7 @@ namespace Scripting.CSharp
                             //NewItem.IsInput = true;
                             NewItem.PathName = subitem.PathName;
                             NewItem.TagName = subitem.Name;
+                            NewItem.bitsize = 0;
                             NewItem.TagParentName = subitem.Parent.Name;
                             //if(xmlDoc.SelectSingleNode("TreeItem/VarDef/VarType").InnerText)
                             NewItem.typedetails = xmlDoc.SelectSingleNode("TreeItem/VarDef/VarType").InnerText;
@@ -465,21 +470,21 @@ namespace Scripting.CSharp
         private void GetIOObject(IWorker worker, ITcSmTreeItem EtherCATMaster, List<IO_Object> IoList, int i, ref Int32 mdrCount)
         {
             //int i = 1;
-            List<IO_Object> FullListOfIOObjects = new List<IO_Object>();
+            //List<IO_Object> FullListOfIOObjects = new List<IO_Object>();
             ITcSmTreeItem EtherCATDevice = EtherCATMaster.Child[i];
-            foreach (ITcSmTreeItem SubItem in EtherCATDevice) //This foreach is just to strip the first object out
-            {
-                GetIOObjectRecursive(worker, SubItem, FullListOfIOObjects);
-            }
+            //foreach (ITcSmTreeItem SubItem in EtherCATDevice) //This foreach is just to strip the first object out
+            //{
+            //    GetIOObjectRecursive(worker, SubItem, FullListOfIOObjects);
+            //}
             XmlDocument EtherCATChilds = new XmlDocument(); //Convert the EtherCAT master childs into XML documents for parsing
             EtherCATChilds.LoadXml(EtherCATMaster.Child[i].ProduceXml(false));//Convert the EtherCAT master childs into XML documents for parsing 
             if (EtherCATChilds.SelectNodes("TreeItem/EtherCAT/Slave/ProcessData/TxPdo") == null)
                 return;
-            XmlNodeList EtherCatTerminal = EtherCATChilds.SelectNodes("TreeItem/EtherCAT/Slave/ProcessData/TxPdo"); // return with the specific tree item of found devices.       
+            //XmlNodeList EtherCatTerminal = EtherCATChilds.SelectNodes("TreeItem/EtherCAT/Slave/ProcessData/TxPdo"); // return with the specific tree item of found devices.       
             //XmlNode TypeOld = EtherCATChilds.SelectSingleNode("TreeItem/EtherCAT/Slave/Info/Type"); //Gets the I/O Type. Example EP1111 or EK1100
             XmlNode Type = EtherCATChilds.SelectSingleNode("TreeItem/EtherCAT/Slave/Info/ProductRevision"); //Gets the I/O Type. Example EP1111 or EK1100
             
-            if(Type.InnerText.Split('-')[0] == "EP7402")
+            if(Type != null && Type.InnerText.Split('-')[0] == "EP7402")
             {
                 mdrCount++;
                 List<StartupListObject> StartupList = CSV_Reader.AutoEtherCATSettings;
@@ -502,14 +507,38 @@ namespace Scripting.CSharp
                         if (mdrCount == value)
                             AddToStartupList(MDR, singleStartup);
                 }
+                foreach (MotorStartupList MotorSetting in CSV_Reader.MotorSettingsList)
+                {
+                    //int value;
+                    //var isNumeric = int.TryParse(MotorSetting.MotorTargetPosition, out value);
+                    //if (isNumeric == true)
+                    if (MotorSetting.MotorTargetName == EtherCATDevice.Name)
+                    {
+                        for (int x = 0; x < MotorSetting.MotorSettings.MotorSettings.Count; x++)
+                        {
+                            string channel = "1";
+                            string index = MotorSetting.MotorSettings.MotorSettings[x].Index;
+                            if (MotorSetting.MotorChannel.ToLower() == "chl2" || MotorSetting.MotorChannel.ToLower() == "2")
+                            {
+                                channel = "2";
+                                int value;
+                                var isNumeric = int.TryParse(index, out value);
+                                if (isNumeric == true)
+                                {
+                                    index = (value + 10).ToString();
+                                }
+                            }
+                            StartupListObject singleStartup = new StartupListObject("", channel, "", "0", "1", index, MotorSetting.MotorSettings.MotorSettings[x].SubIndex, MotorSetting.MotorSettings.MotorSettings[x].Data, MotorSetting.MotorSettings.MotorSettings[x].Size);
+                            AddToStartupList(MDR, singleStartup);
+                        }
+                    }
+                }
 
-                EtherCATDevice.ConsumeXml(MDR.InnerXml);
+
+            EtherCATDevice.ConsumeXml(MDR.InnerXml);
             }
+            /*
 
-            /******************************************
-                 *Search for process data
-                 **************************************** */
-            //OutputAdd("Linking IO from terminal: " + Type.InnerText);
             bool PdoEnbled = false;
             string SmValue;
             string LinkName;
@@ -627,20 +656,6 @@ namespace Scripting.CSharp
                                     NewItem.bitsize = Convert.ToInt32(EtherCatTerminalNodeSubitems.SelectSingleNode("BitLen").InnerText);
                                     NewItem.type = match.type;
                                     NewItem.typedetails = match.typedetails;
-                                    /*
-                                                                if (EtherCatTerminalNodeSubitems.SelectSingleNode("BitLen").InnerText == "1")
-                                                                {
-                                                                    NewItem.type = 1;
-                                                                }
-                                                                else if (EtherCatTerminalNodeSubitems.SelectSingleNode("BitLen").InnerText == "16")
-                                                                {
-                                                                    NewItem.type = 6;
-                                                                }
-                                                                else
-                                                                {
-                                                                    NewItem.type = 0;
-                                                                    NewItem.typedetails = "unknown";
-                                                                }*/
                                     IoList.Add(NewItem);
                                 }
                             }
@@ -651,7 +666,7 @@ namespace Scripting.CSharp
                         }
                     }
                 }
-            }
+            }*/
         }
         private ITcSmTreeItem CreateEtherCATNetwork(ITcSmTreeItem devices, string EtherCATMasterName)
         {
@@ -739,7 +754,7 @@ namespace Scripting.CSharp
             public bool IsOutput = false;
             public string IndexGroup;
             public string IndexOffset;
-            public int bitsize;
+            public int bitsize = 0;
         }
         
         private void AddToStartupList(XmlDocument MDR, StartupListObject SingleObject)
@@ -779,8 +794,10 @@ namespace Scripting.CSharp
                     if (node["Index"].InnerText == Index.InnerText && node["SubIndex"].InnerText == SubIndex.InnerText)
                         InitCmds.RemoveChild(node);
             }
-
-
+            if (SingleObject.Data.ToLower() == "true")
+                SingleObject.Data = "1";
+            if (SingleObject.Data.ToLower() == "false")
+                SingleObject.Data = "0";
             char[] charArrayTemp = Convert.ToInt32(SingleObject.Data).ToString("X").ToCharArray();//SingleObject.Data.ToCharArray();
             char[] charArray = new char[] { '0', '0' };//, '0', '0' };//, '0', '0', '0', '0' };
             if (Convert.ToInt32( SingleObject.Size) == 4)
@@ -791,10 +808,13 @@ namespace Scripting.CSharp
             //Copy the Array Temp to the new array. Add "0"'s in area that th ToString("X") didn't fill in. If we don't do this it fucks up the final number
             int i = 0;
             int x = 0;
+            //if(charArrayTemp.Length > charArray.Length)
+                
             for (i = 0; i< charArrayTemp.Length; i++)
             {
                 x = i + charArray.Length - charArrayTemp.Length;
-                    charArray[x] = charArrayTemp[i];                  
+                    if(x >= 0 && i >= 0 && x < charArray.Length && i < charArrayTemp.Length)
+                charArray[x] = charArrayTemp[i];                  
             }
 
             //Byte swap. Oh god, what a pain in the ass

@@ -1,0 +1,16 @@
+//EP7402 Startup settings file
+UseSimpleMode,true
+DeviceType,EP7402
+MotorSettingsName,MotorB
+
+//Startup,SettingName,IndexChannel1:Offset:Size,Value
+StartupListItem,Peak current,8020:01:2,5000
+
+
+
+//This is a Guide: EP7402,MDR position, This is just a comment I place Ch1 or Ch2 to help keep track of settings., {Comment; index:subindex;value;number of bytes}. Please note, these must abolutly follow the correct pattern of will crash the program.
+//EP7402,All,Ch1,{Peak current;8020:01;5000;2},{Rated current;8020:02;1050;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;1000;2},{Start velocity;8020:09;1239;2},{Mechanical to electrical ratio;8020:13;5;2},{Sensorless offset scaling;8023:14;55;1},{Velocity loop integral time;8023:11;551;4}
+//EP7402,All,Ch2,{Peak current;8030:01;5000;2},{Rated current;8030:02;1100;2},{Rated voltage;8030:03;2400;2},{Phase to phase resistance;8030:04;1000;2},{Start velocity;8030:09;1235;2},{Mechanical to electrical ratio;8030:13;5;2},{Sensorless offset scaling;8033:14;55;1},{Velocity loop integral time;8033:11;551;4}
+//EP7402,1,Ch1,{Peak current;8020:01;5000;2},{Rated current;8020:02;1000;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;123;2},{Start velocity;8020:09;2000;2},{Mechanical to electrical ratio;8020:13;5;2},{Sensorless offset scaling;8023:14;55;1},{Velocity loop integral time;8023:11;551;4}
+//EP7402,1,Ch2,{Peak current;8030:01;5000;2},{Rated current;8030:02;1000;2},{Rated voltage;8030:03;2400;2},{Phase to phase resistance;8030:04;1000;2},{Start velocity;8030:09;2000;2}
+//EP7402,2,Ch1,{Peak current;8020:01;4000;2},{Rated current;8020:02;2000;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;800;2},{Start velocity;8020:09;1500;2}

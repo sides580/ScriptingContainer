@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30626.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptingTestContainerBase", "ScriptingTestContainerBase\ScriptingTestContainerBase.csproj", "{84BF2917-6A6E-45B9-B1BB-3FB86C57756D}"
 EndProject
@@ -63,5 +62,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1210EB05-A254-4E44-8ED9-4600A3C0AC1B}
 	EndGlobalSection
 EndGlobal

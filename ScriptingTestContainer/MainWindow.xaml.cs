@@ -14,7 +14,7 @@ using ScriptingTest;
 using EnvDTE;
 using EnvDTE100;
 using EnvDTE80;
-
+using System.IO.Compression;
 
 using Microsoft.Win32;
  
@@ -58,6 +58,10 @@ namespace ScriptingTest
         /// </summary>
         public MainWindow()
         {
+            string localFolder = System.IO.Directory.GetCurrentDirectory();
+            //MessageBox.Show(localFolder);
+            //var dllDirectory = @"C:/some/path";
+            Environment.SetEnvironmentVariable("PATH", Environment.GetEnvironmentVariable("PATH") + ";" + localFolder);
             _initializing = true;
             //System.Windows.MessageBox.Show("This is Version Beta 1.0");
             InitializeComponent();
@@ -117,6 +121,12 @@ namespace ScriptingTest
             txtSelectedProject.Text = ScriptingTest.CSV_Reader.ProjectPath;
             loadOpenVisualStudio();
 
+            ///// Set open project from folder as defaults
+            ScriptingTest.GlobalVariables.OpenExisitngVSProject = false;
+            rbOpenTwinCATProject.IsChecked = true;
+            rbUseActiveTwinCATProject.IsChecked = false;
+            UpdateOpenTwinCATProjectMode();
+            ///// Set open project from folder as defaults
         }
 
         /// <summary>
@@ -128,8 +138,9 @@ namespace ScriptingTest
             //this.lVScripts.DataContext = scripts;
             this.lVScripts.ItemsSource = scripts;
             CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(lVScripts.ItemsSource);
-            view.SortDescriptions.Add(new SortDescription("Category", ListSortDirection.Ascending));
-
+            view.SortDescriptions.Add(new SortDescription("ScriptName", ListSortDirection.Ascending));
+           
+            lVScripts.SelectedItem = scripts.Last();
         }
         /// <summary>
         /// Sets the scripts within the ListView
@@ -249,7 +260,33 @@ namespace ScriptingTest
         /// <param name="e">The <see cref="System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
         private void btnExecute_Click(object sender, RoutedEventArgs e)
         {
-            Debug.Assert(this._factory == null);
+            if (ScriptingTest.GlobalVariables.OpenExisitngVSProject == false)//open from file
+            {
+                Dictionary<string, List<object>> rot = ROTAccess.GetRunningObjectTable();
+                bool projectalreadyopened = false;
+                for (int x = 0; x < rot.Count; x++)
+                {
+                    if (rot.ElementAt(x).Key == ScriptingTest.CSV_Reader.ProjectPath)
+                    {
+                        projectalreadyopened = true;
+                    }
+                }
+                if (projectalreadyopened == true)
+                {
+                    MessageBox.Show("Project is already opened: " + ScriptingTest.CSV_Reader.ProjectPath + "... Please close before continuing");
+                    return;
+                }
+                /*if (_OpenVsList.Exists(a => a.FolderLocation == ScriptingTest.CSV_Reader.ProjectPath))
+                {
+                    MessageBox.Show("Project is already opened. Please close before continuing");
+                    return;
+                }*/
+            }
+
+            //comment out test
+            //Debug.Assert(this._factory == null);
+
+
 
             if (this.SelectedScript != null)
             {
@@ -257,7 +294,7 @@ namespace ScriptingTest
                 _runningScript.StatusChanged += new EventHandler<ScriptStatusChangedEventArgs>(script_StatusChanged);
 
                 VsFactory vsFactory = new VsFactory();
-
+                //MessageBox.Show("test");
                 if (_runningScript is ScriptEarlyBound)
                     this._factory = new EarlyBoundFactory(vsFactory);
                 else if (_runningScript is ScriptLateBound)
@@ -273,7 +310,7 @@ namespace ScriptingTest
                      ScriptingTest.CSV_Reader.ProjectPath = txtSelectedProject.Text;
                 else ScriptingTest.CSV_Reader.ProjectPath = null;
 
-                if (lVActiveVS.SelectedIndex > 0)
+                if (lVActiveVS.SelectedIndex >= 0)
                 {
                     DTE dteToConnect;
                     int SelectedIndex = lVActiveVS.SelectedIndex;
@@ -282,7 +319,40 @@ namespace ScriptingTest
                     ScriptingTest.GlobalVariables.ConnectedDTE = dteToConnect;
                 }
                 ScriptContext context = new ScriptContext(_factory, ScriptingTest.CSV_Reader.ProjectPath, parameterSet);
-                
+
+
+
+                    //Backup Project
+                    if (ScriptingTest.GlobalVariables.OpenExisitngVSProject == false && ScriptingTest.CSV_Reader.AutoBackupProject)//open from file
+                {
+
+                    if (_OpenVsList.Exists(a => a.FolderLocation == ScriptingTest.CSV_Reader.ProjectPath))
+                    {
+                        MessageBox.Show("Project is already opened. Please close before continuing");
+                        return;
+                    }
+
+
+                    string localFolder = System.IO.Directory.GetCurrentDirectory() + @"\ProjectBackup";
+                    string ProjectLocation = Path.GetDirectoryName(ScriptingTest.CSV_Reader.ProjectPath);
+
+             
+                    System.IO.Directory.CreateDirectory(localFolder);
+                    int fileIndex = 1;
+                    string zipPath = localFolder + @"\Backup" + fileIndex.ToString() + ".zip";
+                    while (File.Exists(zipPath))
+                    {
+                        fileIndex++;
+                        zipPath = localFolder + @"\Backup" + fileIndex.ToString() + ".zip";
+                    }
+                    // string extractPath = @"c:\example\extract";
+                    //System.IO.Compression.ZipFile.CreateFromDirectory
+     
+                    ZipFile.CreateFromDirectory(ProjectLocation, zipPath);
+                    //ZipFile.ExtractToDirectory(zipPath, extractPath);
+                }
+
+
                 _worker = new ScriptBackgroundWorker(/*this._factory,*/ _runningScript,context);
                 this.Update(_runningScript);
                 _worker.ConfigurationInitialized += new EventHandler(_worker_ConfigurationInitialized);
@@ -528,7 +598,7 @@ namespace ScriptingTest
             var fileContent = string.Empty;
             var filePath = string.Empty;
             OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.InitialDirectory = "c:\\";
+            openFileDialog.InitialDirectory = txtSelectedProject.Text;//"c:\\";
                 openFileDialog.Filter = "sln files (*.sln)|*.sln|All files (*.*)|*.*";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
@@ -574,5 +644,24 @@ namespace ScriptingTest
                 btnSelectProject.IsEnabled = true;
             }
         }
+
+        private void EditSettings_Click(object sender, RoutedEventArgs e)
+        {
+            string localFolder = System.IO.Directory.GetCurrentDirectory();
+            string filePath = localFolder + "\\Settings.txt";
+            System.Diagnostics.Process.Start("notepad.exe", filePath);
+        }
     }
 }
+
+
+/*
+ 1. Auto back project before editing so don't ever loss code. 
+2. Auto set IP address from constant inside PLC program. Pull from text file. Do both network cards. Leave option for 1 port to be DHCP
+3. Leave dips alone
+4. Find a way to deal with arrays for linking diagnostics.
+5. Auto detect number of etherCAT slaves.
+6. Add working counter and give name from device in tree.
+ 
+ 
+ */
