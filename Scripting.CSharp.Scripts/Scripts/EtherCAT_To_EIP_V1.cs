@@ -551,9 +551,12 @@ namespace Scripting.CSharp
             {
                 Outputs.DeleteChild(Outputs.Child[i].Name);
             }
-
+            int TotalInputs = 0;
+            int TotalOutputs = 0;
 
             int bitTracker = 0;
+            int InputsbitCounter = 4*8;
+            int OutputsbitCounter = 4*8;
             int bufferCounter = 0;
             int bufferInputCount = 0;
             int bufferOutputCount = 0;
@@ -606,12 +609,15 @@ namespace Scripting.CSharp
                                 {
                                     bufferInputCount++;
                                     item = Outputs.CreateChild("Buffer_" + bufferCounter.ToString(), 1, "", 1);
+                                    InputsbitCounter++;
 
                                 }
                                 else
                                 {
                                     bufferOutputCount++;
                                     item = Inputs.CreateChild("Buffer_" + bufferCounter.ToString(), 1, "", 1);
+
+                                    OutputsbitCounter++;
                                 }
                             }
                             //bitTracker--;
@@ -685,19 +691,23 @@ namespace Scripting.CSharp
                         //Outputs is a Tree item
                         //Maximum tag length = MDR100_InDev_Chl_1_short_circuit_MDR100_
                         //40 chars
+                        TotalInputs++;
                         item = Outputs.CreateChild(tagName, IoList[i].type, "", 1); // This adds the Output to the EIP network PDO
                         xmlDoc.LoadXml(item.ProduceXml(false));
-
+                        
                         bufferInputCount = bufferInputCount + Convert.ToInt32(xmlDoc.SelectSingleNode("TreeItem/VarDef/VarBitSize").InnerText);
-
+                        int bitsize = Convert.ToInt32(xmlDoc.SelectSingleNode("TreeItem/VarDef/VarBitSize").InnerText);
+                        InputsbitCounter = InputsbitCounter + bitsize;// IoList[i].bitsize;
                     }
                     else
                     {
+                        TotalOutputs++;
                         item = Inputs.CreateChild(tagName, IoList[i].type, "", 1);
 
                         xmlDoc.LoadXml(item.ProduceXml(false));
-      
+                        int bitsize = Convert.ToInt32(xmlDoc.SelectSingleNode("TreeItem/VarDef/VarBitSize").InnerText);
                         bufferOutputCount = bufferOutputCount + Convert.ToInt32(xmlDoc.SelectSingleNode("TreeItem/VarDef/VarBitSize").InnerText);
+                        OutputsbitCounter = OutputsbitCounter + bitsize;//IoList[i].bitsize;
                     }
 
                     
@@ -742,6 +752,7 @@ namespace Scripting.CSharp
             while (bufferInputCount % 16 != 0)
             {
                 bufferInputCount++;
+                InputsbitCounter++;
                 bufferCounter++;
                 item = Outputs.CreateChild("Buffer_" + bufferCounter.ToString(), 1, "", 1);
             }
@@ -749,10 +760,30 @@ namespace Scripting.CSharp
             {
                 bufferOutputCount++;
                 bufferCounter++;
+                OutputsbitCounter++;
                 item = Inputs.CreateChild("Buffer_" + bufferCounter.ToString(), 1, "", 1);
 
             }
+            if (true)
+            {
+                var randomclass = new Random();
+                int random = randomclass.Next();
 
+                string comment =  "Total Inputs: " + TotalInputs.ToString() + " / Size In Bytes: "+ ((InputsbitCounter+16)/8).ToString() + "\n" + "Total Outputs: " + TotalOutputs.ToString() + " / Size In Bytes: " + ((OutputsbitCounter) / 8).ToString() + "\n" + "The following checks to make sure the correct L5X file is loaded. The following number is unque:\n" + random.ToString() ;
+               
+                item = Outputs.CreateChild("CheckSum" + random.ToString(), 4, "", 1);
+                XmlDocument xmlItem = new XmlDocument();
+                xmlItem.LoadXml(item.ProduceXml());
+                XmlNode xmlTargetRef = xmlItem["TreeItem"]["ItemName"];
+                XmlNode xmlTarget = xmlItem["TreeItem"];
+                XmlElement Comment1 = xmlItem.CreateElement("Comment");
+                Comment1.InnerXml = "<![CDATA[" + comment + "]]>";
+                //Comment1.InnerXml = "<![CDATA[Hello]]>"; //IoList[i].Description; //"![CDATA[" +  IoList[i].Description + "]";
+                //xmlTarget.AppendChild(Comment1);
+                xmlTarget.InsertAfter(Comment1, xmlTargetRef);
+                xmlDoc.LoadXml(xmlItem.OuterXml);
+                item.ConsumeXml(xmlDoc.OuterXml);
+            }
         }
         private ITcSmTreeItem FindDevice(IWorker worker, ITcSmTreeItem Devices, string Type)
         {

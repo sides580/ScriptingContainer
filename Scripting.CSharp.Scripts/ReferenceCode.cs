@@ -365,6 +365,7 @@ namespace Scripting.CSharp
                         //parrent.TerminalName = subitem.Name;
                         return;
                     }
+                    
 
                     XmlDocument xmlDoc = new XmlDocument();
                     xmlDoc.LoadXml(subitem.ProduceXml(false));
