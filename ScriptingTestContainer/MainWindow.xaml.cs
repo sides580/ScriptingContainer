@@ -81,8 +81,10 @@ namespace ScriptingTest
                 foreach (DTEInfo key in progIdDict.Values)
                 {
                     this.cBProgID.Items.Add(key);
+                    if (key.Name == "TC XAE 2017")
+                        defaultIndex = this.cBProgID.Items.Count - 1; // this.cBProgID.SelectedItem = key.Name;//this.cBProgID.Items.Count-1;
                 }
-
+                
 
             }
             catch (Exception ex)
@@ -262,11 +264,12 @@ namespace ScriptingTest
         {
             if (ScriptingTest.GlobalVariables.OpenExisitngVSProject == false)//open from file
             {
-                Dictionary<string, List<object>> rot = ROTAccess.GetRunningObjectTable();
+                loadOpenVisualStudio();//This is here to help resolve some strange issue where sometimes you close the project but it still thinks its open.
+                Dictionary<string, List<object>> rot1 = ROTAccess.GetRunningObjectTable();
                 bool projectalreadyopened = false;
-                for (int x = 0; x < rot.Count; x++)
+                for (int x = 0; x < rot1.Count; x++)
                 {
-                    if (rot.ElementAt(x).Key == ScriptingTest.CSV_Reader.ProjectPath)
+                    if (rot1.ElementAt(x).Key == ScriptingTest.CSV_Reader.ProjectPath)
                     {
                         projectalreadyopened = true;
                     }
@@ -276,18 +279,10 @@ namespace ScriptingTest
                     MessageBox.Show("Project is already opened: " + ScriptingTest.CSV_Reader.ProjectPath + "... Please close before continuing");
                     return;
                 }
-                /*if (_OpenVsList.Exists(a => a.FolderLocation == ScriptingTest.CSV_Reader.ProjectPath))
-                {
-                    MessageBox.Show("Project is already opened. Please close before continuing");
-                    return;
-                }*/
             }
 
             //comment out test
             //Debug.Assert(this._factory == null);
-
-
-
             if (this.SelectedScript != null)
             {
                 _runningScript = this.SelectedScript;

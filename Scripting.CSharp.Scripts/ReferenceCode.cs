@@ -246,6 +246,15 @@ namespace Scripting.CSharp
                 }
             }
         }
+        static public void AutoRename(IWorker worker, IO_Object Device, string Value, string NewValue)
+        {
+ 
+                if (Device.TagName.Contains(Value))
+                {
+                    Device.TagName = Device.TagName.Replace(Value, NewValue);
+                }
+
+        }
         static public void GetIOObjectRecursive(IWorker worker, ITcSmTreeItem item, List<ReferenceCode.IO_Object> list, IO_ObjectSettings Parrent)
         {
             AutoRename(worker, item);
@@ -411,10 +420,7 @@ namespace Scripting.CSharp
                     if (EtherCATChilds.SelectNodes("TreeItem/Disabled").Item(0).InnerText == "true")
                         return;
             }
-            if (EtherCATDevice.ItemSubTypeName == "EL6652-0010 EtherNet/IP Adapter (Slave)" || CSV_Reader.IgnoreList.Exists(a => a.Type == EtherCATDevice.ItemSubTypeName))
-                return;
-            if (CSV_Reader.IgnoreList.Exists(a => a.Name == EtherCATDevice.Name))
-                return;
+
 
             GetIOObjectRecursive(worker, EtherCATDevice, FullListOfIOObjects, new IO_ObjectSettings());
             //foreach (ITcSmTreeItem SubItem in EtherCATDevice) //This foreach is just to strip the first object out
@@ -440,7 +446,14 @@ namespace Scripting.CSharp
                     else
                         continue;
                 }
-                    if (item.ItemSubType == 1 || item.ItemSubType == 2 || item.ItemSubType == 3)
+                else
+                { //we want to ignore some devices. We only ignore the PDO's, not the state and WcState
+                    if (EtherCATDevice.ItemSubTypeName == "EL6652-0010 EtherNet/IP Adapter (Slave)" || CSV_Reader.IgnoreList.Exists(a => a.Type == EtherCATDevice.ItemSubTypeName))
+                        continue;
+                    if (CSV_Reader.IgnoreList.Exists(a => a.Name == EtherCATDevice.Name))
+                        continue;
+                }
+                if (item.ItemSubType == 1 || item.ItemSubType == 2 || item.ItemSubType == 3)
                 {
                     //string[] PathNameSplit = item.PathName.Split('^');
                     //item.item.Parent

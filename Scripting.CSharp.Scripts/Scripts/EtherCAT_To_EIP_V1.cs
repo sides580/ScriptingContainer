@@ -435,12 +435,17 @@ namespace Scripting.CSharp
                             NewItem.IsInput = CSV_Reader.EipExtraTags[x].IsInput;
                             NewItem.TagParentName = "";
                             NewItem.PathName = PlcInstancePathName + CSV_Reader.EipExtraTags[x].LinkPath + "[" + i.ToString() + "]";
-                            NewItem.TagName = CSV_Reader.EipExtraTags[x].EIPTagName + i.ToString();
+                            NewItem.TagName = CSV_Reader.EipExtraTags[x].EIPTagName;// + i.ToString();
                             NewItem.bitsize = GetSizeFromString(CSV_Reader.EipExtraTags[x].DataType);// Convert.ToInt32(EtherCatTerminalNodeSubitems.SelectSingleNode("BitLen").InnerText);
                             NewItem.type = GetTypeFromString(CSV_Reader.EipExtraTags[x].DataType);
                             NewItem.typedetails = "IsManualAdd";
-                        if (CSV_Reader.EipExtraTags[x].ArrayEnd == "EtherDeviceCount" && GlobalVariables.IOListNames.Count-1 >= i)
+                        if (CSV_Reader.EipExtraTags[x].ArrayEnd == "EtherDeviceCount" && GlobalVariables.IOListNames.Count - 1 >= i)
+                        {
                             NewItem.Description = "EtherCAT Device: " + GlobalVariables.IOListNames[i];
+                            NewItem.TagName = NewItem.TagName + GlobalVariables.IOListNames[i];
+                        }
+                        ReferenceCode.AutoRename(worker, NewItem, " ", "_");
+                        ReferenceCode.AutoRename(worker, NewItem, "-", "_");
                         IoList.Add(NewItem);
                         }              
                 }
