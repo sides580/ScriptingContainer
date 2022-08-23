@@ -266,13 +266,23 @@ namespace Scripting.CSharp
             {
                 int countChildren = 0;
                 if (subitem.ItemType == 60)
-                {   
+                {
                     foreach (ITcSmTreeItem ChildCount in subitem)
                     {
                         countChildren++;
                     }
                 }
-                if (subitem.ChildCount == 0 && countChildren == 0)
+                string Type = ""; //Find out data type ahead of time in cases we don't want all the sub structure types.
+                //Special, convert bit array of 8 into a byte for linking
+                /*if (subitem.ItemType == 7 && subitem.ChildCount == 8)
+                {
+                        XmlDocument xmlDoc = new XmlDocument();
+                        xmlDoc.LoadXml(subitem.ProduceXml(false));
+                        if (xmlDoc.SelectSingleNode("TreeItem/VarDef/VarType") != null)
+                        Type = xmlDoc.SelectSingleNode("TreeItem/VarDef/VarType").InnerText;
+                }*/
+
+                if ((subitem.ChildCount == 0 && countChildren == 0) || (Type == "BITARR8"))
                 {
 
                     if (subitem.ItemType == 7)
@@ -326,6 +336,8 @@ namespace Scripting.CSharp
 
                             if (NewItem.typedetails == "BIT")
                                 NewItem.type = 1;
+                            else if (NewItem.typedetails == "BITARR8")
+                                NewItem.type = 4;
                             //else if (NewItem.typedetails == "Byte")
                             //    NewItem.type = 2;//Byte is 2, but we can't use bytes because it messes up EIP L5X generator
                             else if (NewItem.typedetails == "WORD")//done sort of, 
@@ -355,7 +367,7 @@ namespace Scripting.CSharp
                             else if (NewItem.typedetails == "BIT2") //Done
                                 NewItem.type = 4;
                             else
-                                NewItem.type = 4;
+                                NewItem.type = 4; //2 is byte, but l5x fuckes up when using bytes.
                             NewItem.IndexGroup = xmlDoc.SelectSingleNode("TreeItem/VarDef/AdsInfo/IndexGroup").InnerText;
                             NewItem.IndexOffset = xmlDoc.SelectSingleNode("TreeItem/VarDef/AdsInfo/IndexOffset").InnerText;
                             list.Add(NewItem);
@@ -393,6 +405,10 @@ namespace Scripting.CSharp
                             parrent.IsOutput = parrent.ItemSubType == 2;
                             parrent.IsInput = parrent.ItemSubType == 1 || parrent.ItemSubType == 3;
                             parrent.TypeFound = true;
+                            if (parrent.ItemSubType == 1 || parrent.ItemSubType == 2)
+                            {
+                                parrent.TerminalName = Parrent.TerminalName; //Lets keep the orignal name... this is a test.
+                            }
                         }
                         else
                             parrent = Parrent;
@@ -455,14 +471,25 @@ namespace Scripting.CSharp
                 }
                 if (item.ItemSubType == 1 || item.ItemSubType == 2 || item.ItemSubType == 3)
                 {
-                    //string[] PathNameSplit = item.PathName.Split('^');
-                    //item.item.Parent
+                    //Type = 8 structure but not a linkable tag.
+                    //Type 60 is another type of structure seen in 3rd party devices. This is not linkable.
+                    //Type 7 is a variable. These can be structure or normal base variables
                     List<string> RebuiltName = new List<string>();
                     ITcSmTreeItem searchitem = item.item;
-                    while (true)
+                   // bool ForceAdd = false;
+                    int loopCounter = 0;
+                    while (true) //This loop is for generating the name of the IO. Loop in reverse building up an array of strings to build the name from.
                     {
-
-                        if (searchitem.ItemType == 8 && item.ItemSubType == 3) //we want to skip infodata and WcState
+                        loopCounter++;
+                        /*if (item.typedetails == "BITARR8" && loopCounter == 1) //special case. So we get a good generated name from BITARR8's. This is special for the 
+                        {
+                            RebuiltName.Add(searchitem.Name);
+                            if (searchitem.Parent.ItemType == 8) //This is so we skip part of a name in the IO tree.
+                                searchitem = searchitem.Parent; //Force skip this object because its redundent
+                            if (searchitem.Parent.ItemType == 60)
+                                searchitem = searchitem.Parent; //Force skip this object because its redundent. its some kind of structure we don't care about
+                        }
+                        else*/ if (searchitem.ItemType == 8 && item.ItemSubType == 3) //we want to skip infodata and WcState
                         {
                             ;
                         }
@@ -470,6 +497,10 @@ namespace Scripting.CSharp
                         {
                             ;
                         }
+                        // else if (searchitem.ItemType == 7 && searchitem.) //if has childern ignore
+                        // {
+                        //     ;
+                        // }
                         //else if (searchitem.ItemType == 8 && searchitem.ChildCount == 0) //this gets ride of the stupid IO link thing
                         //{
                         //}
@@ -483,6 +514,7 @@ namespace Scripting.CSharp
                         if (searchitem.ItemType != 7 && searchitem.ItemType != 8 && searchitem.ItemType != 60)
                             break;
                         searchitem = searchitem.Parent;
+                        //ForceAdd = false;
                     }
                     item.TagName = "";
                     for(int x = 0; x < RebuiltName.Count; x++)

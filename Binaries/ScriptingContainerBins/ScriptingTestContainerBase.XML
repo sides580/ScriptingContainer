@@ -637,6 +637,56 @@
             bla
             </summary>
         </member>
+        <member name="T:ScriptingTest.CoEAutoRead">
+            <summary>
+            for adding links from the settings file
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.CoEIndex">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.CoESubIndex">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.EthSlave">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.EIP_Var_Name">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.PLC_Var_Name">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.CoEDataType">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.EthSlaveFindByMethod">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CoEAutoRead.VariableInsideTwinCATLinkName">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="M:ScriptingTest.CoEAutoRead.#ctor">
+            <summary>
+            bla
+            </summary>
+        </member>
         <member name="T:ScriptingTest.IngnoreObject">
             <summary>
             for adding links from the settings file
@@ -753,6 +803,11 @@
             </summary>
         </member>
         <member name="F:ScriptingTest.CSV_Reader.MotorSettingsList">
+            <summary>
+            bla
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.CoEAutoReadToEIP">
             <summary>
             bla
             </summary>

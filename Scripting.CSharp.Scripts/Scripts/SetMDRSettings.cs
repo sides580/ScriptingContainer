@@ -133,12 +133,6 @@ namespace Scripting.CSharp
             //create EIP Master
             worker.ProgressStatus = "Finished Scanning EtherCAT network";
 
-
-
-            //ImportEIPDevice(worker, devices, IO_List);
-
-
-
             
             worker.Progress = 70;
             worker.ProgressStatus = "Adding PLC project ...";
@@ -738,7 +732,7 @@ namespace Scripting.CSharp
         {
             get
             {
-                return "Edit all EP7402's startup list\nSee Settings.txt for settings";
+                return "Edit all EP7402's startup list\nSee motor files directory and EtherCAT_StartupList.txt";
             }
         }
 

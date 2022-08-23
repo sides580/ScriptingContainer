@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0200">
-  <fileHeader companyName="Beckhoff Automation GmbH" productName="TwinCAT PLC Control" productVersion="3.5.13.21" creationDateTime="2022-08-23T07:23:47.1895136" />
-  <contentHeader name="Untitled1" modificationDateTime="2022-08-23T07:23:47.1895136">
+  <fileHeader companyName="Beckhoff Automation GmbH" productName="TwinCAT PLC Control" productVersion="3.5.13.21" creationDateTime="2022-05-13T11:55:32.1321096" />
+  <contentHeader name="Untitled1" modificationDateTime="2022-05-13T11:55:32.1331093">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1" />
@@ -274,99 +274,6 @@
                 <derived name="FB_EcMasterFrameStatisticClearFrames" />
               </type>
             </variable>
-            <variable name="StepCoERead">
-              <type>
-                <UDINT />
-              </type>
-              <documentation>
-                <xhtml xmlns="http://www.w3.org/1999/xhtml">//// End IP address
-// Start CoE read</xhtml>
-              </documentation>
-            </variable>
-            <variable name="CoEReadPos">
-              <type>
-                <INT />
-              </type>
-            </variable>
-            <variable name="CoEReadbytePos">
-              <type>
-                <INT />
-              </type>
-            </variable>
-            <variable name="CoEReadintPos">
-              <type>
-                <INT />
-              </type>
-            </variable>
-            <variable name="CoEReaduintPos">
-              <type>
-                <INT />
-              </type>
-            </variable>
-            <variable name="CoEReadudintPos">
-              <type>
-                <INT />
-              </type>
-            </variable>
-            <variable name="CoEReadboolPos">
-              <type>
-                <INT />
-              </type>
-            </variable>
-            <variable name="fbCoERead">
-              <type>
-                <derived name="FB_EcCoESdoReadEx" />
-              </type>
-            </variable>
-            <variable name="CoEReadcbBufLen">
-              <type>
-                <array>
-                  <dimension lower="1" upper="CoEReadTotalCount" />
-                  <baseType>
-                    <UDINT />
-                  </baseType>
-                </array>
-              </type>
-              <documentation>
-                <xhtml xmlns="http://www.w3.org/1999/xhtml">CoEReadIndex : ARRAY[1..50] OF WORD;
-CoEReadSubIndex : ARRAY[1..50] OF BYTE;
-CoEReadSlaveAddr : ARRAY[1..50] OF UINT;</xhtml>
-              </documentation>
-            </variable>
-            <variable name="CoEReadData">
-              <type>
-                <array>
-                  <dimension lower="1" upper="CoEReadTotalCount" />
-                  <baseType>
-                    <pointer>
-                      <baseType>
-                        <BYTE />
-                      </baseType>
-                    </pointer>
-                  </baseType>
-                </array>
-              </type>
-            </variable>
-            <variable name="CoEReadErrorCounter">
-              <type>
-                <UDINT />
-              </type>
-            </variable>
-            <variable name="CoEReadErrorIndex">
-              <type>
-                <UDINT />
-              </type>
-            </variable>
-            <variable name="CoEReadTonUpdateRate">
-              <type>
-                <derived name="TON" />
-              </type>
-            </variable>
-            <variable name="i">
-              <type>
-                <UDINT />
-              </type>
-            </variable>
           </localVars>
           <localVars constant="true">
             <variable name="dwMaxSlaves">
@@ -384,93 +291,6 @@ CoEReadSlaveAddr : ARRAY[1..50] OF UINT;</xhtml>
             <xhtml xmlns="http://www.w3.org/1999/xhtml">EtherCAT_Diagnostics();
 
 SetIpAddress();
-stArrEcConfSlaveInfo[1].sName;
-stArrEcConfSlaveInfo[1].sType;
-stArrEcConfSlaveInfo[1].nAddr;
-
-CASE StepCoERead OF //Cyclicly read CoE data to send back to rockwell controller.
-	0: //This step is important because it sets all the pointer values. 
-	
-		CoEReadintPos:=0;
-		//Not implimented yet.
-		CoEReadPos:=1;
-		StepCoERead:=StepCoERead+10;
-		//Update Pointers
-		FOR i:=1 TO  CoEReadTotalCount BY 1 DO
-			IF CoEReadDataType[i] = 'INT' THEN
-				CoEReadintPos:=CoEReadintPos+1;
-				CoEReadData[i]:=ADR(CoEReadInt[CoEReadintPos]);
-				CoEReadcbBufLen[i]:=SIZEOF(CoEReadInt[CoEReadintPos]);
-			ELSIF CoEReadDataType[i] = 'BYTE' THEN
-				CoEReadbytePos:=CoEReadbytePos+1;
-				CoEReadData[i]:=ADR(CoEReadByte[CoEReadbytePos]);
-				CoEReadcbBufLen[i]:=SIZEOF(CoEReadByte[CoEReadbytePos]);
-			ELSIF CoEReadDataType[i] = 'UINT' THEN
-				CoEReaduintPos:=CoEReaduintPos+1;
-				CoEReadData[i]:=ADR(CoEReadUint[CoEReaduintPos]);
-				CoEReadcbBufLen[i]:=SIZEOF(CoEReadUint[CoEReaduintPos]);
-			ELSIF CoEReadDataType[i] = 'UDINT' THEN
-				CoEReadudintPos:=CoEReadudintPos+1;
-				CoEReadData[i]:=ADR(CoEReadUdint[CoEReadudintPos]);
-				CoEReadcbBufLen[i]:=SIZEOF(CoEReadUdint[CoEReadudintPos]);
-			ELSIF CoEReadDataType[i] = 'BOOL' THEN
-				CoEReadboolPos:=CoEReadboolPos+1;
-				CoEReadData[i]:=ADR(CoEReadBool[CoEReadboolPos]);
-				CoEReadcbBufLen[i]:=SIZEOF(CoEReadBool[CoEReadboolPos]);
-			END_IF		
-		END_FOR
-		
-		
-	5: //Pause cycle so CoE reads are not constantly occuring.
-		CoEReadTonUpdateRate(IN:=TRUE, PT:=T#2S);	
-		IF CoEReadTonUpdateRate.Q THEN
-			StepCoERead:=10;
-		END_IF
-	
-	10: //Increment index pointer for next read target.
-		fbCoERead( bExecute:=FALSE);
-		IF fbCoERead.bBusy = FALSE THEN
-			IF CoEReadPos &gt; CoEReadTotalCount THEN
-				CoEReadPos:=1;	
-				StepCoERead:=5;
-				CoEReadTonUpdateRate(IN:=FALSE);		
-			ELSE
-				IF STRING_TO_UINT(CoEReadSlaveAddress[CoEReadPos]) &gt; 0 AND CoEReadSubIndex[CoEReadPos] &gt; 0  THEN
-					//We have something to read		
-					StepCoERead:=StepCoERead+10;			
-				ELSE
-					CoEReadPos:=1;	
-					StepCoERead:=5;
-					CoEReadTonUpdateRate(IN:=FALSE);		
-				END_IF
-				
-			END_IF
-		END_IF
-		
-	20: //Start read
-	fbCoERead(
-		sNetId:=F_CreateAmsNetId(nIds := GVL_AutoGenerated.EtherCAT_NetId) , 
-		nSlaveAddr:=STRING_TO_UINT(CoEReadSlaveAddress[CoEReadPos]) , 
-		nSubIndex:=CoEReadSubIndex[CoEReadPos] , 
-		nIndex:=CoEReadIndex[CoEReadPos] , 
-		pDstBuf:=CoEReadData[CoEReadPos] , 
-		cbBufLen:=CoEReadcbBufLen[CoEReadPos] , 
-		bExecute:=TRUE , 
-		tTimeout:= , 
-		bCompleteAccess:= , 
-		bBusy=&gt; , 
-		bError=&gt; , 
-		nErrId=&gt; , 
-		cbRead=&gt; );
-	IF NOT fbCoERead.bBusy THEN
-		IF fbCoERead.bError THEN
-			CoEReadErrorCounter:=CoEReadErrorCounter+1;
-			CoEReadErrorIndex:=CoEReadPos;
-		END_IF
-		CoEReadPos:=CoEReadPos+1;
-		StepCoERead:=StepCoERead-10;
-	END_IF
-END_CASE
 
 
 CASE Step OF
@@ -876,7 +696,7 @@ END_CASE
             </Method>
           </data>
           <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
-            <ObjectId>8fc7fe47-4f5b-4afc-b336-9a7d3d62ab06</ObjectId>
+            <ObjectId>6dc4e52a-6f07-4be2-8eab-70a9b737d600</ObjectId>
           </data>
         </addData>
       </pou>
@@ -888,7 +708,7 @@ END_CASE
   <addData>
     <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
       <ProjectStructure>
-        <Object Name="AutoGenerated" ObjectId="8fc7fe47-4f5b-4afc-b336-9a7d3d62ab06">
+        <Object Name="AutoGenerated" ObjectId="6dc4e52a-6f07-4be2-8eab-70a9b737d600">
           <Object Name="EtherCAT_Diagnostics" ObjectId="3bad4647-2226-4bb9-ba7b-c15aaaea4612" />
           <Object Name="SetIpAddress" ObjectId="a08ff5c2-3a96-4183-8c84-3797ef299fe8" />
         </Object>

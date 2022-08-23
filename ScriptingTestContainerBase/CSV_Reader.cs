@@ -212,6 +212,51 @@ namespace ScriptingTest
     /// <summary>
     /// for adding links from the settings file
     /// </summary>
+    public class CoEAutoRead
+    {
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string CoEIndex;
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string CoESubIndex;
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string EthSlave;// ether a name, address or type.
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string EIP_Var_Name;
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string PLC_Var_Name;
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string CoEDataType;
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string EthSlaveFindByMethod;//string will be ether Address or Name. Could add "Type" in the future
+        /// <summary>
+        /// bla
+        /// </summary>
+        public string VariableInsideTwinCATLinkName;//Is populated when parsing through all these at end.
+        /// <summary>
+        /// bla
+        /// </summary>
+        public CoEAutoRead()
+        {
+            ;
+        }
+    }
+    /// <summary>
+    /// for adding links from the settings file
+    /// </summary>
     public class IngnoreObject
     {
         /// <summary>
@@ -329,6 +374,11 @@ namespace ScriptingTest
         /// bla
         /// </summary>
         static public List<MotorStartupList> MotorSettingsList;
+
+        /// <summary>
+        /// bla
+        /// </summary>
+        static public List<CoEAutoRead> CoEAutoReadToEIP;
         /// <summary>
         /// bla
         /// </summary>
@@ -409,6 +459,7 @@ namespace ScriptingTest
         /// </summary>
         static public void ReadConfigCSV()
         {
+            CoEAutoReadToEIP = new List<CoEAutoRead>();
             MotorDataBase = new List<MotorStartupDataBase>();
             MotorSettingsList = new List<MotorStartupList>();
             IgnoreList = new List<IngnoreObject>();
@@ -837,6 +888,57 @@ namespace ScriptingTest
                                 }
                             }
                             Links.Add(new ManualLinks(Link1, Type1, Link2, Type2));
+                        }
+                        if ((values[0].ToLower() == "CoERead_To_EIP".ToLower()) && values.Count() > 2)
+                        {
+                            CoEAutoRead CoE = new CoEAutoRead();
+                            for (int x = 1; x < values.Count(); x++)
+                            {
+                                string column = values[x];
+                                if (column.StartsWith("{"))
+                                {
+                                    column = column.TrimStart('{');
+                                    column = column.TrimEnd('}');
+
+                                    string[] subcolumn = column.Split(';');
+                                    if (subcolumn[0].ToLower() == "Index".ToLower())
+                                    {
+                                        CoE.CoEIndex = subcolumn[1];
+                                    }
+                                    if (subcolumn[0].ToLower() == "SubIndex".ToLower())
+                                    {
+                                        CoE.CoESubIndex = subcolumn[1];
+                                    }
+                                    if (subcolumn[0].ToLower() == "SlaveAddress".ToLower())
+                                    {
+                                        CoE.EthSlave = subcolumn[1];
+                                        CoE.EthSlaveFindByMethod = "address";
+                                    }
+                                    if (subcolumn[0].ToLower() == "SlaveType".ToLower())
+                                    {
+                                        CoE.EthSlave = subcolumn[1];
+                                        CoE.EthSlaveFindByMethod = "type";
+                                    }
+                                    if (subcolumn[0].ToLower() == "SlaveName".ToLower())
+                                    {
+                                        CoE.EthSlave = subcolumn[1];
+                                        CoE.EthSlaveFindByMethod = "Name";
+                                    }
+                                    if (subcolumn[0].ToLower() == "VarType".ToLower())
+                                    {
+                                        CoE.CoEDataType = subcolumn[1];
+                                    }
+                                    if (subcolumn[0].ToLower() == "VarName".ToLower())
+                                    {
+
+                                        CoE.EIP_Var_Name = subcolumn[1];
+                                    }
+                                }
+                           
+                            }
+                            CoEAutoReadToEIP.Add(CoE);
+
+
                         }
 
                     }
