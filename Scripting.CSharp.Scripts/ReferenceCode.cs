@@ -8,6 +8,7 @@ using TwinCAT.SystemManager;
 using System;
 using ScriptingTest;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace Scripting.CSharp
 {
@@ -79,6 +80,7 @@ namespace Scripting.CSharp
                                         }
                                         catch
                                         {
+                                            worker.ProgressStatus = "Importing Final";
                                             taskObject.CreateChild(importSkimmedFinal, 650, "", null);
                                         }
                                         //ITcSmTreeItem GetFirstChildAsTest = nestedProject.Child[x].Child[1];
@@ -90,6 +92,8 @@ namespace Scripting.CSharp
                             }
                         }
                     }
+                    worker.ProgressStatus = "5 Second Pause";
+                    System.Threading.Thread.Sleep(5000);
                     dte.Solution.SolutionBuild.Build(true);
                 }
                 catch (Exception ex)
@@ -464,7 +468,7 @@ namespace Scripting.CSharp
                 }
                 else
                 { //we want to ignore some devices. We only ignore the PDO's, not the state and WcState
-                    if (EtherCATDevice.ItemSubTypeName == "EL6652-0010 EtherNet/IP Adapter (Slave)" || CSV_Reader.IgnoreList.Exists(a => a.Type == EtherCATDevice.ItemSubTypeName))
+                    if (EtherCATDevice.ItemSubTypeName == "EL6652-0010 EtherNet/IP Adapter (Slave)" || CSV_Reader.IgnoreList.Exists(a => a.Type.Trim() == EtherCATDevice.ItemSubTypeName.Trim()))
                         continue;
                     if (CSV_Reader.IgnoreList.Exists(a => a.Name == EtherCATDevice.Name))
                         continue;
@@ -489,7 +493,16 @@ namespace Scripting.CSharp
                             if (searchitem.Parent.ItemType == 60)
                                 searchitem = searchitem.Parent; //Force skip this object because its redundent. its some kind of structure we don't care about
                         }
-                        else*/ if (searchitem.ItemType == 8 && item.ItemSubType == 3) //we want to skip infodata and WcState
+                        else*/
+                        /*  //Example code how to read for specific data types.
+                        XmlDocument xml1 = new XmlDocument(); //Convert the EtherCAT master childs into XML documents for parsing
+                        xml1.LoadXml(searchitem.ProduceXml(false));//Convert the EtherCAT master childs into XML documents for parsing                        
+                        if (xml1.SelectSingleNode("TreeItem/VarDef/VarType") != null  && xml1.SelectSingleNode("TreeItem/VarDef/VarType").InnerText == "BITARR8") //special case. So we get a good generated name from BITARR8's. This is special for the 
+                        {
+                            ;
+                        }*/
+                        
+                        if (searchitem.ItemType == 8 && item.ItemSubType == 3) //we want to skip infodata and WcState
                         {
                             ;
                         }
@@ -610,6 +623,9 @@ namespace Scripting.CSharp
             public int ItemSubType = 0;
             public string TerminalName = "";
             public ITcSmTreeItem item;
+            public string EIPName = ""; //Specially added for when packing bits into ints. Needed an easy spot to give a name.
+            public int PackBitsOffset = -1;//used to group bits together if we are trying to save on number of tags.
+            public int PackBitsParrent = -1;//used to group bits together if we are trying to save on number of tags.
         }
         public class IO_ObjectSettings
         {
@@ -622,6 +638,18 @@ namespace Scripting.CSharp
             public bool IsInput = false;
             public bool IsOutput = false;
             
+        }
+        public static string TrimEnd(this string target, string trimString)
+        {
+            if (string.IsNullOrEmpty(trimString)) return target;
+
+            string result = target;
+            while (result.EndsWith(trimString))
+            {
+                result = result.Substring(0, result.Length - trimString.Length);
+            }
+
+            return result;
         }
 
     }

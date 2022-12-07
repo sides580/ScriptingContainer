@@ -407,7 +407,15 @@ namespace ScriptingTest
         /// <summary>
         /// Project Path if already exist
         /// </summary>
+        static public bool WcStatesPackIntoBits;
+        /// <summary>
+        /// Project Path if already exist
+        /// </summary>
         static public bool AddAllStatesToEIP;
+        /// <summary>
+        /// Project Path if already exist
+        /// </summary>
+        static public bool PackBitsIntoBytes;
         /// <summary>
         /// Project Path if already exist
         /// </summary>
@@ -465,7 +473,9 @@ namespace ScriptingTest
             IgnoreList = new List<IngnoreObject>();
             DoNotIgnoreDisabledEtherCATDevices = false;
             AddAllStatesToEIP = false;
+            PackBitsIntoBytes = false;
             AddAllWcStatesToEIP = false;
+            WcStatesPackIntoBits = false;
             AddDescription = new List<AddDescriptions>();
             AddLibrary_List = new List<string>();
             AutoAddVariables = new List<AutoAddCode>();
@@ -625,11 +635,21 @@ namespace ScriptingTest
                         if (values[0].ToLower() == "diagnostics" && values[1].ToLower() == "addallwcstatestoeip")
                         {
                             AddAllWcStatesToEIP = true;
+                            if (values.Count() > 2 && values[2].ToLower() == "PackIntoBits".ToLower())
+                            {
+                                WcStatesPackIntoBits = true;
+                            }
                         }
                         if (values[0].ToLower() == "diagnostics" && values[1].ToLower() == "addallstatestoeip")
                         {
                             AddAllStatesToEIP = true;
                         }
+                        if (values[0].ToLower() == "PackBitsIntoBytes".ToLower() && (values[1].ToLower() == "true" || values[1].ToLower() == "1"))
+                        {
+                            PackBitsIntoBytes = true;
+                        }
+
+                        
                         if (values[0] == "EP7402" && values.Count() > 2)
                         {
                             for (int x = 0; x < values.Count(); x++)
@@ -779,11 +799,12 @@ namespace ScriptingTest
                         }
                         if ((values[0].ToLower() == "ignore") && values.Count() > 0)
                         {
+                            var values2 = line.Split(new char[] { ',' },2);
                             string Type = "";
                             string Name = "";
-                            for (int x = 0; x < values.Count(); x++)
+                            for (int x = 0; x < values2.Count(); x++)
                             {
-                                string column = values[x];
+                                string column = values2[x];
                                 if (column.StartsWith("{"))
                                 {
                                     column = column.TrimStart('{');
@@ -909,26 +930,26 @@ namespace ScriptingTest
                                     {
                                         CoE.CoESubIndex = subcolumn[1];
                                     }
-                                    if (subcolumn[0].ToLower() == "SlaveAddress".ToLower())
+                                    if (subcolumn[0].ToLower() == "SlaveAddress".ToLower() || subcolumn[0].ToLower() == "DeviceAddress".ToLower())
                                     {
                                         CoE.EthSlave = subcolumn[1];
                                         CoE.EthSlaveFindByMethod = "address";
                                     }
-                                    if (subcolumn[0].ToLower() == "SlaveType".ToLower())
+                                    if (subcolumn[0].ToLower() == "SlaveType".ToLower() || subcolumn[0].ToLower() == "DeviceType".ToLower())
                                     {
                                         CoE.EthSlave = subcolumn[1];
                                         CoE.EthSlaveFindByMethod = "type";
                                     }
-                                    if (subcolumn[0].ToLower() == "SlaveName".ToLower())
+                                    if (subcolumn[0].ToLower() == "SlaveName".ToLower() || subcolumn[0].ToLower() == "DeviceName".ToLower())
                                     {
                                         CoE.EthSlave = subcolumn[1];
                                         CoE.EthSlaveFindByMethod = "Name";
                                     }
-                                    if (subcolumn[0].ToLower() == "VarType".ToLower())
+                                    if (subcolumn[0].ToLower() == "VarType".ToLower() || subcolumn[0].ToLower() == "DataType".ToLower())
                                     {
                                         CoE.CoEDataType = subcolumn[1];
                                     }
-                                    if (subcolumn[0].ToLower() == "VarName".ToLower())
+                                    if (subcolumn[0].ToLower() == "VarName".ToLower() || subcolumn[0].ToLower() == "EIPName".ToLower())
                                     {
 
                                         CoE.EIP_Var_Name = subcolumn[1];

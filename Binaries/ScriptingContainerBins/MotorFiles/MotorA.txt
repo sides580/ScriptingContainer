@@ -3,15 +3,34 @@ UseSimpleMode,true
 DeviceType,EP7402
 MotorSettingsName,MotorA
 
-//Startup,SettingName,IndexChannel1:Offset:Size,Value
-StartupListItem,Peak current,8020:01:2,5000
-StartupListItem,Rated current,8020:02:2,1500
+//Startup,SettingName,IndexChannel1:Offset:Size(bytes),Value (dec)
+StartupListItem,Peak current,8020:01:2,4900
+StartupListItem,Rated current,8020:02:2,2500
 StartupListItem,Rated voltage,8020:03:2,2400
-StartupListItem,Phase to phase resistance,8020:04:2,300
-StartupListItem,Start velocity,8020:09:2,1234
-StartupListItem,Mechanical to electrical ratio,8020:13:2,5
-StartupListItem,Velocity loop integral time,8023:11:4,551
-StartupListItem,Sensorless offset scaling,8023:14:1,55
+StartupListItem,Phase to phase resistance,8020:04:2,90
+StartupListItem,Start velocity,8020:09:2,500
+StartupListItem,Mechanical to electrical ratio,8020:13:2,23
+StartupListItem,Rated Velocity,8020:14:2,3500
+StartupListItem,I2T warning Level,8020:16:1,80
+StartupListItem,I2T error Level,8020:18:1,110
+StartupListItem,Motor Thermal Time constant,8020:19:2,15
+
+//StartupListItem,Disable stop after unsuccessful rampup,8023:02:1,FALSE
+StartupListItem,Disable motor diagnosis,8023:03:1,TRUE
+StartupListItem,Disable I2T current limitting,8023:04:1,TRUE
+StartupListItem,Velocity Loop integral time,8023:11:4,120
+StartupListItem,Velocity Loop proportional gain,8023:12:4,6000
+StartupListItem,Velocity feed forward gain,8023:13:1,50
+StartupListItem,Sensorless offset scaling,8023:14:1,50
+StartupListItem,Align duration,8023:15:2,30
+StartupListItem,Rampup duration,8023:18:2,50
+StartupListItem,Rampup velocity,8023:19:2,1000
+StartupListItem,Rampup needed switchover events,8023:21:2,5
+StartupListItem,Commutation threshold,8023:22:2,80
+StartupListItem,current loop proportional gain,8023:23:2,2
+StartupListItem,current loop integral time,8023:24:2,20
+StartupListItem,Restart after error number of repetition,8023:25:2,10
+StartupListItem,Restart after error delay,8023:26:2,1000
 
 
 

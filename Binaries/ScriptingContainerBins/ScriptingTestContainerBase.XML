@@ -842,7 +842,17 @@
             Project Path if already exist
             </summary>
         </member>
+        <member name="F:ScriptingTest.CSV_Reader.WcStatesPackIntoBits">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
         <member name="F:ScriptingTest.CSV_Reader.AddAllStatesToEIP">
+            <summary>
+            Project Path if already exist
+            </summary>
+        </member>
+        <member name="F:ScriptingTest.CSV_Reader.PackBitsIntoBytes">
             <summary>
             Project Path if already exist
             </summary>

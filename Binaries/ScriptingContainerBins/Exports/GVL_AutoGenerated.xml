@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0200">
-  <fileHeader companyName="Beckhoff Automation GmbH" productName="TwinCAT PLC Control" productVersion="3.5.13.21" creationDateTime="2022-05-13T11:55:24.4715014" />
-  <contentHeader name="Untitled1" modificationDateTime="2022-05-13T11:55:24.4715014">
+  <fileHeader companyName="Beckhoff Automation GmbH" productName="TwinCAT PLC Control" productVersion="3.5.13.21" creationDateTime="2022-10-24T16:31:11.1154956" />
+  <contentHeader name="PLC" modificationDateTime="2022-10-24T16:31:11.1154956">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1" />
@@ -72,7 +72,7 @@
         <variable name="EtherCATChangeCount" address="%Q*">
           <type>
             <array>
-              <dimension lower="1" upper="50" />
+              <dimension lower="1" upper="EtherDeviceCount" />
               <baseType>
                 <UINT />
               </baseType>
