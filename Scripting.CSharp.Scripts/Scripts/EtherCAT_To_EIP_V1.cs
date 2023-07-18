@@ -889,19 +889,25 @@ namespace Scripting.CSharp
             int bufferOutputCount = 0;
             int tagtrimcounter = 0;
 
-            for (int x = 0; x < 3; x++)
+            for (int x = 0; x < 4; x++)
             {
                 for (int i = 0; i < IoList.Count; i++)
                 {
-                    if (x == 0) { 
-                        if(IoList[i].bitsize < 16 && IoList[i].PackBitsOffset == -1)
-                            continue; 
+                    if (x == 0)
+                    {
+                        if (IoList[i].bitsize < 32)
+                            continue;
+                    }
+                    else if (x == 1)
+                    {
+                        if (IoList[i].bitsize != 16 && IoList[i].PackBitsOffset == -1)
+                            continue;
                     }
                     else if(IoList[i].PackBitsOffset > -1) //This tag should already have been taken care of. 
                         continue;
-                    else if (x == 1 && (IoList[i].bitsize == 1 || IoList[i].bitsize >= 16))
+                    else if (x == 2 && (IoList[i].bitsize == 1 || IoList[i].bitsize >= 16))
                         continue;
-                    else if (x == 2 && IoList[i].bitsize != 1)
+                    else if (x == 3 && IoList[i].bitsize != 1)
                         continue;
 
                     //renames the tagname

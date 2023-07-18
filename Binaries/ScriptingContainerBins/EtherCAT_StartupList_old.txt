@@ -1,10 +1,13 @@
 
 //AddToStartUpList
-MotorSettings,MDR100:Chl1,MotorA
-MotorSettings,MDR100:Chl2,MotorA
-MotorSettings,MDR300:Chl1,MotorB
-MotorSettings,MDR300:Chl2,MotorC
-
+MotorSettings,MDR100:Chl1,MotorB
+MotorSettings,MDR100:Chl2,MotorC
+MotorSettings,MDR300:Chl1,MotorD
+MotorSettings,MDR300:Chl2,MotorB
+MotorSettings,MDR400:Chl1,MotorC
+MotorSettings,MDR400:Chl2,MotorD
+MotorSettings,MDR500:Chl1,MotorB
+MotorSettings,MDR500:Chl2,MotorC
 
 
 

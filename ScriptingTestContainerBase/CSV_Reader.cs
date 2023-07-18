@@ -460,8 +460,11 @@ namespace ScriptingTest
         /// List the contains tags that need added to the EIP and then linked.
         /// </summary>
         static public List<ManualLinks> Links;// = new List<StartupListObject>();
+        /// <summary>
+        /// List the contains tags that need added to the EIP and then linked.
+        /// </summary>
+        static public bool PackEp7402AccAndDecToPlcTags = true;
 
-        
         /// <summary>
         /// Actual status of the Script
         /// </summary>
@@ -476,6 +479,7 @@ namespace ScriptingTest
             PackBitsIntoBytes = false;
             AddAllWcStatesToEIP = false;
             WcStatesPackIntoBits = false;
+            PackEp7402AccAndDecToPlcTags = false;
             AddDescription = new List<AddDescriptions>();
             AddLibrary_List = new List<string>();
             AutoAddVariables = new List<AutoAddCode>();
@@ -799,7 +803,8 @@ namespace ScriptingTest
                         }
                         if ((values[0].ToLower() == "ignore") && values.Count() > 0)
                         {
-                            var values2 = line.Split(new char[] { ',' },2);
+                            string[] values2 = SplitString(line).ToArray();
+                            //var values2 = line.Split(new char[] { ',' });
                             string Type = "";
                             string Name = "";
                             for (int x = 0; x < values2.Count(); x++)
@@ -808,6 +813,7 @@ namespace ScriptingTest
                                 if (column.StartsWith("{"))
                                 {
                                     column = column.TrimStart('{');
+                                    column = column.TrimEnd(',');
                                     column = column.TrimEnd('}');
 
                                     string[] subcolumn = column.Split(';');

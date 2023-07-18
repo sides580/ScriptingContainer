@@ -912,6 +912,11 @@
             List the contains tags that need added to the EIP and then linked.
             </summary>
         </member>
+        <member name="F:ScriptingTest.CSV_Reader.PackEp7402AccAndDecToPlcTags">
+            <summary>
+            List the contains tags that need added to the EIP and then linked.
+            </summary>
+        </member>
         <member name="M:ScriptingTest.CSV_Reader.ReadConfigCSV">
             <summary>
             Actual status of the Script

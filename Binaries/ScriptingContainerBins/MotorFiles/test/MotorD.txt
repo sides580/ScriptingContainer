@@ -1,8 +1,8 @@
 //EP7402 Startup settings file
 UseSimpleMode,true
 DeviceType,EP7402
-MotorSettingsName,MotorA
-// PM486FP-45-365-D-024-GV
+MotorSettingsName,MotorD
+// PM486FP-55-696-D-024-P2-KF
 //Startup,SettingName,IndexChannel1:Offset:Size(bytes),Value (dec)
 StartupListItem,Peak current,8020:01:2,8000
 StartupListItem,Rated current,8020:02:2,5000
@@ -40,3 +40,4 @@ StartupListItem,Restart after error delay,8023:26:2,1000
 //EP7402,1,Ch1,{Peak current;8020:01;5000;2},{Rated current;8020:02;1000;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;123;2},{Start velocity;8020:09;2000;2},{Mechanical to electrical ratio;8020:13;5;2},{Sensorless offset scaling;8023:14;55;1},{Velocity loop integral time;8023:11;551;4}
 //EP7402,1,Ch2,{Peak current;8030:01;5000;2},{Rated current;8030:02;1000;2},{Rated voltage;8030:03;2400;2},{Phase to phase resistance;8030:04;1000;2},{Start velocity;8030:09;2000;2}
 //EP7402,2,Ch1,{Peak current;8020:01;4000;2},{Rated current;8020:02;2000;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;800;2},{Start velocity;8020:09;1500;2}
+

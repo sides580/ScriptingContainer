@@ -1,19 +1,36 @@
 //EP7402 Startup settings file
 UseSimpleMode,true
 DeviceType,EP7402
-MotorSettingsName,MotorC
-
-//Startup,SettingName,IndexChannel1:Offset:Size,Value
-StartupListItem,Peak current,8020:01:2,4000
-StartupListItem,Rated current,8020:02:2,1000
+MotorSettingsName,MotorA
+// PM486FE-45-283-D-024-VG-JQ-KF
+//Startup,SettingName,IndexChannel1:Offset:Size(bytes),Value (dec)
+StartupListItem,Peak current,8020:01:2,8000
+StartupListItem,Rated current,8020:02:2,5000
 StartupListItem,Rated voltage,8020:03:2,2400
-StartupListItem,Phase to phase resistance,8020:04:2,300
-StartupListItem,Start velocity,8020:09:2,1234
-StartupListItem,Mechanical to electrical ratio,8020:13:2,5
-StartupListItem,Velocity loop integral time,8023:11:4,551
-StartupListItem,Sensorless offset scaling,8023:14:1,55
-StartupListItem,Disable motor diagnosis,8023:03:1,true
+StartupListItem,Phase to phase resistance,8020:04:2,90
+StartupListItem,Start velocity,8020:09:2,500
+StartupListItem,Mechanical to electrical ratio,8020:13:2,23
+StartupListItem,Rated Velocity,8020:14:2,3500
+StartupListItem,I2T warning Level,8020:16:1,80
+StartupListItem,I2T error Level,8020:18:1,110
+StartupListItem,Motor Thermal Time constant,8020:19:2,15
 
+//StartupListItem,Disable stop after unsuccessful rampup,8023:02:1,FALSE
+StartupListItem,Disable motor diagnosis,8023:03:1,TRUE
+StartupListItem,Disable I2T current limitting,8023:04:1,TRUE
+StartupListItem,Velocity Loop integral time,8023:11:4,120
+StartupListItem,Velocity Loop proportional gain,8023:12:4,6000
+StartupListItem,Velocity feed forward gain,8023:13:1,50
+StartupListItem,Sensorless offset scaling,8023:14:1,100
+StartupListItem,Align duration,8023:15:2,75
+StartupListItem,Rampup duration,8023:18:2,50
+StartupListItem,Rampup velocity,8023:19:2,1000
+StartupListItem,Rampup needed switchover events,8023:21:2,2
+StartupListItem,Commutation threshold,8023:22:2,100
+StartupListItem,current loop proportional gain,8023:23:2,75
+StartupListItem,current loop integral time,8023:24:2,3
+StartupListItem,Restart after error number of repetition,8023:25:2,10
+StartupListItem,Restart after error delay,8023:26:2,1000
 
 
 
@@ -23,3 +40,4 @@ StartupListItem,Disable motor diagnosis,8023:03:1,true
 //EP7402,1,Ch1,{Peak current;8020:01;5000;2},{Rated current;8020:02;1000;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;123;2},{Start velocity;8020:09;2000;2},{Mechanical to electrical ratio;8020:13;5;2},{Sensorless offset scaling;8023:14;55;1},{Velocity loop integral time;8023:11;551;4}
 //EP7402,1,Ch2,{Peak current;8030:01;5000;2},{Rated current;8030:02;1000;2},{Rated voltage;8030:03;2400;2},{Phase to phase resistance;8030:04;1000;2},{Start velocity;8030:09;2000;2}
 //EP7402,2,Ch1,{Peak current;8020:01;4000;2},{Rated current;8020:02;2000;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;800;2},{Start velocity;8020:09;1500;2}
+

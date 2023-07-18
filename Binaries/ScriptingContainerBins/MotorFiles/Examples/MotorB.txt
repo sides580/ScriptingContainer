@@ -1,22 +1,13 @@
+//EP7402 Startup settings file
+UseSimpleMode,true
+DeviceType,EP7402
+MotorSettingsName,MotorB
 
-//AddToStartUpList
-//AddToStartUpList
-MotorSettings,MDR100:Chl1,MotorB
-MotorSettings,MDR100:Chl2,MotorB
-MotorSettings,MDR200:Chl1,MotorC
-MotorSettings,MDR200:Chl2,MotorB
-MotorSettings,MDR400:Chl1,MotorD
-MotorSettings,MDR400:Chl2,MotorD
+//Startup,SettingName,IndexChannel1:Offset:Size,Value
+StartupListItem,Peak current,8020:01:2,5000
 
 
 
-
-
-
-
-
-
-//Below is the old way. It's still valid and the code should work
 //This is a Guide: EP7402,MDR position, This is just a comment I place Ch1 or Ch2 to help keep track of settings., {Comment; index:subindex;value;number of bytes}. Please note, these must abolutly follow the correct pattern of will crash the program.
 //EP7402,All,Ch1,{Peak current;8020:01;5000;2},{Rated current;8020:02;1050;2},{Rated voltage;8020:03;2400;2},{Phase to phase resistance;8020:04;1000;2},{Start velocity;8020:09;1239;2},{Mechanical to electrical ratio;8020:13;5;2},{Sensorless offset scaling;8023:14;55;1},{Velocity loop integral time;8023:11;551;4}
 //EP7402,All,Ch2,{Peak current;8030:01;5000;2},{Rated current;8030:02;1100;2},{Rated voltage;8030:03;2400;2},{Phase to phase resistance;8030:04;1000;2},{Start velocity;8030:09;1235;2},{Mechanical to electrical ratio;8030:13;5;2},{Sensorless offset scaling;8033:14;55;1},{Velocity loop integral time;8033:11;551;4}

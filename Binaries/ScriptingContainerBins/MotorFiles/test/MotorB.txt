@@ -1,7 +1,7 @@
 //EP7402 Startup settings file
 UseSimpleMode,true
 DeviceType,EP7402
-MotorSettingsName,MotorA
+MotorSettingsName,MotorB
 // PM486FP-45-365-D-024-GV
 //Startup,SettingName,IndexChannel1:Offset:Size(bytes),Value (dec)
 StartupListItem,Peak current,8020:01:2,8000

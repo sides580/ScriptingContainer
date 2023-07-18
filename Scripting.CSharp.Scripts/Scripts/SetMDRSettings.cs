@@ -508,22 +508,30 @@ namespace Scripting.CSharp
                     //if (isNumeric == true)
                     if (MotorSetting.MotorTargetName == EtherCATDevice.Name)
                     {
-                        for (int x = 0; x < MotorSetting.MotorSettings.MotorSettings.Count; x++)
+                        if (MotorSetting.MotorSettings != null)
                         {
-                            string channel = "1";
-                            string index = MotorSetting.MotorSettings.MotorSettings[x].Index;
-                            if (MotorSetting.MotorChannel.ToLower() == "chl2" || MotorSetting.MotorChannel.ToLower() == "2")
+
+
+                            for (int x = 0; x < MotorSetting.MotorSettings.MotorSettings.Count; x++)
                             {
-                                channel = "2";
-                                int value;
-                                var isNumeric = int.TryParse(index, out value);
-                                if (isNumeric == true)
+                                string channel = "1";
+                                string index = MotorSetting.MotorSettings.MotorSettings[x].Index;
+                                if (MotorSetting.MotorChannel.ToLower() == "chl2" || MotorSetting.MotorChannel.ToLower() == "2")
                                 {
-                                    index = (value + 10).ToString();
+                                    channel = "2";
+                                    int value;
+                                    var isNumeric = int.TryParse(index, out value);
+                                    if (isNumeric == true)
+                                    {
+                                        index = (value + 10).ToString();
+                                    }
                                 }
+                                StartupListObject singleStartup = new StartupListObject("", channel, "", "0", "1", index, MotorSetting.MotorSettings.MotorSettings[x].SubIndex, MotorSetting.MotorSettings.MotorSettings[x].Data, MotorSetting.MotorSettings.MotorSettings[x].Size);
+                                AddToStartupList(MDR, singleStartup);
                             }
-                            StartupListObject singleStartup = new StartupListObject("", channel, "", "0", "1", index, MotorSetting.MotorSettings.MotorSettings[x].SubIndex, MotorSetting.MotorSettings.MotorSettings[x].Data, MotorSetting.MotorSettings.MotorSettings[x].Size);
-                            AddToStartupList(MDR, singleStartup);
+                        }
+                        else {
+                            worker.ProgressStatus = "Failed to find motor settings. Check motor types inside motor file";
                         }
                     }
                 }

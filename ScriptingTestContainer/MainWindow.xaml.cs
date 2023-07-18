@@ -317,8 +317,8 @@ namespace ScriptingTest
 
 
 
-                    //Backup Project
-                    if (ScriptingTest.GlobalVariables.OpenExisitngVSProject == false && ScriptingTest.CSV_Reader.AutoBackupProject)//open from file
+                //Backup Project
+                if (ScriptingTest.GlobalVariables.OpenExisitngVSProject == false && ScriptingTest.CSV_Reader.AutoBackupProject)//open from file
                 {
 
                     if (_OpenVsList.Exists(a => a.FolderLocation == ScriptingTest.CSV_Reader.ProjectPath))
@@ -327,25 +327,36 @@ namespace ScriptingTest
                         return;
                     }
 
-
-                    string localFolder = System.IO.Directory.GetCurrentDirectory() + @"\ProjectBackup";
-                    string ProjectLocation = Path.GetDirectoryName(ScriptingTest.CSV_Reader.ProjectPath);
-
-             
-                    System.IO.Directory.CreateDirectory(localFolder);
-                    int fileIndex = 1;
-                    string zipPath = localFolder + @"\Backup" + fileIndex.ToString() + ".zip";
-                    while (File.Exists(zipPath))
+                    try
                     {
-                        fileIndex++;
-                        zipPath = localFolder + @"\Backup" + fileIndex.ToString() + ".zip";
+
+                        string localFolder = System.IO.Directory.GetCurrentDirectory() + @"\ProjectBackup";
+                        string ProjectLocation = Path.GetDirectoryName(ScriptingTest.CSV_Reader.ProjectPath);
+
+
+                        System.IO.Directory.CreateDirectory(localFolder);
+                        int fileIndex = 1;
+                        string zipPath = localFolder + @"\Backup" + fileIndex.ToString() + ".zip";
+                        while (File.Exists(zipPath))
+                        {
+                            fileIndex++;
+                            zipPath = localFolder + @"\Backup" + fileIndex.ToString() + ".zip";
+                        }
+                        // string extractPath = @"c:\example\extract";
+                        //System.IO.Compression.ZipFile.CreateFromDirectory
+
+                        ZipFile.CreateFromDirectory(ProjectLocation, zipPath);
+                        //ZipFile.ExtractToDirectory(zipPath, extractPath);
                     }
-                    // string extractPath = @"c:\example\extract";
-                    //System.IO.Compression.ZipFile.CreateFromDirectory
-     
-                    ZipFile.CreateFromDirectory(ProjectLocation, zipPath);
-                    //ZipFile.ExtractToDirectory(zipPath, extractPath);
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Failed to backup project" + ex.Message.ToString());
+                    }
                 }
+
+
+
+
 
 
                 _worker = new ScriptBackgroundWorker(/*this._factory,*/ _runningScript,context);

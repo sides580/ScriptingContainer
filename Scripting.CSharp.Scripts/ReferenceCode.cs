@@ -472,6 +472,12 @@ namespace Scripting.CSharp
                         continue;
                     if (CSV_Reader.IgnoreList.Exists(a => a.Name == EtherCATDevice.Name))
                         continue;
+                    if (CSV_Reader.IgnoreList.Exists(a => a.Type.ToLower() == "TagName".ToLower()))
+                    {
+                        List<IngnoreObject> TempList = CSV_Reader.IgnoreList.FindAll(a => a.Type.ToLower() == "TagName".ToLower());
+                        if (TempList.Exists(a => a.Name.Trim() == item.TagName))
+                            continue;
+                    }
                 }
                 if (item.ItemSubType == 1 || item.ItemSubType == 2 || item.ItemSubType == 3)
                 {
